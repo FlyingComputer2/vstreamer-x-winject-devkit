@@ -23,6 +23,10 @@
 | Ethernet | 100BASE-TX PHY + *onboard* magnetics; four-contact JST-GH carries isolated twisted-pair cable signals |
 | General GPIO | 3×13 GND/5V/Signal servo-style header; CS1–CS5, GPIO33 spare, GPIO22/23/54, and FS USB D± GPIO24/25 via selectable isolation |
 
+## Mechanical envelope and connector-edge layout
+
+Rev A placement: **120 × 120 mm square, preliminary**. North: camera CSI-2. West: two USB-C and six JST-GH ports in order USB HS, USB FS, UART0, UART1, UART2, I²C, SPI, Ethernet. East: 3×13 servo/GPIO. South: radio SDIO FPC, radio power JST, main 5 V input. See [placement draft](placement-rev-a.md) and [concept diagram](rov-gnd-p4-placement-rev-a.svg). Actual connector courtyards and clearance remain to be verified.
+
 ## WINJECT-RADIO-C5 card
 
 - ESP32-C5, a QPF4507 integrated 5 GHz FEM and a fast RF detector (provisional detector component selection).
