@@ -18,10 +18,10 @@
 | External I²C | Exactly one 4-pin JST-GH bus, independent of camera I²C |
 | SPI | One GP-SPI2 bus, up to 6 CS signals intended; actual ESP-IDF driver behavior to validate |
 | SPI connector | 1×6 standard JST-GH: 3V3, GND, CLK, MOSI, MISO, CS0 |
-| SPI-EXT connector | 1×6 standard JST-GH: CS1, CS2, CS3, CS4, CS5, SPARE |
+| Optional SPI CS | CS1–CS5 are exposed only on the 3×13 GPIO/servo header; **no SPI-EXT JST-GH connector** |
 | SPI IRQ | None shared; device-specific interrupt may use a spare GPIO |
 | Ethernet | 100BASE-TX PHY + *onboard* magnetics; four-contact JST-GH carries isolated twisted-pair cable signals |
-| General GPIO | Shared CS1–CS5; SPI-EXT SPARE; optionally FS USB D± via selectable isolation; remaining free GPIO |
+| General GPIO | 3×13 GND/5V/Signal servo-style header; CS1–CS5, GPIO33 spare, GPIO22/23/54, and FS USB D± GPIO24/25 via selectable isolation |
 
 ## WINJECT-RADIO-C5 card
 

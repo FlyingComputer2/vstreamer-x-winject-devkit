@@ -16,7 +16,7 @@ This captures the *latest design discussion*, not a datasheet-checked pinout. A 
 | microSD DAT0..DAT3 | 39 / 40 / 41 / 42 | Provisional |
 | microSD CLK / CMD | 43 / 44 | Provisional |
 | SPI CLK / MOSI / MISO / CS0 | 9 / 8 / 10 / 7 | Provisional |
-| SPI-EXT CS1..CS5 / SPARE | 4 / 5 / 6 / 13 / 32 / 33 | Provisional, optional GPIO |
+| Optional SPI CS1..CS5; GPIO33 spare (3×13 GPIO header) | 4 / 5 / 6 / 13 / 32 / 33 | Provisional, no separate SPI-EXT connector |
 | USB FS Serial/JTAG D−/D+ | 24 / 25 | Provisional, GPIO only when USB disconnected |
 | USB HS OTG D−/D+ | Dedicated USB pins | Verify actual package nets |
 | Ethernet RMII CRS_DV, RXD0, RXD1 | 28 / 29 / 30 | Provisional |
@@ -36,16 +36,16 @@ This captures the *latest design discussion*, not a datasheet-checked pinout. A 
 
 | GPIO | Digital direction | Assignment | Alternatives / cautions |
 |---:|---|---|---|
-| 4 | IN/OUT | SPI-EXT CS1 | Shared with SPI; alternate mux/touch functions require silicon verification |
-| 5 | IN/OUT | SPI-EXT CS2 | Shared with SPI |
-| 6 | IN/OUT | SPI-EXT CS3 | Shared with SPI |
-| 13 | IN/OUT | SPI-EXT CS4 | Shared with SPI |
+| 4 | IN/OUT | Optional SPI CS1 (GPIO header) | Shared with SPI; alternate mux/touch functions require silicon verification |
+| 5 | IN/OUT | Optional SPI CS2 (GPIO header) | Shared with SPI |
+| 6 | IN/OUT | Optional SPI CS3 (GPIO header) | Shared with SPI |
+| 13 | IN/OUT | Optional SPI CS4 (GPIO header) | Shared with SPI |
 | 22 | IN/OUT | Free / analog candidate | **ADC capability not verified** |
 | 23 | IN/OUT | Free / analog candidate | **ADC capability not verified** |
 | 24 | IN/OUT | USB FS D− / GPIO | Must isolate FS USB connector in GPIO mode |
 | 25 | IN/OUT | USB FS D+ / GPIO | Must isolate FS USB connector in GPIO mode |
-| 32 | IN/OUT | SPI-EXT CS5 | Shared with SPI |
-| 33 | IN/OUT | SPI-EXT SPARE | Shared connector |
+| 32 | IN/OUT | Optional SPI CS5 (GPIO header) | Shared with SPI |
+| 33 | IN/OUT | GPIO header spare | Shared connector |
 | 54 | IN/OUT | Free / analog candidate | **ADC capability not verified** |
 
 **Note:** This table is a *plan*, not proof of pin availability. Any 3.3 V GPIO exposure must respect actual IO power domains, input limits, and bootstrap constraints. Shared GPIO cannot be used independently by the SPI and the external device at the same time.
@@ -62,12 +62,12 @@ The 6-pin JST-GH pinout was proposed as: 1=3V3 reference, 2=GND, 3=TX0, 4=RX0, 5
 |---:|---|---|---|
 | 1 | GND | 3V3 | 3V3 |
 | 2 | GND | 5V | 5V |
-| 3 | GND | 5V | GPIO4 / SPI-EXT CS1 |
-| 4 | GND | 5V | GPIO5 / SPI-EXT CS2 |
-| 5 | GND | 5V | GPIO6 / SPI-EXT CS3 |
-| 6 | GND | 5V | GPIO13 / SPI-EXT CS4 |
-| 7 | GND | 5V | GPIO32 / SPI-EXT CS5 |
-| 8 | GND | 5V | GPIO33 / SPI-EXT SPARE |
+| 3 | GND | 5V | GPIO4 / Optional SPI CS1 (GPIO header) |
+| 4 | GND | 5V | GPIO5 / Optional SPI CS2 (GPIO header) |
+| 5 | GND | 5V | GPIO6 / Optional SPI CS3 (GPIO header) |
+| 6 | GND | 5V | GPIO13 / Optional SPI CS4 (GPIO header) |
+| 7 | GND | 5V | GPIO32 / Optional SPI CS5 (GPIO header) |
+| 8 | GND | 5V | GPIO33 / GPIO header spare |
 | 9 | GND | 5V | GPIO22 (general / ADC candidate) |
 | 10 | GND | 5V | GPIO23 (general / ADC candidate) |
 | 11 | GND | 5V | GPIO54 (general / ADC candidate) |
@@ -78,8 +78,8 @@ Totals: **13 GND + 13 5V + 2 3V3 + 11 signal = 39 contacts**. All 11 signal pins
 
 ### Electrical and mechanical precautions
 
-- **Important: 5 V contacts are directly adjacent to 3.3 V-only GPIO contacts.** Prevent misalignment/reversed mating with keyed mechanical design, clear pin-1 marking and/or protective interface arrangement. GPIO pins must **never** see 5 V. Whether 3×13 shrouded headers are readily available is TBD.
+- Rows 3–13 use the conventional **GND / 5 V / signal** servo-header arrangement. Label the polarity and pin 1 clearly; GPIO signals remain 3.3 V-only (not 5 V tolerant). Exact header mechanical pitch, footprint and orientation are TBD.
 - 5 V is a **shared rail** repeated along the middle column and row 2, *not* thirteen independent regulated outputs. Design trace width, connector current per contact, total current limit and any protective fuse/eFuse accordingly. Same for 3V3.
 - GPIO24/25 shared with built-in **USB Full-Speed Serial/JTAG** must have physical data-path selection/isolation; GPIO mode and USB mode cannot run at the same time. USB D+ = GPIO25, D− = GPIO24.
-- CS1–CS5 appear **both on SPI-EXT and this header**, so GPIO use and SPI chip-select use are mutually exclusive per pin.
+- **CS1–CS5 are connected only to this 3×13 GPIO header**, not to a separate SPI-EXT connector. Each pin can be configured as a SPI chip select or another GPIO function, not both at once. To attach a second SPI device, share CLK/MOSI/MISO/GND from the main SPI JST-GH and bring its CS wire from this header.
 - This header is a design allocation only, not a finalized electrical netlist or manufacturing drawing; check actual pinout, boot straps and package capabilities before routing.

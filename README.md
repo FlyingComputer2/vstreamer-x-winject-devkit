@@ -24,9 +24,9 @@ See [SDIO cable contract](docs/radio-sdio-interface.md).
 - Two USB-C ports: native **USB FS/JTAG** and **USB HS OTG** (host/device for VStreamer).
 - UART0 flashing/logging via **6-pin JST-GH** with external auto-reset/boot controls; UART1 MSP DisplayPort; UART2 CRSF / S.Port via individual 4-pin JST-GH connectors.
 - One external I²C bus **separate** from the camera's I²C.
-- One external SPI bus using two **6-pin JST-GH** connectors labelled **SPI** and **SPI-EXT**. CS1–CS5 are optional/shared GPIO; no shared IRQ.
+- One external GP-SPI2 bus via a **single 6-pin JST-GH** connector labelled **SPI** (3V3, GND, CLK, MOSI, MISO, CS0). Optional CS1–CS5 are available **only on the 3×13 GPIO/servo header**, with no separate SPI-EXT connector and no shared IRQ.
 - 100BASE-TX Ethernet with onboard PHY and magnetics; four-wire custom JST-GH twisted-pair cable-side connection.
-- GPIO expansion including alternate SPI CS and optional FS/JTAG pins.
+- 3×13 GND/5V/GPIO servo-style header exposing CS1–CS5, GPIO33 spare, GPIO22/23/54 and optional FS/JTAG GPIO24/25.
 
 ## Design documents
 

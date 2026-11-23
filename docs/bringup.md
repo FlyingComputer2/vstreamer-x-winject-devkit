@@ -13,7 +13,7 @@
 - [ ] USB HS OTG device and host modes with power protection.
 - [ ] Camera MIPI CSI and its independent I²C.
 - [ ] microSD sustained read/write; check errors.
-- [ ] External I²C, UART1 MSP, UART2 CRSF / S.Port, and SPI CS0..CS5.
+- [ ] External I²C, UART1 MSP, UART2 CRSF / S.Port, and SPI CS0 through the SPI JST-GH plus optional CS1–CS5 through the GPIO header.
 - [ ] 100BASE-TX Ethernet PHY and isolated 4-wire cable connection.
 
 ## Stage 2 — standalone WINJECT-RADIO-C5
