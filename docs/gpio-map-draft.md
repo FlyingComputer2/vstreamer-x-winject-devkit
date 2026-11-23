@@ -53,3 +53,33 @@ This captures the *latest design discussion*, not a datasheet-checked pinout. A 
 ## Auto-flash UART0 wiring
 
 The 6-pin JST-GH pinout was proposed as: 1=3V3 reference, 2=GND, 3=TX0, 4=RX0, 5=DTR control, 6=RTS control. DTR/RTS are signals from the external adapter, not MCU GPIO functions. Include an Espressif-style transistor control network for BOOT and CHIP_PU (EN), and retain buttons. Exact strapping pin, active polarity, and BOOT/EN electrical implementation **must** be verified before drawing the circuit.
+
+## Proposed 3 × 13 GPIO expansion header (39 contacts)
+
+**Decision:** 3 columns × 13 rows. This supersedes a generic unspecified GPIO expansion header. Contact orientation, mechanical pitch and actual footprint/pin-1 numbering still require selection. Table is arranged in logical **rows**, not manufacturer's pin numbers.
+
+| Row | Column 1 | Column 2 | Column 3 |
+|---:|---|---|---|
+| 1 | GND | 3V3 | 3V3 |
+| 2 | GND | 5V | 5V |
+| 3 | GND | 5V | GPIO4 / SPI-EXT CS1 |
+| 4 | GND | 5V | GPIO5 / SPI-EXT CS2 |
+| 5 | GND | 5V | GPIO6 / SPI-EXT CS3 |
+| 6 | GND | 5V | GPIO13 / SPI-EXT CS4 |
+| 7 | GND | 5V | GPIO32 / SPI-EXT CS5 |
+| 8 | GND | 5V | GPIO33 / SPI-EXT SPARE |
+| 9 | GND | 5V | GPIO22 (general / ADC candidate) |
+| 10 | GND | 5V | GPIO23 (general / ADC candidate) |
+| 11 | GND | 5V | GPIO54 (general / ADC candidate) |
+| 12 | GND | 5V | GPIO25 / USB FS D+ |
+| 13 | GND | 5V | GPIO24 / USB FS D− |
+
+Totals: **13 GND + 13 5V + 2 3V3 + 11 signal = 39 contacts**. All 11 signal pins are planned as digital input/output capable, pending package/IO-domain validation; some have alternate functions, so not all are simultaneously free.
+
+### Electrical and mechanical precautions
+
+- **Important: 5 V contacts are directly adjacent to 3.3 V-only GPIO contacts.** Prevent misalignment/reversed mating with keyed mechanical design, clear pin-1 marking and/or protective interface arrangement. GPIO pins must **never** see 5 V. Whether 3×13 shrouded headers are readily available is TBD.
+- 5 V is a **shared rail** repeated along the middle column and row 2, *not* thirteen independent regulated outputs. Design trace width, connector current per contact, total current limit and any protective fuse/eFuse accordingly. Same for 3V3.
+- GPIO24/25 shared with built-in **USB Full-Speed Serial/JTAG** must have physical data-path selection/isolation; GPIO mode and USB mode cannot run at the same time. USB D+ = GPIO25, D− = GPIO24.
+- CS1–CS5 appear **both on SPI-EXT and this header**, so GPIO use and SPI chip-select use are mutually exclusive per pin.
+- This header is a design allocation only, not a finalized electrical netlist or manufacturing drawing; check actual pinout, boot straps and package capabilities before routing.
