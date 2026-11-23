@@ -1,0 +1,41 @@
+# VStreamer × Winject Development Kit
+
+A modular development platform for **VStreamer** (ESP32-P4 camera / H.264 host) and **Winject** (replaceable ESP32-C5 5 GHz radio).
+
+**Project stage:** Rev A architecture and connector contract. Schematic, BOM, fabrication files, silicon pin validation, and RF compliance tests are **not yet complete**.
+
+## Boards
+
+- [`boards/rov-gnd-p4/`](boards/rov-gnd-p4/) — main ESP32-P4 camera / encoder carrier.
+- [`boards/winject-radio-c5/`](boards/winject-radio-c5/) — replaceable ESP32-C5 radio, QPF4507 FEM, fast RF detector.
+
+## Modular connection
+
+- **Data:** native single-ended **4-bit SDIO** (DAT0–DAT3, CMD, CLK) over standard **15-contact, 1.0 mm pitch Raspberry Pi camera-type FFC/FPC**. Six signals and nine grounds; 100 mm cable target. No differential transceivers.
+- **Power:** separate JST power connector; **no power through the FPC**. Exact power connector part/current and voltage protection to be confirmed.
+- The C5 card has **its own flashing/debug UART, BOOT/RESET, and power regulation**.
+- Cards are **not hot-swappable**; always power off before replacement.
+
+See [SDIO cable contract](docs/radio-sdio-interface.md).
+
+## P4 carrier features
+
+- ESP32-P4, camera CSI-2 (15-pin Raspberry Pi-style connector), microSD slot.
+- Two USB-C ports: native **USB FS/JTAG** and **USB HS OTG** (host/device for VStreamer).
+- UART0 flashing/logging via **6-pin JST-GH** with external auto-reset/boot controls; UART1 MSP DisplayPort; UART2 CRSF / S.Port via individual 4-pin JST-GH connectors.
+- One external I²C bus **separate** from the camera's I²C.
+- One external SPI bus using two **6-pin JST-GH** connectors labelled **SPI** and **SPI-EXT**. CS1–CS5 are optional/shared GPIO; no shared IRQ.
+- 100BASE-TX Ethernet with onboard PHY and magnetics; four-wire custom JST-GH twisted-pair cable-side connection.
+- GPIO expansion including alternate SPI CS and optional FS/JTAG pins.
+
+## Design documents
+
+- [Architecture and connector decisions](docs/architecture.md)
+- [Radio SDIO interface and FPC pinout](docs/radio-sdio-interface.md)
+- [Draft GPIO allocation — **not signed off**](docs/gpio-map-draft.md)
+- [Incremental bring-up checklist](docs/bringup.md)
+- [Open hardware decisions / validations](docs/open-items.md)
+
+> **Warning:** The GPIO map is a *conversation-level proposal*, not an electrically verified P4 pinout. Check the exact ESP32-P4 silicon revision, package, strapping pins, USB pins, SDMMC mapping, PHY reference clock, peripheral GPIO-matrix restrictions, and Espressif's hardware design guidelines before schematic or PCB release.
+
+No license selected yet.
