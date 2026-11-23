@@ -1,0 +1,13 @@
+# KiCad
+*-backups/
+_autosave-*
+*.kicad_prl
+*.lck
+*.bak
+*.bak~
+*.tmp
+# Build/exports
+__pycache__/
+*.py[cod]
+.DS_Store
+Thumbs.db
