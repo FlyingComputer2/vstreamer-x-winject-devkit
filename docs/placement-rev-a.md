@@ -1,69 +1,51 @@
-# ROV-GND-P4 Rev A — 100 × 100 mm square placement
+# ROV-GND-P4 Rev A — mixed-orientation GH, physically scaled 80 × 80 mm study
 
-Status: **mechanical concept based on component body widths, not a routed PCB or final connector-courtyard validation**.
+**Status:** revised footprint/body placement study; **NOT a released PCB**. West edge now mixes top-entry (standing) and side-entry (lying) JST GH parts. In the diagram, 1 SVG unit = 1 mm physical: print at **100%, no scaling** for 80 mm board outline.
 
-![Dimensioned 100 mm top-view placement](rov-gnd-p4-placement-rev-a.svg)
+![Measured-dimension board diagram](rov-gnd-p4-placement-rev-a.svg)
 
-The SVG physical board outline is 100 mm × 100 mm when printed at 100% with no page scaling. The drawing is a footprint *study*, not a manufactured PCB or an authoritative KiCad 3D model.
+## Connector selection
 
-## Why 100 mm
+| Port | Proposed exact part | Orientation | Plastic body along west edge | Footprint envelope along edge used for placement |
+|---|---|---|---:|---:|
+| USB HS OTG | `GCT USB4085-GF-A` | Right-angle, cable W | 8.94 mm | 9.40 mm |
+| UART0 · 6P | `JST SM06B-GHS-TB` | Right-angle, cable W | 10.75 mm | 11.25 mm |
+| UART1 · 4P | `JST BM04B-GHS-TBT` | Top-entry, pin axis E–W, cable +Z | 4.05 mm | 6.60 mm |
+| UART2 · 4P | `JST BM04B-GHS-TBT` | Top-entry, pin axis E–W, cable +Z | 4.05 mm | 6.60 mm |
+| I²C · 4P | `JST BM04B-GHS-TBT` | Top-entry, pin axis E–W, cable +Z | 4.05 mm | 6.60 mm |
+| SPI · 6P | `JST BM06B-GHS-TBT` | Top-entry, pin axis E–W, cable +Z | 4.05 mm | 6.10 mm |
+| ETH · 4P | `JST SM04B-GHS-TB` | Right-angle, cable W | 8.25 mm | 8.75 mm |
 
-The **second USB-C (FS/JTAG) has been removed**. The P4 retains native USB FS/JTAG, with GPIO24 D− and GPIO25 D+ routed **only to the east 3×13 GPIO header**, to be used with an optional separate USB-C adapter.
+**Sources:** JST GH drawing: https://www.marutsu.co.jp/contents/shop/marutsu/datasheet/BM04B-GHS-TBT%28LF%29%28SN%29.pdf ; vertical GH KiCad examples: https://wiki.adom.inc/adom/bm04b-ghs-tbt/files/bm04b-ghs-tbt.kicad_mod and https://wiki.adom.inc/adom/bm06b-ghs-tbt/files/bm06b-ghs-tbt.kicad_mod ; USB-C GCT drawing: https://www.mouser.com/datasheet/2/837/USB4085-2888250.pdf .
 
-West edge required: **one USB-C HS OTG + six JST-GH connectors**.
+**Important distinction:** the *plastic body width* of a rotated top-entry GH is only **4.05 mm**, but its SMT pads and courtyard extend farther. The drawing therefore uses **6.60 mm** top-entry 4P and **6.10 mm** top-entry 6P envelopes based on footprint examples, and **estimated** 0.5 mm additional clearance for the two right-angle GH bodies and the USB body. Reconfirm all footprints from the definitive KiCad library before fixing connector spacing. Cabling above the board also needs full 3D checks.
 
-| Item | Dimension |
-|---|---:|
-| One USB-C body (reference width) | ~8.94 mm |
-| Two JST-GH 6P bodies, 10.75 mm each | 21.50 mm |
-| Four JST-GH 4P bodies, 8.25 mm each | 33.00 mm |
-| **Total connector bodies** | **63.44 mm** |
-| Six gaps × 3 mm | 18.00 mm |
-| Two end margins | 18.56 mm |
-| **Total west edge** | **100.00 mm** |
+### Actual physical sizing and boundary conditions
 
-Note: measurements are **representative connector body widths**, not guaranteed courtyard/latch/cable-boot spacing. Before freezing the outline, verify exact chosen connector drawings and actual cable insertion/removal access.
+- Board: **80 × 80 mm**, top view, millimeter-scale SVG.
+- Mixed GH + USB West envelope lengths total: **55.30 mm**.
+- Six envelope gaps × 2.00 mm = **12.00 mm**.
+- Combined west occupancy = **67.30 mm**, remaining **12.70 mm**, placed with **6.35 mm** nominal end margins.
+- JST top-entry part body is 8.25 mm (4P) or 10.75 mm (6P) **inboard**; entry opening points up away from board (+Z). It is not electrically different from right-angle JST GH.
+- GCT USB4085-GF-A USB Type-C body shown **8.94 × 9.17 mm** (USB2.0 480 Mbps HS OTG).
+- ESP32-P4 QFN104 package is **10 × 10 mm**.
+- Two 15P 1.0 mm-pitch Molex `0522071533` reference FFC/FPC bodies shown **19.7 × 6.9 mm**, with CSI north and radio SDIO south. **Confirm actual choice and FFC contact side/orientation.** Source: https://s3.amazonaws.com/snapeda/datasheet/522071533_Molex.pdf .
+- Molex microSD `5033981892` socket shown **13.1 × 14.05 mm**. Source: https://www.molex.com/content/dam/molex/molex-dot-com/en_us/pdf/product-reference-guides/987651-8263.pdf .
+- 3×13 servo header has **2.54 mm** pin pitch, with first-to-last row center span **30.48 mm**. GND/5V/signal ordering is unchanged; USB FS/JTAG D−/D+ GPIO24/GPIO25 stay only on this header, no onboard FS connector.
+- South main power and radio power are drawn as **candidate 4-pin GH side-entry bodies**; exact connector and current rating remain unresolved. Their labels `VIN*` and `R-PWR*` indicate placeholders.
+- PHY, magnetics and buck regulator zones are **functional placement placeholders, not validated manufacturer dimensions**.
+- Corner holes are preliminary and **not** mechanically approved.
 
-### West edge coordinates, north to south
+## Cable clearance and PCB constraints
 
-Measured from the northwest edge corner, in mm:
+1. Top-entry GH cables emerge perpendicular to the PCB. Check mating housing height, insulation bend radius and removal access, including adjacent standing plugs and the enclosure roof.
+2. Side-entry GH cables project outward to the west. Check actual connector rotation, latch access and JST mating plug orientation.
+3. A printed housing size alone is insufficient for final PCB DRC. Verify **KiCad courtyard and SMT mounting pads** for selected exact variants. The dashed envelopes are indicative until chosen footprint files are imported.
+4. UART0 6P and Ethernet 4P deliberately remain side-entry for external harness access. UART1/2, external I²C and SPI switch to top-entry (standing).
+5. Ensure PCB mount screws, camera FPC latch, radio SDIO latch, microSD extraction, 3×13 header and USB shell are accessible with cables installed.
+6. Native USB FS/JTAG from GPIO24/25 requires a separate external USB-C adapter with GND/CC/ESD and no direct cable VBUS-to-servo 5V backfeed.
+7. P4 GPIO/boot-strap routing, USB-C HS host VBUS and Ethernet PHY routing are not yet verified.
 
-| Connector | Start y | End y |
-|---|---:|---:|
-| USB-C HS/OTG | 9.28 | 18.22 |
-| UART0 GH 6P | 21.22 | 31.97 |
-| UART1 GH 4P | 34.97 | 43.22 |
-| UART2 GH 4P | 46.22 | 54.47 |
-| External I2C GH 4P | 57.47 | 65.72 |
-| SPI GH 6P | 68.72 | 79.47 |
-| Ethernet GH 4P | 82.47 | 90.72 |
+## Recommendation
 
-Nominal margins at top and bottom: **9.28 mm each**.
-
-## Compass layout
-
-### North: Camera
-15-pin, 1.0 mm pitch Raspberry Pi-style CSI-2 FPC, camera cable exits north. P4 sits close to north-center to minimize MIPI trace length.
-
-### West: External connectors
-From north to south: **USB-C HS OTG**, UART0 (6-pin GH), UART1 (4-pin GH), UART2 (4-pin GH), I²C (4-pin GH), SPI (6-pin GH), Ethernet (4-pin GH). The Ethernet PHY and magnetics remain *on the board*. **No onboard USB FS/JTAG port and no SPI-EXT JST-GH**.
-
-### East: GPIO / servo
-3×13 at 2.54 mm pitch, logical GND / 5 V / signal rows 3–13, two power-only rows at top. Signals are GPIO4, GPIO5, GPIO6, GPIO13, GPIO32, GPIO33, GPIO22, GPIO23, GPIO54, GPIO25/USB FS D+ and GPIO24/USB FS D−. The optional FS USB-C breakout must use D± plus GND, fit required Type-C CC pull-downs and ESD, and **must not connect cable VBUS directly to the header 5 V supply rail**.
-
-### South: Radio
-15-pin SDIO 1.0 mm-pitch FPC centered on south, plus separate JST radio power and main 5 V input. Radio flex contains SDIO + interleaved GND only; target cable length is 100 mm.
-
-### Interior
-P4 near CSI north-center; microSD accessible on northeast; ethernet magnetics southwest; regulators and radio power protection southeast. All are provisional component zones.
-
-## Validation before a final board outline
-
-1. Check actual USB-C/JST-GH **courtyards, cable overmolds and latch clearances**, not just body width.
-2. Verify 3×13 header polarity, row/pin numbering, 5 V distribution and servo-cable access.
-3. Ensure microSD extraction, both FPC latches, and four mounting screws remain accessible.
-4. Audit P4 pin map, boot straps, USB HS OTG power design, UART0 DTR/RTS, Ethernet and camera routing.
-5. Keep native USB FS/JTAG D± on header short for optional external adapter; GPIO is 3.3 V-only.
-6. Increase board to 105 or 110 mm if connector/latch keepouts or routing require it.
-
-**Mechanical baseline:** 100 × 100 mm square; awaiting footprint and cable fit verification.
+**Use 80 × 80 mm as a promising new mechanical target**, **not** a committed PCB outline. Re-run physical placement using vendor STEP models / KiCad exact footprints and full mated-harness models; grow to 85–90 mm if any west-edge courtyard, routing or mounting clearance fails.
