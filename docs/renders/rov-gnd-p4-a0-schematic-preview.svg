@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="1189mm" height="841mm" viewBox="0 0 1189 841">
-<title>ROV-GND-P4 Rev A: grouped native KiCad schematic preview</title>
-<style>.outline{fill:none;stroke:#9ba8b4;stroke-width:.26}.group{fill:none;stroke:#98b1c6;stroke-width:.35;stroke-dasharray:2 1}.box{fill:#fffbeb;stroke:#2f4471;stroke-width:.35}.wire{fill:none;stroke:#196e45;stroke-width:.32}.junction{fill:#196e45}.name{fill:#34516a;font:1.48px Arial,sans-serif}.num{fill:#3d4e74;font:1.17px Arial,sans-serif}.net{fill:#176b48;font:1.65px Arial,sans-serif}.ref{fill:#243b64;font:bold 2.4px Arial,sans-serif}.val{fill:#334c7e;font:1.9px Arial,sans-serif}.heading{fill:#263f5c;font-family:Arial,sans-serif}.pin{stroke:#435c86;stroke-width:.27}.nc{fill:none;stroke:#1e77b8;stroke-width:.4}</style>
-<rect x="0" y="0" width="1189" height="841" fill="white"/><rect class="outline" x="13" y="13" width="1163" height="815"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="1189mm" height="841mm" viewBox="0 0 1189 841"><title>ROV-GND-P4 grouped KiCad schematic, Rev A</title><desc>Source-derived preview, not native KiCad PDF export. Hardware circuits are preliminary.</desc>
+<style>.frame{stroke:#9ba8b4;stroke-width:.26;fill:none}.group{stroke:#9bb1c7;stroke-width:.34;stroke-dasharray:2 1;fill:none}.box{stroke:#273e6a;stroke-width:.31;fill:#fff9e8}.pin{stroke:#344e75;stroke-width:.26}.name{font:1.4px Arial;fill:#365277}.pn{font:1.13px Arial;fill:#33456b}.wire{stroke:#156c49;stroke-width:.32;fill:none}.net{font:1.6px Arial;fill:#116c48}.ref{font:bold 2.3px Arial;fill:#233e73}.value{font:1.9px Arial;fill:#304975}.header{font-family:Arial;fill:#30495f}.nc{stroke:#2879bb;stroke-width:.35;fill:none}</style>
+<rect width="1189" height="841" fill="white"/><rect x="13" y="13" width="1163" height="815" class="frame"/>
 <polyline class="group" points="35,60 430,60 430,410 35,410 35,60"/>
 <polyline class="group" points="445,60 730,60 730,215 445,215 445,60"/>
 <polyline class="group" points="445,225 730,225 730,396 445,396 445,225"/>
@@ -32,28 +31,28 @@
 <line class="wire" x1="240.03" y1="284.48" x2="240.03" y2="257.81"/>
 <line class="wire" x1="224.79" y1="120.65" x2="224.79" y2="138.43"/>
 <line class="wire" x1="240.03" y1="120.65" x2="240.03" y2="138.43"/>
-<line class="wire" x1="828.04" y1="660.02" x2="938.53" y2="660.02"/>
-<line class="wire" x1="979.17" y1="670.18" x2="1090.93" y2="670.18"/>
-<line class="wire" x1="828.04" y1="662.56" x2="938.53" y2="662.56"/>
-<line class="wire" x1="979.17" y1="672.72" x2="1090.93" y2="672.72"/>
-<line class="wire" x1="828.04" y1="665.1" x2="938.53" y2="665.1"/>
-<line class="wire" x1="979.17" y1="675.26" x2="1090.93" y2="675.26"/>
-<line class="wire" x1="828.04" y1="667.64" x2="938.53" y2="667.64"/>
-<line class="wire" x1="979.17" y1="677.8" x2="1090.93" y2="677.8"/>
+<line class="wire" x1="828.04" y1="660.4" x2="938.53" y2="660.4"/>
+<line class="wire" x1="979.17" y1="670.56" x2="1090.93" y2="670.56"/>
+<line class="wire" x1="828.04" y1="662.94" x2="938.53" y2="662.94"/>
+<line class="wire" x1="979.17" y1="673.1" x2="1090.93" y2="673.1"/>
+<line class="wire" x1="828.04" y1="665.48" x2="938.53" y2="665.48"/>
+<line class="wire" x1="979.17" y1="675.64" x2="1090.93" y2="675.64"/>
+<line class="wire" x1="828.04" y1="668.02" x2="938.53" y2="668.02"/>
+<line class="wire" x1="979.17" y1="678.18" x2="1090.93" y2="678.18"/>
 <line class="wire" x1="161.29" y1="532.13" x2="196.85" y2="532.13"/>
 <line class="wire" x1="161.29" y1="542.29" x2="196.85" y2="542.29"/>
 <line class="wire" x1="283.21" y1="532.13" x2="318.77" y2="532.13"/>
 <line class="wire" x1="283.21" y1="542.29" x2="318.77" y2="542.29"/>
-<line class="wire" x1="78.74" y1="690.92" x2="111.76" y2="690.92"/>
-<line class="wire" x1="78.74" y1="701.08" x2="111.76" y2="701.08"/>
-<line class="wire" x1="175.26" y1="690.92" x2="208.28" y2="690.92"/>
-<line class="wire" x1="208.28" y1="690.92" x2="241.3" y2="690.92"/>
-<line class="wire" x1="175.26" y1="701.08" x2="208.28" y2="701.08"/>
-<line class="wire" x1="208.28" y1="701.08" x2="241.3" y2="701.08"/>
-<line class="wire" x1="300.99" y1="690.92" x2="334.01" y2="690.92"/>
-<line class="wire" x1="334.01" y1="690.92" x2="367.03" y2="690.92"/>
-<line class="wire" x1="300.99" y1="701.08" x2="334.01" y2="701.08"/>
-<line class="wire" x1="334.01" y1="701.08" x2="367.03" y2="701.08"/>
+<line class="wire" x1="78.74" y1="690.88" x2="111.76" y2="690.88"/>
+<line class="wire" x1="78.74" y1="701.04" x2="111.76" y2="701.04"/>
+<line class="wire" x1="175.26" y1="690.88" x2="208.28" y2="690.88"/>
+<line class="wire" x1="208.28" y1="690.88" x2="241.3" y2="690.88"/>
+<line class="wire" x1="175.26" y1="701.04" x2="208.28" y2="701.04"/>
+<line class="wire" x1="208.28" y1="701.04" x2="241.3" y2="701.04"/>
+<line class="wire" x1="300.99" y1="690.88" x2="334.01" y2="690.88"/>
+<line class="wire" x1="334.01" y1="690.88" x2="367.03" y2="690.88"/>
+<line class="wire" x1="300.99" y1="701.04" x2="334.01" y2="701.04"/>
+<line class="wire" x1="334.01" y1="701.04" x2="367.03" y2="701.04"/>
 <line class="wire" x1="344.17" y1="260.35" x2="388.62" y2="260.35"/>
 <line class="wire" x1="344.17" y1="270.51" x2="388.62" y2="270.51"/>
 <line class="wire" x1="549.91" y1="273.05" x2="575.31" y2="273.05"/>
@@ -280,15 +279,15 @@
 <line class="wire" x1="1076.96" y1="408.94" x2="1084.58" y2="408.94"/>
 <line class="wire" x1="1076.96" y1="411.48" x2="1084.58" y2="411.48"/>
 <line class="wire" x1="1076.96" y1="414.02" x2="1084.58" y2="414.02"/>
-<line class="wire" x1="101.6" y1="471.19" x2="109.22" y2="471.19"/>
-<line class="wire" x1="101.6" y1="473.73" x2="109.22" y2="473.73"/>
-<line class="wire" x1="101.6" y1="476.27" x2="109.22" y2="476.27"/>
-<line class="wire" x1="101.6" y1="478.81" x2="109.22" y2="478.81"/>
-<line class="wire" x1="294.64" y1="469.92" x2="302.26" y2="469.92"/>
-<line class="wire" x1="294.64" y1="472.46" x2="302.26" y2="472.46"/>
-<line class="wire" x1="294.64" y1="475" x2="302.26" y2="475"/>
-<line class="wire" x1="294.64" y1="477.54" x2="302.26" y2="477.54"/>
-<line class="wire" x1="294.64" y1="480.08" x2="302.26" y2="480.08"/>
+<line class="wire" x1="101.6" y1="471.17" x2="109.22" y2="471.17"/>
+<line class="wire" x1="101.6" y1="473.71" x2="109.22" y2="473.71"/>
+<line class="wire" x1="101.6" y1="476.25" x2="109.22" y2="476.25"/>
+<line class="wire" x1="101.6" y1="478.79" x2="109.22" y2="478.79"/>
+<line class="wire" x1="294.64" y1="469.9" x2="302.26" y2="469.9"/>
+<line class="wire" x1="294.64" y1="472.44" x2="302.26" y2="472.44"/>
+<line class="wire" x1="294.64" y1="474.98" x2="302.26" y2="474.98"/>
+<line class="wire" x1="294.64" y1="477.52" x2="302.26" y2="477.52"/>
+<line class="wire" x1="294.64" y1="480.06" x2="302.26" y2="480.06"/>
 <line class="wire" x1="129.54" y1="605.79" x2="137.16" y2="605.79"/>
 <line class="wire" x1="129.54" y1="608.33" x2="137.16" y2="608.33"/>
 <line class="wire" x1="129.54" y1="610.87" x2="137.16" y2="610.87"/>
@@ -308,18 +307,18 @@
 <line class="wire" x1="873.76" y1="186.69" x2="881.38" y2="186.69"/>
 <line class="wire" x1="873.76" y1="189.23" x2="881.38" y2="189.23"/>
 <line class="wire" x1="873.76" y1="191.77" x2="881.38" y2="191.77"/>
-<line class="wire" x1="787.4" y1="634.62" x2="795.02" y2="634.62"/>
-<line class="wire" x1="787.4" y1="637.16" x2="795.02" y2="637.16"/>
-<line class="wire" x1="787.4" y1="639.7" x2="795.02" y2="639.7"/>
-<line class="wire" x1="787.4" y1="642.24" x2="795.02" y2="642.24"/>
-<line class="wire" x1="787.4" y1="644.78" x2="795.02" y2="644.78"/>
-<line class="wire" x1="787.4" y1="647.32" x2="795.02" y2="647.32"/>
-<line class="wire" x1="787.4" y1="649.86" x2="795.02" y2="649.86"/>
-<line class="wire" x1="787.4" y1="652.4" x2="795.02" y2="652.4"/>
-<line class="wire" x1="787.4" y1="654.94" x2="795.02" y2="654.94"/>
-<line class="wire" x1="787.4" y1="657.48" x2="795.02" y2="657.48"/>
-<line class="wire" x1="787.4" y1="670.18" x2="795.02" y2="670.18"/>
-<line class="wire" x1="787.4" y1="672.72" x2="795.02" y2="672.72"/>
+<line class="wire" x1="787.4" y1="635" x2="795.02" y2="635"/>
+<line class="wire" x1="787.4" y1="637.54" x2="795.02" y2="637.54"/>
+<line class="wire" x1="787.4" y1="640.08" x2="795.02" y2="640.08"/>
+<line class="wire" x1="787.4" y1="642.62" x2="795.02" y2="642.62"/>
+<line class="wire" x1="787.4" y1="645.16" x2="795.02" y2="645.16"/>
+<line class="wire" x1="787.4" y1="647.7" x2="795.02" y2="647.7"/>
+<line class="wire" x1="787.4" y1="650.24" x2="795.02" y2="650.24"/>
+<line class="wire" x1="787.4" y1="652.78" x2="795.02" y2="652.78"/>
+<line class="wire" x1="787.4" y1="655.32" x2="795.02" y2="655.32"/>
+<line class="wire" x1="787.4" y1="657.86" x2="795.02" y2="657.86"/>
+<line class="wire" x1="787.4" y1="670.56" x2="795.02" y2="670.56"/>
+<line class="wire" x1="787.4" y1="673.1" x2="795.02" y2="673.1"/>
 <line class="wire" x1="93.98" y1="115.57" x2="101.6" y2="115.57"/>
 <line class="wire" x1="129.54" y1="125.73" x2="129.54" y2="118.11"/>
 <line class="wire" x1="93.98" y1="205.74" x2="101.6" y2="205.74"/>
@@ -331,1426 +330,1426 @@
 <line class="wire" x1="240.03" y1="148.59" x2="240.03" y2="140.97"/>
 <line class="wire" x1="285.75" y1="284.48" x2="278.13" y2="284.48"/>
 <line class="wire" x1="250.19" y1="284.48" x2="242.57" y2="284.48"/>
-<circle class="junction" cx="549.91" cy="278.13" r=".7"/>
-<circle class="junction" cx="549.91" cy="283.21" r=".7"/>
-<circle class="junction" cx="549.91" cy="288.29" r=".7"/>
-<circle class="junction" cx="539.75" cy="466.09" r=".7"/>
-<circle class="junction" cx="539.75" cy="468.63" r=".7"/>
-<circle class="junction" cx="539.75" cy="478.79" r=".7"/>
+<circle cx="549.91" cy="278.13" r=".55" fill="#156c49"/>
+<circle cx="549.91" cy="283.21" r=".55" fill="#156c49"/>
+<circle cx="549.91" cy="288.29" r=".55" fill="#156c49"/>
+<circle cx="539.75" cy="466.09" r=".55" fill="#156c49"/>
+<circle cx="539.75" cy="468.63" r=".55" fill="#156c49"/>
+<circle cx="539.75" cy="478.79" r=".55" fill="#156c49"/>
 <g data-ref="U1"><title>U1 ESP32-P4NRW32X (v3.x)</title>
 <rect class="box" x="199.39" y="171.45" width="111.76" height="83.82"/>
 <line class="pin" x1="196.85" y1="204.47" x2="199.39" y2="204.47"/>
-<text class="name" x="199.99" y="204.97">GPIO9</text>
-<text class="num" x="198.12" y="203.87" text-anchor="middle">10</text>
+<text class="name" x="199.99" y="204.92">GPIO9</text>
+<text class="pn" x="198.12" y="203.97" text-anchor="middle">10</text>
 <line class="pin" x1="196.85" y1="207.01" x2="199.39" y2="207.01"/>
-<text class="name" x="199.99" y="207.51">GPIO10</text>
-<text class="num" x="198.12" y="206.41" text-anchor="middle">11</text>
+<text class="name" x="199.99" y="207.46">GPIO10</text>
+<text class="pn" x="198.12" y="206.51" text-anchor="middle">11</text>
 <line class="pin" x1="196.85" y1="209.55" x2="199.39" y2="209.55"/>
-<text class="name" x="199.99" y="210.05">GPIO11</text>
-<text class="num" x="198.12" y="208.95" text-anchor="middle">12</text>
+<text class="name" x="199.99" y="210">GPIO11</text>
+<text class="pn" x="198.12" y="209.05" text-anchor="middle">12</text>
 <line class="pin" x1="196.85" y1="212.09" x2="199.39" y2="212.09"/>
-<text class="name" x="199.99" y="212.59">GPIO12</text>
-<text class="num" x="198.12" y="211.49" text-anchor="middle">13</text>
+<text class="name" x="199.99" y="212.54">GPIO12</text>
+<text class="pn" x="198.12" y="211.59" text-anchor="middle">13</text>
 <line class="pin" x1="196.85" y1="214.63" x2="199.39" y2="214.63"/>
-<text class="name" x="199.99" y="215.13">GPIO13</text>
-<text class="num" x="198.12" y="214.03" text-anchor="middle">14</text>
+<text class="name" x="199.99" y="215.08">GPIO13</text>
+<text class="pn" x="198.12" y="214.13" text-anchor="middle">14</text>
 <line class="pin" x1="196.85" y1="217.17" x2="199.39" y2="217.17"/>
-<text class="name" x="199.99" y="217.67">GPIO14</text>
-<text class="num" x="198.12" y="216.57" text-anchor="middle">15</text>
+<text class="name" x="199.99" y="217.62">GPIO14</text>
+<text class="pn" x="198.12" y="216.67" text-anchor="middle">15</text>
 <line class="pin" x1="196.85" y1="219.71" x2="199.39" y2="219.71"/>
-<text class="name" x="199.99" y="220.21">GPIO15</text>
-<text class="num" x="198.12" y="219.11" text-anchor="middle">16</text>
+<text class="name" x="199.99" y="220.16">GPIO15</text>
+<text class="pn" x="198.12" y="219.21" text-anchor="middle">16</text>
 <line class="pin" x1="196.85" y1="222.25" x2="199.39" y2="222.25"/>
-<text class="name" x="199.99" y="222.75">GPIO16/ADC1_CHANNEL0</text>
-<text class="num" x="198.12" y="221.65" text-anchor="middle">17</text>
+<text class="name" x="199.99" y="222.7">GPIO16/ADC1_CHANNEL0</text>
+<text class="pn" x="198.12" y="221.75" text-anchor="middle">17</text>
 <line class="pin" x1="196.85" y1="224.79" x2="199.39" y2="224.79"/>
-<text class="name" x="199.99" y="225.29">GPIO17/ADC1_CHANNEL1</text>
-<text class="num" x="198.12" y="224.19" text-anchor="middle">18</text>
+<text class="name" x="199.99" y="225.24">GPIO17/ADC1_CHANNEL1</text>
+<text class="pn" x="198.12" y="224.29" text-anchor="middle">18</text>
 <line class="pin" x1="196.85" y1="227.33" x2="199.39" y2="227.33"/>
-<text class="name" x="199.99" y="227.83">GPIO18/ADC1_CHANNEL2</text>
-<text class="num" x="198.12" y="226.73" text-anchor="middle">19</text>
+<text class="name" x="199.99" y="227.78">GPIO18/ADC1_CHANNEL2</text>
+<text class="pn" x="198.12" y="226.83" text-anchor="middle">19</text>
 <line class="pin" x1="196.85" y1="229.87" x2="199.39" y2="229.87"/>
-<text class="name" x="199.99" y="230.37">GPIO19/ADC1_CHANNEL3</text>
-<text class="num" x="198.12" y="229.27" text-anchor="middle">20</text>
+<text class="name" x="199.99" y="230.32">GPIO19/ADC1_CHANNEL3</text>
+<text class="pn" x="198.12" y="229.37" text-anchor="middle">20</text>
 <line class="pin" x1="196.85" y1="232.41" x2="199.39" y2="232.41"/>
-<text class="name" x="199.99" y="232.91">VDD_IO_0</text>
-<text class="num" x="198.12" y="231.81" text-anchor="middle">21</text>
+<text class="name" x="199.99" y="232.86">VDD_IO_0</text>
+<text class="pn" x="198.12" y="231.91" text-anchor="middle">21</text>
 <line class="pin" x1="196.85" y1="234.95" x2="199.39" y2="234.95"/>
-<text class="name" x="199.99" y="235.45">GPIO20/ADC1_CHANNEL4</text>
-<text class="num" x="198.12" y="234.35" text-anchor="middle">22</text>
+<text class="name" x="199.99" y="235.4">GPIO20/ADC1_CHANNEL4</text>
+<text class="pn" x="198.12" y="234.45" text-anchor="middle">22</text>
 <line class="pin" x1="196.85" y1="237.49" x2="199.39" y2="237.49"/>
-<text class="name" x="199.99" y="237.99">GPIO21/ADC1_CHANNEL5</text>
-<text class="num" x="198.12" y="236.89" text-anchor="middle">23</text>
+<text class="name" x="199.99" y="237.94">GPIO21/ADC1_CHANNEL5</text>
+<text class="pn" x="198.12" y="236.99" text-anchor="middle">23</text>
 <line class="pin" x1="196.85" y1="240.03" x2="199.39" y2="240.03"/>
-<text class="name" x="199.99" y="240.53">GPIO22/ADC1_CHANNEL6</text>
-<text class="num" x="198.12" y="239.43" text-anchor="middle">24</text>
+<text class="name" x="199.99" y="240.48">GPIO22/ADC1_CHANNEL6</text>
+<text class="pn" x="198.12" y="239.53" text-anchor="middle">24</text>
 <line class="pin" x1="196.85" y1="242.57" x2="199.39" y2="242.57"/>
-<text class="name" x="199.99" y="243.07">GPIO23/ADC1_CHANNEL7</text>
-<text class="num" x="198.12" y="241.97" text-anchor="middle">25</text>
+<text class="name" x="199.99" y="243.02">GPIO23/ADC1_CHANNEL7</text>
+<text class="pn" x="198.12" y="242.07" text-anchor="middle">25</text>
 <line class="pin" x1="196.85" y1="245.11" x2="199.39" y2="245.11"/>
-<text class="name" x="199.99" y="245.61">VDD_HP_0</text>
-<text class="num" x="198.12" y="244.51" text-anchor="middle">26</text>
+<text class="name" x="199.99" y="245.56">VDD_HP_0</text>
+<text class="pn" x="198.12" y="244.61" text-anchor="middle">26</text>
 <line class="pin" x1="222.25" y1="257.81" x2="222.25" y2="255.27"/>
-<text class="name" transform="translate(222.25 254.47) rotate(-90)">FLASH_CS</text>
-<text class="num" x="223.05" y="256.54" text-anchor="middle">27</text>
+<text class="name" x="222.25" y="255.27" transform="rotate(-90 222.25 255.27)">FLASH_CS</text>
+<text class="pn" x="222.85" y="256.54">27</text>
 <line class="pin" x1="224.79" y1="257.81" x2="224.79" y2="255.27"/>
-<text class="name" transform="translate(224.79 254.47) rotate(-90)">FLASH_Q</text>
-<text class="num" x="225.59" y="256.54" text-anchor="middle">28</text>
+<text class="name" x="224.79" y="255.27" transform="rotate(-90 224.79 255.27)">FLASH_Q</text>
+<text class="pn" x="225.39" y="256.54">28</text>
 <line class="pin" x1="227.33" y1="257.81" x2="227.33" y2="255.27"/>
-<text class="name" transform="translate(227.33 254.47) rotate(-90)">FLASH_WP</text>
-<text class="num" x="228.13" y="256.54" text-anchor="middle">29</text>
+<text class="name" x="227.33" y="255.27" transform="rotate(-90 227.33 255.27)">FLASH_WP</text>
+<text class="pn" x="227.93" y="256.54">29</text>
 <line class="pin" x1="229.87" y1="257.81" x2="229.87" y2="255.27"/>
-<text class="name" transform="translate(229.87 254.47) rotate(-90)">VDD_FLASH_IO</text>
-<text class="num" x="230.67" y="256.54" text-anchor="middle">30</text>
+<text class="name" x="229.87" y="255.27" transform="rotate(-90 229.87 255.27)">VDD_FLASH_IO</text>
+<text class="pn" x="230.47" y="256.54">30</text>
 <line class="pin" x1="232.41" y1="257.81" x2="232.41" y2="255.27"/>
-<text class="name" transform="translate(232.41 254.47) rotate(-90)">FLASH_HOLD</text>
-<text class="num" x="233.21" y="256.54" text-anchor="middle">31</text>
+<text class="name" x="232.41" y="255.27" transform="rotate(-90 232.41 255.27)">FLASH_HOLD</text>
+<text class="pn" x="233.01" y="256.54">31</text>
 <line class="pin" x1="234.95" y1="257.81" x2="234.95" y2="255.27"/>
-<text class="name" transform="translate(234.95 254.47) rotate(-90)">FLASH_CK</text>
-<text class="num" x="235.75" y="256.54" text-anchor="middle">32</text>
+<text class="name" x="234.95" y="255.27" transform="rotate(-90 234.95 255.27)">FLASH_CK</text>
+<text class="pn" x="235.55" y="256.54">32</text>
 <line class="pin" x1="237.49" y1="257.81" x2="237.49" y2="255.27"/>
-<text class="name" transform="translate(237.49 254.47) rotate(-90)">FLASH_D</text>
-<text class="num" x="238.29" y="256.54" text-anchor="middle">33</text>
+<text class="name" x="237.49" y="255.27" transform="rotate(-90 237.49 255.27)">FLASH_D</text>
+<text class="pn" x="238.09" y="256.54">33</text>
 <line class="pin" x1="240.03" y1="257.81" x2="240.03" y2="255.27"/>
-<text class="name" transform="translate(240.03 254.47) rotate(-90)">DSI_REXT</text>
-<text class="num" x="240.83" y="256.54" text-anchor="middle">34</text>
+<text class="name" x="240.03" y="255.27" transform="rotate(-90 240.03 255.27)">DSI_REXT</text>
+<text class="pn" x="240.63" y="256.54">34</text>
 <line class="pin" x1="242.57" y1="257.81" x2="242.57" y2="255.27"/>
-<text class="name" transform="translate(242.57 254.47) rotate(-90)">DSI_DATAP1</text>
-<text class="num" x="243.37" y="256.54" text-anchor="middle">35</text>
+<text class="name" x="242.57" y="255.27" transform="rotate(-90 242.57 255.27)">DSI_DATAP1</text>
+<text class="pn" x="243.17" y="256.54">35</text>
 <line class="pin" x1="245.11" y1="257.81" x2="245.11" y2="255.27"/>
-<text class="name" transform="translate(245.11 254.47) rotate(-90)">DSI_DATAN1</text>
-<text class="num" x="245.91" y="256.54" text-anchor="middle">36</text>
+<text class="name" x="245.11" y="255.27" transform="rotate(-90 245.11 255.27)">DSI_DATAN1</text>
+<text class="pn" x="245.71" y="256.54">36</text>
 <line class="pin" x1="247.65" y1="257.81" x2="247.65" y2="255.27"/>
-<text class="name" transform="translate(247.65 254.47) rotate(-90)">DSI_CLKN</text>
-<text class="num" x="248.45" y="256.54" text-anchor="middle">37</text>
+<text class="name" x="247.65" y="255.27" transform="rotate(-90 247.65 255.27)">DSI_CLKN</text>
+<text class="pn" x="248.25" y="256.54">37</text>
 <line class="pin" x1="250.19" y1="257.81" x2="250.19" y2="255.27"/>
-<text class="name" transform="translate(250.19 254.47) rotate(-90)">DSI_CLKP</text>
-<text class="num" x="250.99" y="256.54" text-anchor="middle">38</text>
+<text class="name" x="250.19" y="255.27" transform="rotate(-90 250.19 255.27)">DSI_CLKP</text>
+<text class="pn" x="250.79" y="256.54">38</text>
 <line class="pin" x1="252.73" y1="257.81" x2="252.73" y2="255.27"/>
-<text class="name" transform="translate(252.73 254.47) rotate(-90)">DSI_DATAP0</text>
-<text class="num" x="253.53" y="256.54" text-anchor="middle">39</text>
+<text class="name" x="252.73" y="255.27" transform="rotate(-90 252.73 255.27)">DSI_DATAP0</text>
+<text class="pn" x="253.33" y="256.54">39</text>
 <line class="pin" x1="255.27" y1="257.81" x2="255.27" y2="255.27"/>
-<text class="name" transform="translate(255.27 254.47) rotate(-90)">DSI_DATAN0</text>
-<text class="num" x="256.07" y="256.54" text-anchor="middle">40</text>
+<text class="name" x="255.27" y="255.27" transform="rotate(-90 255.27 255.27)">DSI_DATAN0</text>
+<text class="pn" x="255.87" y="256.54">40</text>
 <line class="pin" x1="257.81" y1="257.81" x2="257.81" y2="255.27"/>
-<text class="name" transform="translate(257.81 254.47) rotate(-90)">VDD_MIPI_DPHY</text>
-<text class="num" x="258.61" y="256.54" text-anchor="middle">41</text>
+<text class="name" x="257.81" y="255.27" transform="rotate(-90 257.81 255.27)">VDD_MIPI_DPHY</text>
+<text class="pn" x="258.41" y="256.54">41</text>
 <line class="pin" x1="260.35" y1="257.81" x2="260.35" y2="255.27"/>
-<text class="name" transform="translate(260.35 254.47) rotate(-90)">CSI_DATAN0</text>
-<text class="num" x="261.15" y="256.54" text-anchor="middle">42</text>
+<text class="name" x="260.35" y="255.27" transform="rotate(-90 260.35 255.27)">CSI_DATAN0</text>
+<text class="pn" x="260.95" y="256.54">42</text>
 <line class="pin" x1="262.89" y1="257.81" x2="262.89" y2="255.27"/>
-<text class="name" transform="translate(262.89 254.47) rotate(-90)">CSI_DATAP0</text>
-<text class="num" x="263.69" y="256.54" text-anchor="middle">43</text>
+<text class="name" x="262.89" y="255.27" transform="rotate(-90 262.89 255.27)">CSI_DATAP0</text>
+<text class="pn" x="263.49" y="256.54">43</text>
 <line class="pin" x1="265.43" y1="257.81" x2="265.43" y2="255.27"/>
-<text class="name" transform="translate(265.43 254.47) rotate(-90)">CSI_CLKP</text>
-<text class="num" x="266.23" y="256.54" text-anchor="middle">44</text>
+<text class="name" x="265.43" y="255.27" transform="rotate(-90 265.43 255.27)">CSI_CLKP</text>
+<text class="pn" x="266.03" y="256.54">44</text>
 <line class="pin" x1="267.97" y1="257.81" x2="267.97" y2="255.27"/>
-<text class="name" transform="translate(267.97 254.47) rotate(-90)">CSI_CLKN</text>
-<text class="num" x="268.77" y="256.54" text-anchor="middle">45</text>
+<text class="name" x="267.97" y="255.27" transform="rotate(-90 267.97 255.27)">CSI_CLKN</text>
+<text class="pn" x="268.57" y="256.54">45</text>
 <line class="pin" x1="270.51" y1="257.81" x2="270.51" y2="255.27"/>
-<text class="name" transform="translate(270.51 254.47) rotate(-90)">CSI_DATAN1</text>
-<text class="num" x="271.31" y="256.54" text-anchor="middle">46</text>
+<text class="name" x="270.51" y="255.27" transform="rotate(-90 270.51 255.27)">CSI_DATAN1</text>
+<text class="pn" x="271.11" y="256.54">46</text>
 <line class="pin" x1="273.05" y1="257.81" x2="273.05" y2="255.27"/>
-<text class="name" transform="translate(273.05 254.47) rotate(-90)">CSI_DATAP1</text>
-<text class="num" x="273.85" y="256.54" text-anchor="middle">47</text>
+<text class="name" x="273.05" y="255.27" transform="rotate(-90 273.05 255.27)">CSI_DATAP1</text>
+<text class="pn" x="273.65" y="256.54">47</text>
 <line class="pin" x1="275.59" y1="257.81" x2="275.59" y2="255.27"/>
-<text class="name" transform="translate(275.59 254.47) rotate(-90)">CSI_REXT</text>
-<text class="num" x="276.39" y="256.54" text-anchor="middle">48</text>
+<text class="name" x="275.59" y="255.27" transform="rotate(-90 275.59 255.27)">CSI_REXT</text>
+<text class="pn" x="276.19" y="256.54">48</text>
 <line class="pin" x1="278.13" y1="257.81" x2="278.13" y2="255.27"/>
-<text class="name" transform="translate(278.13 254.47) rotate(-90)">USB-DM</text>
-<text class="num" x="278.93" y="256.54" text-anchor="middle">49</text>
+<text class="name" x="278.13" y="255.27" transform="rotate(-90 278.13 255.27)">USB-DM</text>
+<text class="pn" x="278.73" y="256.54">49</text>
 <line class="pin" x1="280.67" y1="257.81" x2="280.67" y2="255.27"/>
-<text class="name" transform="translate(280.67 254.47) rotate(-90)">USB-DP</text>
-<text class="num" x="281.47" y="256.54" text-anchor="middle">50</text>
+<text class="name" x="280.67" y="255.27" transform="rotate(-90 280.67 255.27)">USB-DP</text>
+<text class="pn" x="281.27" y="256.54">50</text>
 <line class="pin" x1="283.21" y1="257.81" x2="283.21" y2="255.27"/>
-<text class="name" transform="translate(283.21 254.47) rotate(-90)">VDD_USBPHY</text>
-<text class="num" x="284.01" y="256.54" text-anchor="middle">51</text>
+<text class="name" x="283.21" y="255.27" transform="rotate(-90 283.21 255.27)">VDD_USBPHY</text>
+<text class="pn" x="283.81" y="256.54">51</text>
 <line class="pin" x1="285.75" y1="257.81" x2="285.75" y2="255.27"/>
-<text class="name" transform="translate(285.75 254.47) rotate(-90)">GPIO24/USB1P1_N0</text>
-<text class="num" x="286.55" y="256.54" text-anchor="middle">52</text>
+<text class="name" x="285.75" y="255.27" transform="rotate(-90 285.75 255.27)">GPIO24/USB1P1_N0</text>
+<text class="pn" x="286.35" y="256.54">52</text>
 <line class="pin" x1="313.69" y1="243.84" x2="311.15" y2="243.84"/>
-<text class="name" x="310.55" y="244.34" text-anchor="end">GPIO25/USB1P1_P0</text>
-<text class="num" x="312.42" y="243.24" text-anchor="middle">53</text>
+<text class="name" x="310.55" y="244.29" text-anchor="end">GPIO25/USB1P1_P0</text>
+<text class="pn" x="312.42" y="243.34" text-anchor="middle">53</text>
 <line class="pin" x1="313.69" y1="241.3" x2="311.15" y2="241.3"/>
-<text class="name" x="310.55" y="241.8" text-anchor="end">VDD_HP_1</text>
-<text class="num" x="312.42" y="240.7" text-anchor="middle">54</text>
+<text class="name" x="310.55" y="241.75" text-anchor="end">VDD_HP_1</text>
+<text class="pn" x="312.42" y="240.8" text-anchor="middle">54</text>
 <line class="pin" x1="313.69" y1="238.76" x2="311.15" y2="238.76"/>
-<text class="name" x="310.55" y="239.26" text-anchor="end">GPIO26/USB1P1_N1</text>
-<text class="num" x="312.42" y="238.16" text-anchor="middle">55</text>
+<text class="name" x="310.55" y="239.21" text-anchor="end">GPIO26/USB1P1_N1</text>
+<text class="pn" x="312.42" y="238.26" text-anchor="middle">55</text>
 <line class="pin" x1="313.69" y1="236.22" x2="311.15" y2="236.22"/>
-<text class="name" x="310.55" y="236.72" text-anchor="end">GPIO27/USB1P1_P1</text>
-<text class="num" x="312.42" y="235.62" text-anchor="middle">56</text>
+<text class="name" x="310.55" y="236.67" text-anchor="end">GPIO27/USB1P1_P1</text>
+<text class="pn" x="312.42" y="235.72" text-anchor="middle">56</text>
 <line class="pin" x1="313.69" y1="233.68" x2="311.15" y2="233.68"/>
-<text class="name" x="310.55" y="234.18" text-anchor="end">GPIO28</text>
-<text class="num" x="312.42" y="233.08" text-anchor="middle">57</text>
+<text class="name" x="310.55" y="234.13" text-anchor="end">GPIO28</text>
+<text class="pn" x="312.42" y="233.18" text-anchor="middle">57</text>
 <line class="pin" x1="313.69" y1="231.14" x2="311.15" y2="231.14"/>
-<text class="name" x="310.55" y="231.64" text-anchor="end">GPIO29</text>
-<text class="num" x="312.42" y="230.54" text-anchor="middle">58</text>
+<text class="name" x="310.55" y="231.59" text-anchor="end">GPIO29</text>
+<text class="pn" x="312.42" y="230.64" text-anchor="middle">58</text>
 <line class="pin" x1="313.69" y1="228.6" x2="311.15" y2="228.6"/>
-<text class="name" x="310.55" y="229.1" text-anchor="end">VDD_PSRAM_0</text>
-<text class="num" x="312.42" y="228" text-anchor="middle">59</text>
+<text class="name" x="310.55" y="229.05" text-anchor="end">VDD_PSRAM_0</text>
+<text class="pn" x="312.42" y="228.1" text-anchor="middle">59</text>
 <line class="pin" x1="313.69" y1="226.06" x2="311.15" y2="226.06"/>
-<text class="name" x="310.55" y="226.56" text-anchor="end">GPIO30</text>
-<text class="num" x="312.42" y="225.46" text-anchor="middle">60</text>
+<text class="name" x="310.55" y="226.51" text-anchor="end">GPIO30</text>
+<text class="pn" x="312.42" y="225.56" text-anchor="middle">60</text>
 <line class="pin" x1="313.69" y1="223.52" x2="311.15" y2="223.52"/>
-<text class="name" x="310.55" y="224.02" text-anchor="end">GPIO31</text>
-<text class="num" x="312.42" y="222.92" text-anchor="middle">61</text>
+<text class="name" x="310.55" y="223.97" text-anchor="end">GPIO31</text>
+<text class="pn" x="312.42" y="223.02" text-anchor="middle">61</text>
 <line class="pin" x1="313.69" y1="220.98" x2="311.15" y2="220.98"/>
-<text class="name" x="310.55" y="221.48" text-anchor="end">VDD_IO_4</text>
-<text class="num" x="312.42" y="220.38" text-anchor="middle">62</text>
+<text class="name" x="310.55" y="221.43" text-anchor="end">VDD_IO_4</text>
+<text class="pn" x="312.42" y="220.48" text-anchor="middle">62</text>
 <line class="pin" x1="313.69" y1="218.44" x2="311.15" y2="218.44"/>
-<text class="name" x="310.55" y="218.94" text-anchor="end">GPIO32</text>
-<text class="num" x="312.42" y="217.84" text-anchor="middle">63</text>
+<text class="name" x="310.55" y="218.89" text-anchor="end">GPIO32</text>
+<text class="pn" x="312.42" y="217.94" text-anchor="middle">63</text>
 <line class="pin" x1="313.69" y1="215.9" x2="311.15" y2="215.9"/>
-<text class="name" x="310.55" y="216.4" text-anchor="end">GPIO33</text>
-<text class="num" x="312.42" y="215.3" text-anchor="middle">64</text>
+<text class="name" x="310.55" y="216.35" text-anchor="end">GPIO33</text>
+<text class="pn" x="312.42" y="215.4" text-anchor="middle">64</text>
 <line class="pin" x1="313.69" y1="213.36" x2="311.15" y2="213.36"/>
-<text class="name" x="310.55" y="213.86" text-anchor="end">GPIO34</text>
-<text class="num" x="312.42" y="212.76" text-anchor="middle">65</text>
+<text class="name" x="310.55" y="213.81" text-anchor="end">GPIO34</text>
+<text class="pn" x="312.42" y="212.86" text-anchor="middle">65</text>
 <line class="pin" x1="313.69" y1="210.82" x2="311.15" y2="210.82"/>
-<text class="name" x="310.55" y="211.32" text-anchor="end">GPIO35</text>
-<text class="num" x="312.42" y="210.22" text-anchor="middle">66</text>
+<text class="name" x="310.55" y="211.27" text-anchor="end">GPIO35</text>
+<text class="pn" x="312.42" y="210.32" text-anchor="middle">66</text>
 <line class="pin" x1="313.69" y1="208.28" x2="311.15" y2="208.28"/>
-<text class="name" x="310.55" y="208.78" text-anchor="end">VDD_PSRAM_1</text>
-<text class="num" x="312.42" y="207.68" text-anchor="middle">67</text>
+<text class="name" x="310.55" y="208.73" text-anchor="end">VDD_PSRAM_1</text>
+<text class="pn" x="312.42" y="207.78" text-anchor="middle">67</text>
 <line class="pin" x1="313.69" y1="205.74" x2="311.15" y2="205.74"/>
-<text class="name" x="310.55" y="206.24" text-anchor="end">GPIO36</text>
-<text class="num" x="312.42" y="205.14" text-anchor="middle">68</text>
+<text class="name" x="310.55" y="206.19" text-anchor="end">GPIO36</text>
+<text class="pn" x="312.42" y="205.24" text-anchor="middle">68</text>
 <line class="pin" x1="313.69" y1="203.2" x2="311.15" y2="203.2"/>
-<text class="name" x="310.55" y="203.7" text-anchor="end">GPIO37</text>
-<text class="num" x="312.42" y="202.6" text-anchor="middle">69</text>
+<text class="name" x="310.55" y="203.65" text-anchor="end">GPIO37</text>
+<text class="pn" x="312.42" y="202.7" text-anchor="middle">69</text>
 <line class="pin" x1="313.69" y1="200.66" x2="311.15" y2="200.66"/>
-<text class="name" x="310.55" y="201.16" text-anchor="end">GPIO38</text>
-<text class="num" x="312.42" y="200.06" text-anchor="middle">70</text>
+<text class="name" x="310.55" y="201.11" text-anchor="end">GPIO38</text>
+<text class="pn" x="312.42" y="200.16" text-anchor="middle">70</text>
 <line class="pin" x1="313.69" y1="198.12" x2="311.15" y2="198.12"/>
-<text class="name" x="310.55" y="198.62" text-anchor="end">VDDO_FLASH</text>
-<text class="num" x="312.42" y="197.52" text-anchor="middle">71</text>
+<text class="name" x="310.55" y="198.57" text-anchor="end">VDDO_FLASH</text>
+<text class="pn" x="312.42" y="197.62" text-anchor="middle">71</text>
 <line class="pin" x1="313.69" y1="195.58" x2="311.15" y2="195.58"/>
-<text class="name" x="310.55" y="196.08" text-anchor="end">VDDO_PSRAM</text>
-<text class="num" x="312.42" y="194.98" text-anchor="middle">72</text>
+<text class="name" x="310.55" y="196.03" text-anchor="end">VDDO_PSRAM</text>
+<text class="pn" x="312.42" y="195.08" text-anchor="middle">72</text>
 <line class="pin" x1="313.69" y1="193.04" x2="311.15" y2="193.04"/>
-<text class="name" x="310.55" y="193.54" text-anchor="end">VDDO_3</text>
-<text class="num" x="312.42" y="192.44" text-anchor="middle">73</text>
+<text class="name" x="310.55" y="193.49" text-anchor="end">VDDO_3</text>
+<text class="pn" x="312.42" y="192.54" text-anchor="middle">73</text>
 <line class="pin" x1="313.69" y1="190.5" x2="311.15" y2="190.5"/>
-<text class="name" x="310.55" y="191" text-anchor="end">VDDO_4</text>
-<text class="num" x="312.42" y="189.9" text-anchor="middle">74</text>
+<text class="name" x="310.55" y="190.95" text-anchor="end">VDDO_4</text>
+<text class="pn" x="312.42" y="190" text-anchor="middle">74</text>
 <line class="pin" x1="313.69" y1="187.96" x2="311.15" y2="187.96"/>
-<text class="name" x="310.55" y="188.46" text-anchor="end">VDD_LDO</text>
-<text class="num" x="312.42" y="187.36" text-anchor="middle">75</text>
+<text class="name" x="310.55" y="188.41" text-anchor="end">VDD_LDO</text>
+<text class="pn" x="312.42" y="187.46" text-anchor="middle">75</text>
 <line class="pin" x1="313.69" y1="185.42" x2="311.15" y2="185.42"/>
-<text class="name" x="310.55" y="185.92" text-anchor="end">VDD_HP_2</text>
-<text class="num" x="312.42" y="184.82" text-anchor="middle">76</text>
+<text class="name" x="310.55" y="185.87" text-anchor="end">VDD_HP_2</text>
+<text class="pn" x="312.42" y="184.92" text-anchor="middle">76</text>
 <line class="pin" x1="313.69" y1="182.88" x2="311.15" y2="182.88"/>
-<text class="name" x="310.55" y="183.38" text-anchor="end">VDD_DCDCC</text>
-<text class="num" x="312.42" y="182.28" text-anchor="middle">77</text>
+<text class="name" x="310.55" y="183.33" text-anchor="end">VDD_DCDCC</text>
+<text class="pn" x="312.42" y="182.38" text-anchor="middle">77</text>
 <line class="pin" x1="313.69" y1="180.34" x2="311.15" y2="180.34"/>
-<text class="name" x="310.55" y="180.84" text-anchor="end">FB_DCDC</text>
-<text class="num" x="312.42" y="179.74" text-anchor="middle">78</text>
+<text class="name" x="310.55" y="180.79" text-anchor="end">FB_DCDC</text>
+<text class="pn" x="312.42" y="179.84" text-anchor="middle">78</text>
 <line class="pin" x1="285.75" y1="168.91" x2="285.75" y2="171.45"/>
-<text class="name" transform="translate(285.75 172.25) rotate(90)">EN_DCDC</text>
-<text class="num" x="286.55" y="170.18" text-anchor="middle">79</text>
+<text class="name" x="285.75" y="171.45" transform="rotate(90 285.75 171.45)">EN_DCDC</text>
+<text class="pn" x="286.35" y="170.18">79</text>
 <line class="pin" x1="283.21" y1="168.91" x2="283.21" y2="171.45"/>
-<text class="name" transform="translate(283.21 172.25) rotate(90)">GPIO39</text>
-<text class="num" x="284.01" y="170.18" text-anchor="middle">80</text>
+<text class="name" x="283.21" y="171.45" transform="rotate(90 283.21 171.45)">GPIO39</text>
+<text class="pn" x="283.81" y="170.18">80</text>
 <line class="pin" x1="280.67" y1="168.91" x2="280.67" y2="171.45"/>
-<text class="name" transform="translate(280.67 172.25) rotate(90)">GPIO40</text>
-<text class="num" x="281.47" y="170.18" text-anchor="middle">81</text>
+<text class="name" x="280.67" y="171.45" transform="rotate(90 280.67 171.45)">GPIO40</text>
+<text class="pn" x="281.27" y="170.18">81</text>
 <line class="pin" x1="278.13" y1="168.91" x2="278.13" y2="171.45"/>
-<text class="name" transform="translate(278.13 172.25) rotate(90)">GPIO41</text>
-<text class="num" x="278.93" y="170.18" text-anchor="middle">82</text>
+<text class="name" x="278.13" y="171.45" transform="rotate(90 278.13 171.45)">GPIO41</text>
+<text class="pn" x="278.73" y="170.18">82</text>
 <line class="pin" x1="275.59" y1="168.91" x2="275.59" y2="171.45"/>
-<text class="name" transform="translate(275.59 172.25) rotate(90)">GPIO42</text>
-<text class="num" x="276.39" y="170.18" text-anchor="middle">83</text>
+<text class="name" x="275.59" y="171.45" transform="rotate(90 275.59 171.45)">GPIO42</text>
+<text class="pn" x="276.19" y="170.18">83</text>
 <line class="pin" x1="273.05" y1="168.91" x2="273.05" y2="171.45"/>
-<text class="name" transform="translate(273.05 172.25) rotate(90)">GPIO43</text>
-<text class="num" x="273.85" y="170.18" text-anchor="middle">84</text>
+<text class="name" x="273.05" y="171.45" transform="rotate(90 273.05 171.45)">GPIO43</text>
+<text class="pn" x="273.65" y="170.18">84</text>
 <line class="pin" x1="270.51" y1="168.91" x2="270.51" y2="171.45"/>
-<text class="name" transform="translate(270.51 172.25) rotate(90)">VDD_IO_5</text>
-<text class="num" x="271.31" y="170.18" text-anchor="middle">85</text>
+<text class="name" x="270.51" y="171.45" transform="rotate(90 270.51 171.45)">VDD_IO_5</text>
+<text class="pn" x="271.11" y="170.18">85</text>
 <line class="pin" x1="267.97" y1="168.91" x2="267.97" y2="171.45"/>
-<text class="name" transform="translate(267.97 172.25) rotate(90)">GPIO44</text>
-<text class="num" x="268.77" y="170.18" text-anchor="middle">86</text>
+<text class="name" x="267.97" y="171.45" transform="rotate(90 267.97 171.45)">GPIO44</text>
+<text class="pn" x="268.57" y="170.18">86</text>
 <line class="pin" x1="265.43" y1="168.91" x2="265.43" y2="171.45"/>
-<text class="name" transform="translate(265.43 172.25) rotate(90)">GPIO45</text>
-<text class="num" x="266.23" y="170.18" text-anchor="middle">87</text>
+<text class="name" x="265.43" y="171.45" transform="rotate(90 265.43 171.45)">GPIO45</text>
+<text class="pn" x="266.03" y="170.18">87</text>
 <line class="pin" x1="262.89" y1="168.91" x2="262.89" y2="171.45"/>
-<text class="name" transform="translate(262.89 172.25) rotate(90)">GPIO46</text>
-<text class="num" x="263.69" y="170.18" text-anchor="middle">88</text>
+<text class="name" x="262.89" y="171.45" transform="rotate(90 262.89 171.45)">GPIO46</text>
+<text class="pn" x="263.49" y="170.18">88</text>
 <line class="pin" x1="260.35" y1="168.91" x2="260.35" y2="171.45"/>
-<text class="name" transform="translate(260.35 172.25) rotate(90)">GPIO47</text>
-<text class="num" x="261.15" y="170.18" text-anchor="middle">89</text>
+<text class="name" x="260.35" y="171.45" transform="rotate(90 260.35 171.45)">GPIO47</text>
+<text class="pn" x="260.95" y="170.18">89</text>
 <line class="pin" x1="257.81" y1="168.91" x2="257.81" y2="171.45"/>
-<text class="name" transform="translate(257.81 172.25) rotate(90)">GPIO48</text>
-<text class="num" x="258.61" y="170.18" text-anchor="middle">90</text>
+<text class="name" x="257.81" y="171.45" transform="rotate(90 257.81 171.45)">GPIO48</text>
+<text class="pn" x="258.41" y="170.18">90</text>
 <line class="pin" x1="255.27" y1="168.91" x2="255.27" y2="171.45"/>
-<text class="name" transform="translate(255.27 172.25) rotate(90)">VDD_HP_3</text>
-<text class="num" x="256.07" y="170.18" text-anchor="middle">91</text>
+<text class="name" x="255.27" y="171.45" transform="rotate(90 255.27 171.45)">VDD_HP_3</text>
+<text class="pn" x="255.87" y="170.18">91</text>
 <line class="pin" x1="252.73" y1="168.91" x2="252.73" y2="171.45"/>
-<text class="name" transform="translate(252.73 172.25) rotate(90)">GPIO49/ADC2_CHANNEL0</text>
-<text class="num" x="253.53" y="170.18" text-anchor="middle">92</text>
+<text class="name" x="252.73" y="171.45" transform="rotate(90 252.73 171.45)">GPIO49/ADC2_CHANNEL0</text>
+<text class="pn" x="253.33" y="170.18">92</text>
 <line class="pin" x1="250.19" y1="168.91" x2="250.19" y2="171.45"/>
-<text class="name" transform="translate(250.19 172.25) rotate(90)">GPIO50/ADC2_CHANNEL1</text>
-<text class="num" x="250.99" y="170.18" text-anchor="middle">93</text>
+<text class="name" x="250.19" y="171.45" transform="rotate(90 250.19 171.45)">GPIO50/ADC2_CHANNEL1</text>
+<text class="pn" x="250.79" y="170.18">93</text>
 <line class="pin" x1="247.65" y1="168.91" x2="247.65" y2="171.45"/>
-<text class="name" transform="translate(247.65 172.25) rotate(90)">GPIO51/ADC2_CHANNEL2</text>
-<text class="num" x="248.45" y="170.18" text-anchor="middle">94</text>
+<text class="name" x="247.65" y="171.45" transform="rotate(90 247.65 171.45)">GPIO51/ADC2_CHANNEL2</text>
+<text class="pn" x="248.25" y="170.18">94</text>
 <line class="pin" x1="245.11" y1="168.91" x2="245.11" y2="171.45"/>
-<text class="name" transform="translate(245.11 172.25) rotate(90)">GPIO52/ADC2_CHANNEL3</text>
-<text class="num" x="245.91" y="170.18" text-anchor="middle">95</text>
+<text class="name" x="245.11" y="171.45" transform="rotate(90 245.11 171.45)">GPIO52/ADC2_CHANNEL3</text>
+<text class="pn" x="245.71" y="170.18">95</text>
 <line class="pin" x1="242.57" y1="168.91" x2="242.57" y2="171.45"/>
-<text class="name" transform="translate(242.57 172.25) rotate(90)">VDD_IO_6</text>
-<text class="num" x="243.37" y="170.18" text-anchor="middle">96</text>
+<text class="name" x="242.57" y="171.45" transform="rotate(90 242.57 171.45)">VDD_IO_6</text>
+<text class="pn" x="243.17" y="170.18">96</text>
 <line class="pin" x1="240.03" y1="168.91" x2="240.03" y2="171.45"/>
-<text class="name" transform="translate(240.03 172.25) rotate(90)">GPIO53/ADC2_CHANNEL4</text>
-<text class="num" x="240.83" y="170.18" text-anchor="middle">97</text>
+<text class="name" x="240.03" y="171.45" transform="rotate(90 240.03 171.45)">GPIO53/ADC2_CHANNEL4</text>
+<text class="pn" x="240.63" y="170.18">97</text>
 <line class="pin" x1="237.49" y1="168.91" x2="237.49" y2="171.45"/>
-<text class="name" transform="translate(237.49 172.25) rotate(90)">GPIO54/ADC2_CHANNEL5</text>
-<text class="num" x="238.29" y="170.18" text-anchor="middle">98</text>
+<text class="name" x="237.49" y="171.45" transform="rotate(90 237.49 171.45)">GPIO54/ADC2_CHANNEL5</text>
+<text class="pn" x="238.09" y="170.18">98</text>
 <line class="pin" x1="234.95" y1="168.91" x2="234.95" y2="171.45"/>
-<text class="name" transform="translate(234.95 172.25) rotate(90)">XTAL_N</text>
-<text class="num" x="235.75" y="170.18" text-anchor="middle">99</text>
+<text class="name" x="234.95" y="171.45" transform="rotate(90 234.95 171.45)">XTAL_N</text>
+<text class="pn" x="235.55" y="170.18">99</text>
 <line class="pin" x1="232.41" y1="168.91" x2="232.41" y2="171.45"/>
-<text class="name" transform="translate(232.41 172.25) rotate(90)">XTAL_P</text>
-<text class="num" x="233.21" y="170.18" text-anchor="middle">100</text>
+<text class="name" x="232.41" y="171.45" transform="rotate(90 232.41 171.45)">XTAL_P</text>
+<text class="pn" x="233.01" y="170.18">100</text>
 <line class="pin" x1="229.87" y1="168.91" x2="229.87" y2="171.45"/>
-<text class="name" transform="translate(229.87 172.25) rotate(90)">VDD_ANA</text>
-<text class="num" x="230.67" y="170.18" text-anchor="middle">101</text>
+<text class="name" x="229.87" y="171.45" transform="rotate(90 229.87 171.45)">VDD_ANA</text>
+<text class="pn" x="230.47" y="170.18">101</text>
 <line class="pin" x1="227.33" y1="168.91" x2="227.33" y2="171.45"/>
-<text class="name" transform="translate(227.33 172.25) rotate(90)">VDD_BAT</text>
-<text class="num" x="228.13" y="170.18" text-anchor="middle">102</text>
+<text class="name" x="227.33" y="171.45" transform="rotate(90 227.33 171.45)">VDD_BAT</text>
+<text class="pn" x="227.93" y="170.18">102</text>
 <line class="pin" x1="224.79" y1="168.91" x2="224.79" y2="171.45"/>
-<text class="name" transform="translate(224.79 172.25) rotate(90)">CHIP_PU</text>
-<text class="num" x="225.59" y="170.18" text-anchor="middle">103</text>
+<text class="name" x="224.79" y="171.45" transform="rotate(90 224.79 171.45)">CHIP_PU</text>
+<text class="pn" x="225.39" y="170.18">103</text>
 <line class="pin" x1="222.25" y1="168.91" x2="222.25" y2="171.45"/>
-<text class="name" transform="translate(222.25 172.25) rotate(90)">GPIO0</text>
-<text class="num" x="223.05" y="170.18" text-anchor="middle">104</text>
+<text class="name" x="222.25" y="171.45" transform="rotate(90 222.25 171.45)">GPIO0</text>
+<text class="pn" x="222.85" y="170.18">104</text>
 <line class="pin" x1="299.72" y1="257.81" x2="299.72" y2="255.27"/>
-<text class="name" transform="translate(299.72 254.47) rotate(-90)">GND</text>
-<text class="num" x="300.52" y="256.54" text-anchor="middle">105</text>
+<text class="name" x="299.72" y="255.27" transform="rotate(-90 299.72 255.27)">GND</text>
+<text class="pn" x="300.32" y="256.54">105</text>
 <line class="pin" x1="196.85" y1="181.61" x2="199.39" y2="181.61"/>
-<text class="name" x="199.99" y="182.11">GPIO1</text>
-<text class="num" x="198.12" y="181.01" text-anchor="middle">1</text>
+<text class="name" x="199.99" y="182.06">GPIO1</text>
+<text class="pn" x="198.12" y="181.11" text-anchor="middle">1</text>
 <line class="pin" x1="196.85" y1="184.15" x2="199.39" y2="184.15"/>
-<text class="name" x="199.99" y="184.65">GPIO2</text>
-<text class="num" x="198.12" y="183.55" text-anchor="middle">2</text>
+<text class="name" x="199.99" y="184.6">GPIO2</text>
+<text class="pn" x="198.12" y="183.65" text-anchor="middle">2</text>
 <line class="pin" x1="196.85" y1="186.69" x2="199.39" y2="186.69"/>
-<text class="name" x="199.99" y="187.19">GPIO3</text>
-<text class="num" x="198.12" y="186.09" text-anchor="middle">3</text>
+<text class="name" x="199.99" y="187.14">GPIO3</text>
+<text class="pn" x="198.12" y="186.19" text-anchor="middle">3</text>
 <line class="pin" x1="196.85" y1="189.23" x2="199.39" y2="189.23"/>
-<text class="name" x="199.99" y="189.73">GPIO4</text>
-<text class="num" x="198.12" y="188.63" text-anchor="middle">4</text>
+<text class="name" x="199.99" y="189.68">GPIO4</text>
+<text class="pn" x="198.12" y="188.73" text-anchor="middle">4</text>
 <line class="pin" x1="196.85" y1="191.77" x2="199.39" y2="191.77"/>
-<text class="name" x="199.99" y="192.27">GPIO5</text>
-<text class="num" x="198.12" y="191.17" text-anchor="middle">5</text>
+<text class="name" x="199.99" y="192.22">GPIO5</text>
+<text class="pn" x="198.12" y="191.27" text-anchor="middle">5</text>
 <line class="pin" x1="196.85" y1="194.31" x2="199.39" y2="194.31"/>
-<text class="name" x="199.99" y="194.81">GPIO6</text>
-<text class="num" x="198.12" y="193.71" text-anchor="middle">6</text>
+<text class="name" x="199.99" y="194.76">GPIO6</text>
+<text class="pn" x="198.12" y="193.81" text-anchor="middle">6</text>
 <line class="pin" x1="196.85" y1="196.85" x2="199.39" y2="196.85"/>
-<text class="name" x="199.99" y="197.35">GPIO7</text>
-<text class="num" x="198.12" y="196.25" text-anchor="middle">7</text>
+<text class="name" x="199.99" y="197.3">GPIO7</text>
+<text class="pn" x="198.12" y="196.35" text-anchor="middle">7</text>
 <line class="pin" x1="196.85" y1="199.39" x2="199.39" y2="199.39"/>
-<text class="name" x="199.99" y="199.89">GPIO8</text>
-<text class="num" x="198.12" y="198.79" text-anchor="middle">8</text>
+<text class="name" x="199.99" y="199.84">GPIO8</text>
+<text class="pn" x="198.12" y="198.89" text-anchor="middle">8</text>
 <line class="pin" x1="196.85" y1="201.93" x2="199.39" y2="201.93"/>
-<text class="name" x="199.99" y="202.43">VDD_LP</text>
-<text class="num" x="198.12" y="201.33" text-anchor="middle">9</text>
+<text class="name" x="199.99" y="202.38">VDD_LP</text>
+<text class="pn" x="198.12" y="201.43" text-anchor="middle">9</text>
 <text class="ref" x="254" y="161.36" text-anchor="middle">U1</text>
-<text class="val" x="254" y="265.36" text-anchor="middle">ESP32-P4NRW32X (v3.x)</text>
+<text class="value" x="254" y="265.36" text-anchor="middle">ESP32-P4NRW32X (v3.x)</text>
 </g>
 <g data-ref="J1"><title>J1 RPi 15P CSI CAMERA</title>
 <rect class="box" x="662.94" y="104.14" width="30.48" height="40.64"/>
 <line class="pin" x1="660.4" y1="106.68" x2="662.94" y2="106.68"/>
-<text class="name" x="663.54" y="107.18">Pin_1</text>
-<text class="num" x="661.67" y="106.08" text-anchor="middle">1</text>
+<text class="name" x="663.54" y="107.13">Pin_1</text>
+<text class="pn" x="661.67" y="106.18" text-anchor="middle">1</text>
 <line class="pin" x1="660.4" y1="109.22" x2="662.94" y2="109.22"/>
-<text class="name" x="663.54" y="109.72">Pin_2</text>
-<text class="num" x="661.67" y="108.62" text-anchor="middle">2</text>
+<text class="name" x="663.54" y="109.67">Pin_2</text>
+<text class="pn" x="661.67" y="108.72" text-anchor="middle">2</text>
 <line class="pin" x1="660.4" y1="111.76" x2="662.94" y2="111.76"/>
-<text class="name" x="663.54" y="112.26">Pin_3</text>
-<text class="num" x="661.67" y="111.16" text-anchor="middle">3</text>
+<text class="name" x="663.54" y="112.21">Pin_3</text>
+<text class="pn" x="661.67" y="111.26" text-anchor="middle">3</text>
 <line class="pin" x1="660.4" y1="114.3" x2="662.94" y2="114.3"/>
-<text class="name" x="663.54" y="114.8">Pin_4</text>
-<text class="num" x="661.67" y="113.7" text-anchor="middle">4</text>
+<text class="name" x="663.54" y="114.75">Pin_4</text>
+<text class="pn" x="661.67" y="113.8" text-anchor="middle">4</text>
 <line class="pin" x1="660.4" y1="116.84" x2="662.94" y2="116.84"/>
-<text class="name" x="663.54" y="117.34">Pin_5</text>
-<text class="num" x="661.67" y="116.24" text-anchor="middle">5</text>
+<text class="name" x="663.54" y="117.29">Pin_5</text>
+<text class="pn" x="661.67" y="116.34" text-anchor="middle">5</text>
 <line class="pin" x1="660.4" y1="119.38" x2="662.94" y2="119.38"/>
-<text class="name" x="663.54" y="119.88">Pin_6</text>
-<text class="num" x="661.67" y="118.78" text-anchor="middle">6</text>
+<text class="name" x="663.54" y="119.83">Pin_6</text>
+<text class="pn" x="661.67" y="118.88" text-anchor="middle">6</text>
 <line class="pin" x1="660.4" y1="121.92" x2="662.94" y2="121.92"/>
-<text class="name" x="663.54" y="122.42">Pin_7</text>
-<text class="num" x="661.67" y="121.32" text-anchor="middle">7</text>
+<text class="name" x="663.54" y="122.37">Pin_7</text>
+<text class="pn" x="661.67" y="121.42" text-anchor="middle">7</text>
 <line class="pin" x1="660.4" y1="124.46" x2="662.94" y2="124.46"/>
-<text class="name" x="663.54" y="124.96">Pin_8</text>
-<text class="num" x="661.67" y="123.86" text-anchor="middle">8</text>
+<text class="name" x="663.54" y="124.91">Pin_8</text>
+<text class="pn" x="661.67" y="123.96" text-anchor="middle">8</text>
 <line class="pin" x1="660.4" y1="127" x2="662.94" y2="127"/>
-<text class="name" x="663.54" y="127.5">Pin_9</text>
-<text class="num" x="661.67" y="126.4" text-anchor="middle">9</text>
+<text class="name" x="663.54" y="127.45">Pin_9</text>
+<text class="pn" x="661.67" y="126.5" text-anchor="middle">9</text>
 <line class="pin" x1="660.4" y1="129.54" x2="662.94" y2="129.54"/>
-<text class="name" x="663.54" y="130.04">Pin_10</text>
-<text class="num" x="661.67" y="128.94" text-anchor="middle">10</text>
+<text class="name" x="663.54" y="129.99">Pin_10</text>
+<text class="pn" x="661.67" y="129.04" text-anchor="middle">10</text>
 <line class="pin" x1="660.4" y1="132.08" x2="662.94" y2="132.08"/>
-<text class="name" x="663.54" y="132.58">Pin_11</text>
-<text class="num" x="661.67" y="131.48" text-anchor="middle">11</text>
+<text class="name" x="663.54" y="132.53">Pin_11</text>
+<text class="pn" x="661.67" y="131.58" text-anchor="middle">11</text>
 <line class="pin" x1="660.4" y1="134.62" x2="662.94" y2="134.62"/>
-<text class="name" x="663.54" y="135.12">Pin_12</text>
-<text class="num" x="661.67" y="134.02" text-anchor="middle">12</text>
+<text class="name" x="663.54" y="135.07">Pin_12</text>
+<text class="pn" x="661.67" y="134.12" text-anchor="middle">12</text>
 <line class="pin" x1="660.4" y1="137.16" x2="662.94" y2="137.16"/>
-<text class="name" x="663.54" y="137.66">Pin_13</text>
-<text class="num" x="661.67" y="136.56" text-anchor="middle">13</text>
+<text class="name" x="663.54" y="137.61">Pin_13</text>
+<text class="pn" x="661.67" y="136.66" text-anchor="middle">13</text>
 <line class="pin" x1="660.4" y1="139.7" x2="662.94" y2="139.7"/>
-<text class="name" x="663.54" y="140.2">Pin_14</text>
-<text class="num" x="661.67" y="139.1" text-anchor="middle">14</text>
+<text class="name" x="663.54" y="140.15">Pin_14</text>
+<text class="pn" x="661.67" y="139.2" text-anchor="middle">14</text>
 <line class="pin" x1="660.4" y1="142.24" x2="662.94" y2="142.24"/>
-<text class="name" x="663.54" y="142.74">Pin_15</text>
-<text class="num" x="661.67" y="141.64" text-anchor="middle">15</text>
+<text class="name" x="663.54" y="142.69">Pin_15</text>
+<text class="pn" x="661.67" y="141.74" text-anchor="middle">15</text>
 <text class="ref" x="680.72" y="99.46" text-anchor="middle">J1</text>
-<text class="val" x="680.72" y="149.46" text-anchor="middle">RPi 15P CSI CAMERA</text>
+<text class="value" x="680.72" y="149.46" text-anchor="middle">RPi 15P CSI CAMERA</text>
 </g>
 <g data-ref="J2"><title>J2 15P SDIO RADIO (custom, no camera)</title>
 <rect class="box" x="662.94" y="267.97" width="30.48" height="40.64"/>
 <line class="pin" x1="660.4" y1="270.51" x2="662.94" y2="270.51"/>
-<text class="name" x="663.54" y="271.01">Pin_1</text>
-<text class="num" x="661.67" y="269.91" text-anchor="middle">1</text>
+<text class="name" x="663.54" y="270.96">Pin_1</text>
+<text class="pn" x="661.67" y="270.01" text-anchor="middle">1</text>
 <line class="pin" x1="660.4" y1="273.05" x2="662.94" y2="273.05"/>
-<text class="name" x="663.54" y="273.55">Pin_2</text>
-<text class="num" x="661.67" y="272.45" text-anchor="middle">2</text>
+<text class="name" x="663.54" y="273.5">Pin_2</text>
+<text class="pn" x="661.67" y="272.55" text-anchor="middle">2</text>
 <line class="pin" x1="660.4" y1="275.59" x2="662.94" y2="275.59"/>
-<text class="name" x="663.54" y="276.09">Pin_3</text>
-<text class="num" x="661.67" y="274.99" text-anchor="middle">3</text>
+<text class="name" x="663.54" y="276.04">Pin_3</text>
+<text class="pn" x="661.67" y="275.09" text-anchor="middle">3</text>
 <line class="pin" x1="660.4" y1="278.13" x2="662.94" y2="278.13"/>
-<text class="name" x="663.54" y="278.63">Pin_4</text>
-<text class="num" x="661.67" y="277.53" text-anchor="middle">4</text>
+<text class="name" x="663.54" y="278.58">Pin_4</text>
+<text class="pn" x="661.67" y="277.63" text-anchor="middle">4</text>
 <line class="pin" x1="660.4" y1="280.67" x2="662.94" y2="280.67"/>
-<text class="name" x="663.54" y="281.17">Pin_5</text>
-<text class="num" x="661.67" y="280.07" text-anchor="middle">5</text>
+<text class="name" x="663.54" y="281.12">Pin_5</text>
+<text class="pn" x="661.67" y="280.17" text-anchor="middle">5</text>
 <line class="pin" x1="660.4" y1="283.21" x2="662.94" y2="283.21"/>
-<text class="name" x="663.54" y="283.71">Pin_6</text>
-<text class="num" x="661.67" y="282.61" text-anchor="middle">6</text>
+<text class="name" x="663.54" y="283.66">Pin_6</text>
+<text class="pn" x="661.67" y="282.71" text-anchor="middle">6</text>
 <line class="pin" x1="660.4" y1="285.75" x2="662.94" y2="285.75"/>
-<text class="name" x="663.54" y="286.25">Pin_7</text>
-<text class="num" x="661.67" y="285.15" text-anchor="middle">7</text>
+<text class="name" x="663.54" y="286.2">Pin_7</text>
+<text class="pn" x="661.67" y="285.25" text-anchor="middle">7</text>
 <line class="pin" x1="660.4" y1="288.29" x2="662.94" y2="288.29"/>
-<text class="name" x="663.54" y="288.79">Pin_8</text>
-<text class="num" x="661.67" y="287.69" text-anchor="middle">8</text>
+<text class="name" x="663.54" y="288.74">Pin_8</text>
+<text class="pn" x="661.67" y="287.79" text-anchor="middle">8</text>
 <line class="pin" x1="660.4" y1="290.83" x2="662.94" y2="290.83"/>
-<text class="name" x="663.54" y="291.33">Pin_9</text>
-<text class="num" x="661.67" y="290.23" text-anchor="middle">9</text>
+<text class="name" x="663.54" y="291.28">Pin_9</text>
+<text class="pn" x="661.67" y="290.33" text-anchor="middle">9</text>
 <line class="pin" x1="660.4" y1="293.37" x2="662.94" y2="293.37"/>
-<text class="name" x="663.54" y="293.87">Pin_10</text>
-<text class="num" x="661.67" y="292.77" text-anchor="middle">10</text>
+<text class="name" x="663.54" y="293.82">Pin_10</text>
+<text class="pn" x="661.67" y="292.87" text-anchor="middle">10</text>
 <line class="pin" x1="660.4" y1="295.91" x2="662.94" y2="295.91"/>
-<text class="name" x="663.54" y="296.41">Pin_11</text>
-<text class="num" x="661.67" y="295.31" text-anchor="middle">11</text>
+<text class="name" x="663.54" y="296.36">Pin_11</text>
+<text class="pn" x="661.67" y="295.41" text-anchor="middle">11</text>
 <line class="pin" x1="660.4" y1="298.45" x2="662.94" y2="298.45"/>
-<text class="name" x="663.54" y="298.95">Pin_12</text>
-<text class="num" x="661.67" y="297.85" text-anchor="middle">12</text>
+<text class="name" x="663.54" y="298.9">Pin_12</text>
+<text class="pn" x="661.67" y="297.95" text-anchor="middle">12</text>
 <line class="pin" x1="660.4" y1="300.99" x2="662.94" y2="300.99"/>
-<text class="name" x="663.54" y="301.49">Pin_13</text>
-<text class="num" x="661.67" y="300.39" text-anchor="middle">13</text>
+<text class="name" x="663.54" y="301.44">Pin_13</text>
+<text class="pn" x="661.67" y="300.49" text-anchor="middle">13</text>
 <line class="pin" x1="660.4" y1="303.53" x2="662.94" y2="303.53"/>
-<text class="name" x="663.54" y="304.03">Pin_14</text>
-<text class="num" x="661.67" y="302.93" text-anchor="middle">14</text>
+<text class="name" x="663.54" y="303.98">Pin_14</text>
+<text class="pn" x="661.67" y="303.03" text-anchor="middle">14</text>
 <line class="pin" x1="660.4" y1="306.07" x2="662.94" y2="306.07"/>
-<text class="name" x="663.54" y="306.57">Pin_15</text>
-<text class="num" x="661.67" y="305.47" text-anchor="middle">15</text>
+<text class="name" x="663.54" y="306.52">Pin_15</text>
+<text class="pn" x="661.67" y="305.57" text-anchor="middle">15</text>
 <text class="ref" x="680.72" y="263.29" text-anchor="middle">J2</text>
-<text class="val" x="680.72" y="313.29" text-anchor="middle">15P SDIO RADIO (custom, no camera)</text>
+<text class="value" x="680.72" y="313.29" text-anchor="middle">15P SDIO RADIO (custom, no camera)</text>
 </g>
 <g data-ref="J3"><title>J3 microSD 4-bit / edge access</title>
 <rect class="box" x="662.94" y="461.01" width="33.02" height="25.4"/>
 <line class="pin" x1="660.4" y1="463.55" x2="662.94" y2="463.55"/>
-<text class="name" x="663.54" y="464.05">DAT2</text>
-<text class="num" x="661.67" y="462.95" text-anchor="middle">1</text>
+<text class="name" x="663.54" y="464">DAT2</text>
+<text class="pn" x="661.67" y="463.05" text-anchor="middle">1</text>
 <line class="pin" x1="660.4" y1="466.09" x2="662.94" y2="466.09"/>
-<text class="name" x="663.54" y="466.59">DAT3</text>
-<text class="num" x="661.67" y="465.49" text-anchor="middle">2</text>
+<text class="name" x="663.54" y="466.54">DAT3</text>
+<text class="pn" x="661.67" y="465.59" text-anchor="middle">2</text>
 <line class="pin" x1="660.4" y1="468.63" x2="662.94" y2="468.63"/>
-<text class="name" x="663.54" y="469.13">CMD</text>
-<text class="num" x="661.67" y="468.03" text-anchor="middle">3</text>
+<text class="name" x="663.54" y="469.08">CMD</text>
+<text class="pn" x="661.67" y="468.13" text-anchor="middle">3</text>
 <line class="pin" x1="660.4" y1="471.17" x2="662.94" y2="471.17"/>
-<text class="name" x="663.54" y="471.67">VDD</text>
-<text class="num" x="661.67" y="470.57" text-anchor="middle">4</text>
+<text class="name" x="663.54" y="471.62">VDD</text>
+<text class="pn" x="661.67" y="470.67" text-anchor="middle">4</text>
 <line class="pin" x1="660.4" y1="473.71" x2="662.94" y2="473.71"/>
-<text class="name" x="663.54" y="474.21">CLK</text>
-<text class="num" x="661.67" y="473.11" text-anchor="middle">5</text>
+<text class="name" x="663.54" y="474.16">CLK</text>
+<text class="pn" x="661.67" y="473.21" text-anchor="middle">5</text>
 <line class="pin" x1="660.4" y1="476.25" x2="662.94" y2="476.25"/>
-<text class="name" x="663.54" y="476.75">VSS</text>
-<text class="num" x="661.67" y="475.65" text-anchor="middle">6</text>
+<text class="name" x="663.54" y="476.7">VSS</text>
+<text class="pn" x="661.67" y="475.75" text-anchor="middle">6</text>
 <line class="pin" x1="660.4" y1="478.79" x2="662.94" y2="478.79"/>
-<text class="name" x="663.54" y="479.29">DAT0</text>
-<text class="num" x="661.67" y="478.19" text-anchor="middle">7</text>
+<text class="name" x="663.54" y="479.24">DAT0</text>
+<text class="pn" x="661.67" y="478.29" text-anchor="middle">7</text>
 <line class="pin" x1="660.4" y1="481.33" x2="662.94" y2="481.33"/>
-<text class="name" x="663.54" y="481.83">DAT1</text>
-<text class="num" x="661.67" y="480.73" text-anchor="middle">8</text>
+<text class="name" x="663.54" y="481.78">DAT1</text>
+<text class="pn" x="661.67" y="480.83" text-anchor="middle">8</text>
 <line class="pin" x1="660.4" y1="483.87" x2="662.94" y2="483.87"/>
-<text class="name" x="663.54" y="484.37">SHIELD</text>
-<text class="num" x="661.67" y="483.27" text-anchor="middle">9</text>
+<text class="name" x="663.54" y="484.32">SHIELD</text>
+<text class="pn" x="661.67" y="483.37" text-anchor="middle">9</text>
 <text class="ref" x="680.72" y="457.11" text-anchor="middle">J3</text>
-<text class="val" x="680.72" y="490.31" text-anchor="middle">microSD 4-bit / edge access</text>
+<text class="value" x="680.72" y="490.31" text-anchor="middle">microSD 4-bit / edge access</text>
 </g>
 <g data-ref="J4"><title>J4 HS USB-C 480M / OTG</title>
 <rect class="box" x="662.94" y="647.7" width="33.02" height="40.64"/>
 <line class="pin" x1="660.4" y1="650.24" x2="662.94" y2="650.24"/>
-<text class="name" x="663.54" y="650.74">A1_GND</text>
-<text class="num" x="661.67" y="649.64" text-anchor="middle">1</text>
+<text class="name" x="663.54" y="650.69">A1_GND</text>
+<text class="pn" x="661.67" y="649.74" text-anchor="middle">1</text>
 <line class="pin" x1="660.4" y1="652.78" x2="662.94" y2="652.78"/>
-<text class="name" x="663.54" y="653.28">A4_VBUS</text>
-<text class="num" x="661.67" y="652.18" text-anchor="middle">2</text>
+<text class="name" x="663.54" y="653.23">A4_VBUS</text>
+<text class="pn" x="661.67" y="652.28" text-anchor="middle">2</text>
 <line class="pin" x1="660.4" y1="655.32" x2="662.94" y2="655.32"/>
-<text class="name" x="663.54" y="655.82">A5_CC1</text>
-<text class="num" x="661.67" y="654.72" text-anchor="middle">3</text>
+<text class="name" x="663.54" y="655.77">A5_CC1</text>
+<text class="pn" x="661.67" y="654.82" text-anchor="middle">3</text>
 <line class="pin" x1="660.4" y1="657.86" x2="662.94" y2="657.86"/>
-<text class="name" x="663.54" y="658.36">A6_DP</text>
-<text class="num" x="661.67" y="657.26" text-anchor="middle">4</text>
+<text class="name" x="663.54" y="658.31">A6_DP</text>
+<text class="pn" x="661.67" y="657.36" text-anchor="middle">4</text>
 <line class="pin" x1="660.4" y1="660.4" x2="662.94" y2="660.4"/>
-<text class="name" x="663.54" y="660.9">A7_DN</text>
-<text class="num" x="661.67" y="659.8" text-anchor="middle">5</text>
+<text class="name" x="663.54" y="660.85">A7_DN</text>
+<text class="pn" x="661.67" y="659.9" text-anchor="middle">5</text>
 <line class="pin" x1="660.4" y1="662.94" x2="662.94" y2="662.94"/>
-<text class="name" x="663.54" y="663.44">A9_VBUS</text>
-<text class="num" x="661.67" y="662.34" text-anchor="middle">6</text>
+<text class="name" x="663.54" y="663.39">A9_VBUS</text>
+<text class="pn" x="661.67" y="662.44" text-anchor="middle">6</text>
 <line class="pin" x1="660.4" y1="665.48" x2="662.94" y2="665.48"/>
-<text class="name" x="663.54" y="665.98">A12_GND</text>
-<text class="num" x="661.67" y="664.88" text-anchor="middle">7</text>
+<text class="name" x="663.54" y="665.93">A12_GND</text>
+<text class="pn" x="661.67" y="664.98" text-anchor="middle">7</text>
 <line class="pin" x1="660.4" y1="668.02" x2="662.94" y2="668.02"/>
-<text class="name" x="663.54" y="668.52">B1_GND</text>
-<text class="num" x="661.67" y="667.42" text-anchor="middle">8</text>
+<text class="name" x="663.54" y="668.47">B1_GND</text>
+<text class="pn" x="661.67" y="667.52" text-anchor="middle">8</text>
 <line class="pin" x1="660.4" y1="670.56" x2="662.94" y2="670.56"/>
-<text class="name" x="663.54" y="671.06">B4_VBUS</text>
-<text class="num" x="661.67" y="669.96" text-anchor="middle">9</text>
+<text class="name" x="663.54" y="671.01">B4_VBUS</text>
+<text class="pn" x="661.67" y="670.06" text-anchor="middle">9</text>
 <line class="pin" x1="660.4" y1="673.1" x2="662.94" y2="673.1"/>
-<text class="name" x="663.54" y="673.6">B5_CC2</text>
-<text class="num" x="661.67" y="672.5" text-anchor="middle">10</text>
+<text class="name" x="663.54" y="673.55">B5_CC2</text>
+<text class="pn" x="661.67" y="672.6" text-anchor="middle">10</text>
 <line class="pin" x1="660.4" y1="675.64" x2="662.94" y2="675.64"/>
-<text class="name" x="663.54" y="676.14">B6_DP</text>
-<text class="num" x="661.67" y="675.04" text-anchor="middle">11</text>
+<text class="name" x="663.54" y="676.09">B6_DP</text>
+<text class="pn" x="661.67" y="675.14" text-anchor="middle">11</text>
 <line class="pin" x1="660.4" y1="678.18" x2="662.94" y2="678.18"/>
-<text class="name" x="663.54" y="678.68">B7_DN</text>
-<text class="num" x="661.67" y="677.58" text-anchor="middle">12</text>
+<text class="name" x="663.54" y="678.63">B7_DN</text>
+<text class="pn" x="661.67" y="677.68" text-anchor="middle">12</text>
 <line class="pin" x1="660.4" y1="680.72" x2="662.94" y2="680.72"/>
-<text class="name" x="663.54" y="681.22">B9_VBUS</text>
-<text class="num" x="661.67" y="680.12" text-anchor="middle">13</text>
+<text class="name" x="663.54" y="681.17">B9_VBUS</text>
+<text class="pn" x="661.67" y="680.22" text-anchor="middle">13</text>
 <line class="pin" x1="660.4" y1="683.26" x2="662.94" y2="683.26"/>
-<text class="name" x="663.54" y="683.76">B12_GND</text>
-<text class="num" x="661.67" y="682.66" text-anchor="middle">14</text>
+<text class="name" x="663.54" y="683.71">B12_GND</text>
+<text class="pn" x="661.67" y="682.76" text-anchor="middle">14</text>
 <line class="pin" x1="660.4" y1="685.8" x2="662.94" y2="685.8"/>
-<text class="name" x="663.54" y="686.3">SHIELD</text>
-<text class="num" x="661.67" y="685.2" text-anchor="middle">15</text>
+<text class="name" x="663.54" y="686.25">SHIELD</text>
+<text class="pn" x="661.67" y="685.3" text-anchor="middle">15</text>
 <text class="ref" x="680.72" y="643.02" text-anchor="middle">J4</text>
-<text class="val" x="680.72" y="693.02" text-anchor="middle">HS USB-C 480M / OTG</text>
+<text class="value" x="680.72" y="693.02" text-anchor="middle">HS USB-C 480M / OTG</text>
 </g>
 <g data-ref="J5"><title>J5 UART0 FLASH - GH6</title>
 <rect class="box" x="876.3" y="109.22" width="30.48" height="17.78"/>
 <line class="pin" x1="873.76" y1="111.76" x2="876.3" y2="111.76"/>
-<text class="name" x="876.9" y="112.26">Pin_1</text>
-<text class="num" x="875.03" y="111.16" text-anchor="middle">1</text>
+<text class="name" x="876.9" y="112.21">Pin_1</text>
+<text class="pn" x="875.03" y="111.26" text-anchor="middle">1</text>
 <line class="pin" x1="873.76" y1="114.3" x2="876.3" y2="114.3"/>
-<text class="name" x="876.9" y="114.8">Pin_2</text>
-<text class="num" x="875.03" y="113.7" text-anchor="middle">2</text>
+<text class="name" x="876.9" y="114.75">Pin_2</text>
+<text class="pn" x="875.03" y="113.8" text-anchor="middle">2</text>
 <line class="pin" x1="873.76" y1="116.84" x2="876.3" y2="116.84"/>
-<text class="name" x="876.9" y="117.34">Pin_3</text>
-<text class="num" x="875.03" y="116.24" text-anchor="middle">3</text>
+<text class="name" x="876.9" y="117.29">Pin_3</text>
+<text class="pn" x="875.03" y="116.34" text-anchor="middle">3</text>
 <line class="pin" x1="873.76" y1="119.38" x2="876.3" y2="119.38"/>
-<text class="name" x="876.9" y="119.88">Pin_4</text>
-<text class="num" x="875.03" y="118.78" text-anchor="middle">4</text>
+<text class="name" x="876.9" y="119.83">Pin_4</text>
+<text class="pn" x="875.03" y="118.88" text-anchor="middle">4</text>
 <line class="pin" x1="873.76" y1="121.92" x2="876.3" y2="121.92"/>
-<text class="name" x="876.9" y="122.42">Pin_5</text>
-<text class="num" x="875.03" y="121.32" text-anchor="middle">5</text>
+<text class="name" x="876.9" y="122.37">Pin_5</text>
+<text class="pn" x="875.03" y="121.42" text-anchor="middle">5</text>
 <line class="pin" x1="873.76" y1="124.46" x2="876.3" y2="124.46"/>
-<text class="name" x="876.9" y="124.96">Pin_6</text>
-<text class="num" x="875.03" y="123.86" text-anchor="middle">6</text>
+<text class="name" x="876.9" y="124.91">Pin_6</text>
+<text class="pn" x="875.03" y="123.96" text-anchor="middle">6</text>
 <text class="ref" x="894.08" y="105.71" text-anchor="middle">J5</text>
-<text class="val" x="894.08" y="130.51" text-anchor="middle">UART0 FLASH - GH6</text>
+<text class="value" x="894.08" y="130.51" text-anchor="middle">UART0 FLASH - GH6</text>
 </g>
 <g data-ref="J6"><title>J6 UART1 MSP - GH4</title>
 <rect class="box" x="876.3" y="260.35" width="30.48" height="12.7"/>
 <line class="pin" x1="873.76" y1="262.89" x2="876.3" y2="262.89"/>
-<text class="name" x="876.9" y="263.39">Pin_1</text>
-<text class="num" x="875.03" y="262.29" text-anchor="middle">1</text>
+<text class="name" x="876.9" y="263.34">Pin_1</text>
+<text class="pn" x="875.03" y="262.39" text-anchor="middle">1</text>
 <line class="pin" x1="873.76" y1="265.43" x2="876.3" y2="265.43"/>
-<text class="name" x="876.9" y="265.93">Pin_2</text>
-<text class="num" x="875.03" y="264.83" text-anchor="middle">2</text>
+<text class="name" x="876.9" y="265.88">Pin_2</text>
+<text class="pn" x="875.03" y="264.93" text-anchor="middle">2</text>
 <line class="pin" x1="873.76" y1="267.97" x2="876.3" y2="267.97"/>
-<text class="name" x="876.9" y="268.47">Pin_3</text>
-<text class="num" x="875.03" y="267.37" text-anchor="middle">3</text>
+<text class="name" x="876.9" y="268.42">Pin_3</text>
+<text class="pn" x="875.03" y="267.47" text-anchor="middle">3</text>
 <line class="pin" x1="873.76" y1="270.51" x2="876.3" y2="270.51"/>
-<text class="name" x="876.9" y="271.01">Pin_4</text>
-<text class="num" x="875.03" y="269.91" text-anchor="middle">4</text>
+<text class="name" x="876.9" y="270.96">Pin_4</text>
+<text class="pn" x="875.03" y="270.01" text-anchor="middle">4</text>
 <text class="ref" x="894.08" y="254.7" text-anchor="middle">J6</text>
-<text class="val" x="894.08" y="278.7" text-anchor="middle">UART1 MSP - GH4</text>
+<text class="value" x="894.08" y="278.7" text-anchor="middle">UART1 MSP - GH4</text>
 </g>
 <g data-ref="J7"><title>J7 UART2 CRSF/SPORT - GH4</title>
 <rect class="box" x="876.3" y="341.63" width="30.48" height="12.7"/>
 <line class="pin" x1="873.76" y1="344.17" x2="876.3" y2="344.17"/>
-<text class="name" x="876.9" y="344.67">Pin_1</text>
-<text class="num" x="875.03" y="343.57" text-anchor="middle">1</text>
+<text class="name" x="876.9" y="344.62">Pin_1</text>
+<text class="pn" x="875.03" y="343.67" text-anchor="middle">1</text>
 <line class="pin" x1="873.76" y1="346.71" x2="876.3" y2="346.71"/>
-<text class="name" x="876.9" y="347.21">Pin_2</text>
-<text class="num" x="875.03" y="346.11" text-anchor="middle">2</text>
+<text class="name" x="876.9" y="347.16">Pin_2</text>
+<text class="pn" x="875.03" y="346.21" text-anchor="middle">2</text>
 <line class="pin" x1="873.76" y1="349.25" x2="876.3" y2="349.25"/>
-<text class="name" x="876.9" y="349.75">Pin_3</text>
-<text class="num" x="875.03" y="348.65" text-anchor="middle">3</text>
+<text class="name" x="876.9" y="349.7">Pin_3</text>
+<text class="pn" x="875.03" y="348.75" text-anchor="middle">3</text>
 <line class="pin" x1="873.76" y1="351.79" x2="876.3" y2="351.79"/>
-<text class="name" x="876.9" y="352.29">Pin_4</text>
-<text class="num" x="875.03" y="351.19" text-anchor="middle">4</text>
+<text class="name" x="876.9" y="352.24">Pin_4</text>
+<text class="pn" x="875.03" y="351.29" text-anchor="middle">4</text>
 <text class="ref" x="894.08" y="335.98" text-anchor="middle">J7</text>
-<text class="val" x="894.08" y="359.98" text-anchor="middle">UART2 CRSF/SPORT - GH4</text>
+<text class="value" x="894.08" y="359.98" text-anchor="middle">UART2 CRSF/SPORT - GH4</text>
 </g>
 <g data-ref="J8"><title>J8 EXTERNAL I2C - GH4</title>
 <rect class="box" x="876.3" y="419.1" width="30.48" height="12.7"/>
 <line class="pin" x1="873.76" y1="421.64" x2="876.3" y2="421.64"/>
-<text class="name" x="876.9" y="422.14">Pin_1</text>
-<text class="num" x="875.03" y="421.04" text-anchor="middle">1</text>
+<text class="name" x="876.9" y="422.09">Pin_1</text>
+<text class="pn" x="875.03" y="421.14" text-anchor="middle">1</text>
 <line class="pin" x1="873.76" y1="424.18" x2="876.3" y2="424.18"/>
-<text class="name" x="876.9" y="424.68">Pin_2</text>
-<text class="num" x="875.03" y="423.58" text-anchor="middle">2</text>
+<text class="name" x="876.9" y="424.63">Pin_2</text>
+<text class="pn" x="875.03" y="423.68" text-anchor="middle">2</text>
 <line class="pin" x1="873.76" y1="426.72" x2="876.3" y2="426.72"/>
-<text class="name" x="876.9" y="427.22">Pin_3</text>
-<text class="num" x="875.03" y="426.12" text-anchor="middle">3</text>
+<text class="name" x="876.9" y="427.17">Pin_3</text>
+<text class="pn" x="875.03" y="426.22" text-anchor="middle">3</text>
 <line class="pin" x1="873.76" y1="429.26" x2="876.3" y2="429.26"/>
-<text class="name" x="876.9" y="429.76">Pin_4</text>
-<text class="num" x="875.03" y="428.66" text-anchor="middle">4</text>
+<text class="name" x="876.9" y="429.71">Pin_4</text>
+<text class="pn" x="875.03" y="428.76" text-anchor="middle">4</text>
 <text class="ref" x="894.08" y="413.45" text-anchor="middle">J8</text>
-<text class="val" x="894.08" y="437.45" text-anchor="middle">EXTERNAL I2C - GH4</text>
+<text class="value" x="894.08" y="437.45" text-anchor="middle">EXTERNAL I2C - GH4</text>
 </g>
 <g data-ref="J9"><title>J9 SPI - GH6</title>
 <rect class="box" x="876.3" y="497.84" width="30.48" height="17.78"/>
 <line class="pin" x1="873.76" y1="500.38" x2="876.3" y2="500.38"/>
-<text class="name" x="876.9" y="500.88">Pin_1</text>
-<text class="num" x="875.03" y="499.78" text-anchor="middle">1</text>
+<text class="name" x="876.9" y="500.83">Pin_1</text>
+<text class="pn" x="875.03" y="499.88" text-anchor="middle">1</text>
 <line class="pin" x1="873.76" y1="502.92" x2="876.3" y2="502.92"/>
-<text class="name" x="876.9" y="503.42">Pin_2</text>
-<text class="num" x="875.03" y="502.32" text-anchor="middle">2</text>
+<text class="name" x="876.9" y="503.37">Pin_2</text>
+<text class="pn" x="875.03" y="502.42" text-anchor="middle">2</text>
 <line class="pin" x1="873.76" y1="505.46" x2="876.3" y2="505.46"/>
-<text class="name" x="876.9" y="505.96">Pin_3</text>
-<text class="num" x="875.03" y="504.86" text-anchor="middle">3</text>
+<text class="name" x="876.9" y="505.91">Pin_3</text>
+<text class="pn" x="875.03" y="504.96" text-anchor="middle">3</text>
 <line class="pin" x1="873.76" y1="508" x2="876.3" y2="508"/>
-<text class="name" x="876.9" y="508.5">Pin_4</text>
-<text class="num" x="875.03" y="507.4" text-anchor="middle">4</text>
+<text class="name" x="876.9" y="508.45">Pin_4</text>
+<text class="pn" x="875.03" y="507.5" text-anchor="middle">4</text>
 <line class="pin" x1="873.76" y1="510.54" x2="876.3" y2="510.54"/>
-<text class="name" x="876.9" y="511.04">Pin_5</text>
-<text class="num" x="875.03" y="509.94" text-anchor="middle">5</text>
+<text class="name" x="876.9" y="510.99">Pin_5</text>
+<text class="pn" x="875.03" y="510.04" text-anchor="middle">5</text>
 <line class="pin" x1="873.76" y1="513.08" x2="876.3" y2="513.08"/>
-<text class="name" x="876.9" y="513.58">Pin_6</text>
-<text class="num" x="875.03" y="512.48" text-anchor="middle">6</text>
+<text class="name" x="876.9" y="513.53">Pin_6</text>
+<text class="pn" x="875.03" y="512.58" text-anchor="middle">6</text>
 <text class="ref" x="894.08" y="494.33" text-anchor="middle">J9</text>
-<text class="val" x="894.08" y="519.13" text-anchor="middle">SPI - GH6</text>
+<text class="value" x="894.08" y="519.13" text-anchor="middle">SPI - GH6</text>
 </g>
 <g data-ref="J10"><title>J10 ETHERNET CABLE - GH4</title>
-<rect class="box" x="1093.47" y="667.64" width="30.48" height="12.7"/>
-<line class="pin" x1="1090.93" y1="670.18" x2="1093.47" y2="670.18"/>
-<text class="name" x="1094.07" y="670.68">Pin_1</text>
-<text class="num" x="1092.2" y="669.58" text-anchor="middle">1</text>
-<line class="pin" x1="1090.93" y1="672.72" x2="1093.47" y2="672.72"/>
-<text class="name" x="1094.07" y="673.22">Pin_2</text>
-<text class="num" x="1092.2" y="672.12" text-anchor="middle">2</text>
-<line class="pin" x1="1090.93" y1="675.26" x2="1093.47" y2="675.26"/>
-<text class="name" x="1094.07" y="675.76">Pin_3</text>
-<text class="num" x="1092.2" y="674.66" text-anchor="middle">3</text>
-<line class="pin" x1="1090.93" y1="677.8" x2="1093.47" y2="677.8"/>
-<text class="name" x="1094.07" y="678.3">Pin_4</text>
-<text class="num" x="1092.2" y="677.2" text-anchor="middle">4</text>
-<text class="ref" x="1111.25" y="661.99" text-anchor="middle">J10</text>
-<text class="val" x="1111.25" y="685.99" text-anchor="middle">ETHERNET CABLE - GH4</text>
+<rect class="box" x="1093.47" y="668.02" width="30.48" height="12.7"/>
+<line class="pin" x1="1090.93" y1="670.56" x2="1093.47" y2="670.56"/>
+<text class="name" x="1094.07" y="671.01">Pin_1</text>
+<text class="pn" x="1092.2" y="670.06" text-anchor="middle">1</text>
+<line class="pin" x1="1090.93" y1="673.1" x2="1093.47" y2="673.1"/>
+<text class="name" x="1094.07" y="673.55">Pin_2</text>
+<text class="pn" x="1092.2" y="672.6" text-anchor="middle">2</text>
+<line class="pin" x1="1090.93" y1="675.64" x2="1093.47" y2="675.64"/>
+<text class="name" x="1094.07" y="676.09">Pin_3</text>
+<text class="pn" x="1092.2" y="675.14" text-anchor="middle">3</text>
+<line class="pin" x1="1090.93" y1="678.18" x2="1093.47" y2="678.18"/>
+<text class="name" x="1094.07" y="678.63">Pin_4</text>
+<text class="pn" x="1092.2" y="677.68" text-anchor="middle">4</text>
+<text class="ref" x="1111.25" y="662.37" text-anchor="middle">J10</text>
+<text class="value" x="1111.25" y="686.37" text-anchor="middle">ETHERNET CABLE - GH4</text>
 </g>
 <g data-ref="J11"><title>J11 3x13 SERVO GPIO / 2.54mm</title>
 <rect class="box" x="1079.5" y="182.88" width="30.48" height="101.6"/>
 <line class="pin" x1="1076.96" y1="185.42" x2="1079.5" y2="185.42"/>
-<text class="name" x="1080.1" y="185.92">Pin_1</text>
-<text class="num" x="1078.23" y="184.82" text-anchor="middle">1</text>
+<text class="name" x="1080.1" y="185.87">Pin_1</text>
+<text class="pn" x="1078.23" y="184.92" text-anchor="middle">1</text>
 <line class="pin" x1="1076.96" y1="187.96" x2="1079.5" y2="187.96"/>
-<text class="name" x="1080.1" y="188.46">Pin_2</text>
-<text class="num" x="1078.23" y="187.36" text-anchor="middle">2</text>
+<text class="name" x="1080.1" y="188.41">Pin_2</text>
+<text class="pn" x="1078.23" y="187.46" text-anchor="middle">2</text>
 <line class="pin" x1="1076.96" y1="190.5" x2="1079.5" y2="190.5"/>
-<text class="name" x="1080.1" y="191">Pin_3</text>
-<text class="num" x="1078.23" y="189.9" text-anchor="middle">3</text>
+<text class="name" x="1080.1" y="190.95">Pin_3</text>
+<text class="pn" x="1078.23" y="190" text-anchor="middle">3</text>
 <line class="pin" x1="1076.96" y1="193.04" x2="1079.5" y2="193.04"/>
-<text class="name" x="1080.1" y="193.54">Pin_4</text>
-<text class="num" x="1078.23" y="192.44" text-anchor="middle">4</text>
+<text class="name" x="1080.1" y="193.49">Pin_4</text>
+<text class="pn" x="1078.23" y="192.54" text-anchor="middle">4</text>
 <line class="pin" x1="1076.96" y1="195.58" x2="1079.5" y2="195.58"/>
-<text class="name" x="1080.1" y="196.08">Pin_5</text>
-<text class="num" x="1078.23" y="194.98" text-anchor="middle">5</text>
+<text class="name" x="1080.1" y="196.03">Pin_5</text>
+<text class="pn" x="1078.23" y="195.08" text-anchor="middle">5</text>
 <line class="pin" x1="1076.96" y1="198.12" x2="1079.5" y2="198.12"/>
-<text class="name" x="1080.1" y="198.62">Pin_6</text>
-<text class="num" x="1078.23" y="197.52" text-anchor="middle">6</text>
+<text class="name" x="1080.1" y="198.57">Pin_6</text>
+<text class="pn" x="1078.23" y="197.62" text-anchor="middle">6</text>
 <line class="pin" x1="1076.96" y1="200.66" x2="1079.5" y2="200.66"/>
-<text class="name" x="1080.1" y="201.16">Pin_7</text>
-<text class="num" x="1078.23" y="200.06" text-anchor="middle">7</text>
+<text class="name" x="1080.1" y="201.11">Pin_7</text>
+<text class="pn" x="1078.23" y="200.16" text-anchor="middle">7</text>
 <line class="pin" x1="1076.96" y1="203.2" x2="1079.5" y2="203.2"/>
-<text class="name" x="1080.1" y="203.7">Pin_8</text>
-<text class="num" x="1078.23" y="202.6" text-anchor="middle">8</text>
+<text class="name" x="1080.1" y="203.65">Pin_8</text>
+<text class="pn" x="1078.23" y="202.7" text-anchor="middle">8</text>
 <line class="pin" x1="1076.96" y1="205.74" x2="1079.5" y2="205.74"/>
-<text class="name" x="1080.1" y="206.24">Pin_9</text>
-<text class="num" x="1078.23" y="205.14" text-anchor="middle">9</text>
+<text class="name" x="1080.1" y="206.19">Pin_9</text>
+<text class="pn" x="1078.23" y="205.24" text-anchor="middle">9</text>
 <line class="pin" x1="1076.96" y1="208.28" x2="1079.5" y2="208.28"/>
-<text class="name" x="1080.1" y="208.78">Pin_10</text>
-<text class="num" x="1078.23" y="207.68" text-anchor="middle">10</text>
+<text class="name" x="1080.1" y="208.73">Pin_10</text>
+<text class="pn" x="1078.23" y="207.78" text-anchor="middle">10</text>
 <line class="pin" x1="1076.96" y1="210.82" x2="1079.5" y2="210.82"/>
-<text class="name" x="1080.1" y="211.32">Pin_11</text>
-<text class="num" x="1078.23" y="210.22" text-anchor="middle">11</text>
+<text class="name" x="1080.1" y="211.27">Pin_11</text>
+<text class="pn" x="1078.23" y="210.32" text-anchor="middle">11</text>
 <line class="pin" x1="1076.96" y1="213.36" x2="1079.5" y2="213.36"/>
-<text class="name" x="1080.1" y="213.86">Pin_12</text>
-<text class="num" x="1078.23" y="212.76" text-anchor="middle">12</text>
+<text class="name" x="1080.1" y="213.81">Pin_12</text>
+<text class="pn" x="1078.23" y="212.86" text-anchor="middle">12</text>
 <line class="pin" x1="1076.96" y1="215.9" x2="1079.5" y2="215.9"/>
-<text class="name" x="1080.1" y="216.4">Pin_13</text>
-<text class="num" x="1078.23" y="215.3" text-anchor="middle">13</text>
+<text class="name" x="1080.1" y="216.35">Pin_13</text>
+<text class="pn" x="1078.23" y="215.4" text-anchor="middle">13</text>
 <line class="pin" x1="1076.96" y1="218.44" x2="1079.5" y2="218.44"/>
-<text class="name" x="1080.1" y="218.94">Pin_14</text>
-<text class="num" x="1078.23" y="217.84" text-anchor="middle">14</text>
+<text class="name" x="1080.1" y="218.89">Pin_14</text>
+<text class="pn" x="1078.23" y="217.94" text-anchor="middle">14</text>
 <line class="pin" x1="1076.96" y1="220.98" x2="1079.5" y2="220.98"/>
-<text class="name" x="1080.1" y="221.48">Pin_15</text>
-<text class="num" x="1078.23" y="220.38" text-anchor="middle">15</text>
+<text class="name" x="1080.1" y="221.43">Pin_15</text>
+<text class="pn" x="1078.23" y="220.48" text-anchor="middle">15</text>
 <line class="pin" x1="1076.96" y1="223.52" x2="1079.5" y2="223.52"/>
-<text class="name" x="1080.1" y="224.02">Pin_16</text>
-<text class="num" x="1078.23" y="222.92" text-anchor="middle">16</text>
+<text class="name" x="1080.1" y="223.97">Pin_16</text>
+<text class="pn" x="1078.23" y="223.02" text-anchor="middle">16</text>
 <line class="pin" x1="1076.96" y1="226.06" x2="1079.5" y2="226.06"/>
-<text class="name" x="1080.1" y="226.56">Pin_17</text>
-<text class="num" x="1078.23" y="225.46" text-anchor="middle">17</text>
+<text class="name" x="1080.1" y="226.51">Pin_17</text>
+<text class="pn" x="1078.23" y="225.56" text-anchor="middle">17</text>
 <line class="pin" x1="1076.96" y1="228.6" x2="1079.5" y2="228.6"/>
-<text class="name" x="1080.1" y="229.1">Pin_18</text>
-<text class="num" x="1078.23" y="228" text-anchor="middle">18</text>
+<text class="name" x="1080.1" y="229.05">Pin_18</text>
+<text class="pn" x="1078.23" y="228.1" text-anchor="middle">18</text>
 <line class="pin" x1="1076.96" y1="231.14" x2="1079.5" y2="231.14"/>
-<text class="name" x="1080.1" y="231.64">Pin_19</text>
-<text class="num" x="1078.23" y="230.54" text-anchor="middle">19</text>
+<text class="name" x="1080.1" y="231.59">Pin_19</text>
+<text class="pn" x="1078.23" y="230.64" text-anchor="middle">19</text>
 <line class="pin" x1="1076.96" y1="233.68" x2="1079.5" y2="233.68"/>
-<text class="name" x="1080.1" y="234.18">Pin_20</text>
-<text class="num" x="1078.23" y="233.08" text-anchor="middle">20</text>
+<text class="name" x="1080.1" y="234.13">Pin_20</text>
+<text class="pn" x="1078.23" y="233.18" text-anchor="middle">20</text>
 <line class="pin" x1="1076.96" y1="236.22" x2="1079.5" y2="236.22"/>
-<text class="name" x="1080.1" y="236.72">Pin_21</text>
-<text class="num" x="1078.23" y="235.62" text-anchor="middle">21</text>
+<text class="name" x="1080.1" y="236.67">Pin_21</text>
+<text class="pn" x="1078.23" y="235.72" text-anchor="middle">21</text>
 <line class="pin" x1="1076.96" y1="238.76" x2="1079.5" y2="238.76"/>
-<text class="name" x="1080.1" y="239.26">Pin_22</text>
-<text class="num" x="1078.23" y="238.16" text-anchor="middle">22</text>
+<text class="name" x="1080.1" y="239.21">Pin_22</text>
+<text class="pn" x="1078.23" y="238.26" text-anchor="middle">22</text>
 <line class="pin" x1="1076.96" y1="241.3" x2="1079.5" y2="241.3"/>
-<text class="name" x="1080.1" y="241.8">Pin_23</text>
-<text class="num" x="1078.23" y="240.7" text-anchor="middle">23</text>
+<text class="name" x="1080.1" y="241.75">Pin_23</text>
+<text class="pn" x="1078.23" y="240.8" text-anchor="middle">23</text>
 <line class="pin" x1="1076.96" y1="243.84" x2="1079.5" y2="243.84"/>
-<text class="name" x="1080.1" y="244.34">Pin_24</text>
-<text class="num" x="1078.23" y="243.24" text-anchor="middle">24</text>
+<text class="name" x="1080.1" y="244.29">Pin_24</text>
+<text class="pn" x="1078.23" y="243.34" text-anchor="middle">24</text>
 <line class="pin" x1="1076.96" y1="246.38" x2="1079.5" y2="246.38"/>
-<text class="name" x="1080.1" y="246.88">Pin_25</text>
-<text class="num" x="1078.23" y="245.78" text-anchor="middle">25</text>
+<text class="name" x="1080.1" y="246.83">Pin_25</text>
+<text class="pn" x="1078.23" y="245.88" text-anchor="middle">25</text>
 <line class="pin" x1="1076.96" y1="248.92" x2="1079.5" y2="248.92"/>
-<text class="name" x="1080.1" y="249.42">Pin_26</text>
-<text class="num" x="1078.23" y="248.32" text-anchor="middle">26</text>
+<text class="name" x="1080.1" y="249.37">Pin_26</text>
+<text class="pn" x="1078.23" y="248.42" text-anchor="middle">26</text>
 <line class="pin" x1="1076.96" y1="251.46" x2="1079.5" y2="251.46"/>
-<text class="name" x="1080.1" y="251.96">Pin_27</text>
-<text class="num" x="1078.23" y="250.86" text-anchor="middle">27</text>
+<text class="name" x="1080.1" y="251.91">Pin_27</text>
+<text class="pn" x="1078.23" y="250.96" text-anchor="middle">27</text>
 <line class="pin" x1="1076.96" y1="254" x2="1079.5" y2="254"/>
-<text class="name" x="1080.1" y="254.5">Pin_28</text>
-<text class="num" x="1078.23" y="253.4" text-anchor="middle">28</text>
+<text class="name" x="1080.1" y="254.45">Pin_28</text>
+<text class="pn" x="1078.23" y="253.5" text-anchor="middle">28</text>
 <line class="pin" x1="1076.96" y1="256.54" x2="1079.5" y2="256.54"/>
-<text class="name" x="1080.1" y="257.04">Pin_29</text>
-<text class="num" x="1078.23" y="255.94" text-anchor="middle">29</text>
+<text class="name" x="1080.1" y="256.99">Pin_29</text>
+<text class="pn" x="1078.23" y="256.04" text-anchor="middle">29</text>
 <line class="pin" x1="1076.96" y1="259.08" x2="1079.5" y2="259.08"/>
-<text class="name" x="1080.1" y="259.58">Pin_30</text>
-<text class="num" x="1078.23" y="258.48" text-anchor="middle">30</text>
+<text class="name" x="1080.1" y="259.53">Pin_30</text>
+<text class="pn" x="1078.23" y="258.58" text-anchor="middle">30</text>
 <line class="pin" x1="1076.96" y1="261.62" x2="1079.5" y2="261.62"/>
-<text class="name" x="1080.1" y="262.12">Pin_31</text>
-<text class="num" x="1078.23" y="261.02" text-anchor="middle">31</text>
+<text class="name" x="1080.1" y="262.07">Pin_31</text>
+<text class="pn" x="1078.23" y="261.12" text-anchor="middle">31</text>
 <line class="pin" x1="1076.96" y1="264.16" x2="1079.5" y2="264.16"/>
-<text class="name" x="1080.1" y="264.66">Pin_32</text>
-<text class="num" x="1078.23" y="263.56" text-anchor="middle">32</text>
+<text class="name" x="1080.1" y="264.61">Pin_32</text>
+<text class="pn" x="1078.23" y="263.66" text-anchor="middle">32</text>
 <line class="pin" x1="1076.96" y1="266.7" x2="1079.5" y2="266.7"/>
-<text class="name" x="1080.1" y="267.2">Pin_33</text>
-<text class="num" x="1078.23" y="266.1" text-anchor="middle">33</text>
+<text class="name" x="1080.1" y="267.15">Pin_33</text>
+<text class="pn" x="1078.23" y="266.2" text-anchor="middle">33</text>
 <line class="pin" x1="1076.96" y1="269.24" x2="1079.5" y2="269.24"/>
-<text class="name" x="1080.1" y="269.74">Pin_34</text>
-<text class="num" x="1078.23" y="268.64" text-anchor="middle">34</text>
+<text class="name" x="1080.1" y="269.69">Pin_34</text>
+<text class="pn" x="1078.23" y="268.74" text-anchor="middle">34</text>
 <line class="pin" x1="1076.96" y1="271.78" x2="1079.5" y2="271.78"/>
-<text class="name" x="1080.1" y="272.28">Pin_35</text>
-<text class="num" x="1078.23" y="271.18" text-anchor="middle">35</text>
+<text class="name" x="1080.1" y="272.23">Pin_35</text>
+<text class="pn" x="1078.23" y="271.28" text-anchor="middle">35</text>
 <line class="pin" x1="1076.96" y1="274.32" x2="1079.5" y2="274.32"/>
-<text class="name" x="1080.1" y="274.82">Pin_36</text>
-<text class="num" x="1078.23" y="273.72" text-anchor="middle">36</text>
+<text class="name" x="1080.1" y="274.77">Pin_36</text>
+<text class="pn" x="1078.23" y="273.82" text-anchor="middle">36</text>
 <line class="pin" x1="1076.96" y1="276.86" x2="1079.5" y2="276.86"/>
-<text class="name" x="1080.1" y="277.36">Pin_37</text>
-<text class="num" x="1078.23" y="276.26" text-anchor="middle">37</text>
+<text class="name" x="1080.1" y="277.31">Pin_37</text>
+<text class="pn" x="1078.23" y="276.36" text-anchor="middle">37</text>
 <line class="pin" x1="1076.96" y1="279.4" x2="1079.5" y2="279.4"/>
-<text class="name" x="1080.1" y="279.9">Pin_38</text>
-<text class="num" x="1078.23" y="278.8" text-anchor="middle">38</text>
+<text class="name" x="1080.1" y="279.85">Pin_38</text>
+<text class="pn" x="1078.23" y="278.9" text-anchor="middle">38</text>
 <line class="pin" x1="1076.96" y1="281.94" x2="1079.5" y2="281.94"/>
-<text class="name" x="1080.1" y="282.44">Pin_39</text>
-<text class="num" x="1078.23" y="281.34" text-anchor="middle">39</text>
+<text class="name" x="1080.1" y="282.39">Pin_39</text>
+<text class="pn" x="1078.23" y="281.44" text-anchor="middle">39</text>
 <text class="ref" x="1097.28" y="181.68" text-anchor="middle">J11</text>
-<text class="val" x="1097.28" y="285.68" text-anchor="middle">3x13 SERVO GPIO / 2.54mm</text>
+<text class="value" x="1097.28" y="285.68" text-anchor="middle">3x13 SERVO GPIO / 2.54mm</text>
 </g>
 <g data-ref="J12"><title>J12 MAIN 5V INPUT GH4</title>
 <rect class="box" x="1079.5" y="358.14" width="30.48" height="12.7"/>
 <line class="pin" x1="1076.96" y1="360.68" x2="1079.5" y2="360.68"/>
-<text class="name" x="1080.1" y="361.18">Pin_1</text>
-<text class="num" x="1078.23" y="360.08" text-anchor="middle">1</text>
+<text class="name" x="1080.1" y="361.13">Pin_1</text>
+<text class="pn" x="1078.23" y="360.18" text-anchor="middle">1</text>
 <line class="pin" x1="1076.96" y1="363.22" x2="1079.5" y2="363.22"/>
-<text class="name" x="1080.1" y="363.72">Pin_2</text>
-<text class="num" x="1078.23" y="362.62" text-anchor="middle">2</text>
+<text class="name" x="1080.1" y="363.67">Pin_2</text>
+<text class="pn" x="1078.23" y="362.72" text-anchor="middle">2</text>
 <line class="pin" x1="1076.96" y1="365.76" x2="1079.5" y2="365.76"/>
-<text class="name" x="1080.1" y="366.26">Pin_3</text>
-<text class="num" x="1078.23" y="365.16" text-anchor="middle">3</text>
+<text class="name" x="1080.1" y="366.21">Pin_3</text>
+<text class="pn" x="1078.23" y="365.26" text-anchor="middle">3</text>
 <line class="pin" x1="1076.96" y1="368.3" x2="1079.5" y2="368.3"/>
-<text class="name" x="1080.1" y="368.8">Pin_4</text>
-<text class="num" x="1078.23" y="367.7" text-anchor="middle">4</text>
+<text class="name" x="1080.1" y="368.75">Pin_4</text>
+<text class="pn" x="1078.23" y="367.8" text-anchor="middle">4</text>
 <text class="ref" x="1097.28" y="352.49" text-anchor="middle">J12</text>
-<text class="val" x="1097.28" y="376.49" text-anchor="middle">MAIN 5V INPUT GH4</text>
+<text class="value" x="1097.28" y="376.49" text-anchor="middle">MAIN 5V INPUT GH4</text>
 </g>
 <g data-ref="J13"><title>J13 RADIO 5V POWER GH4</title>
 <rect class="box" x="1079.5" y="403.86" width="30.48" height="12.7"/>
 <line class="pin" x1="1076.96" y1="406.4" x2="1079.5" y2="406.4"/>
-<text class="name" x="1080.1" y="406.9">Pin_1</text>
-<text class="num" x="1078.23" y="405.8" text-anchor="middle">1</text>
+<text class="name" x="1080.1" y="406.85">Pin_1</text>
+<text class="pn" x="1078.23" y="405.9" text-anchor="middle">1</text>
 <line class="pin" x1="1076.96" y1="408.94" x2="1079.5" y2="408.94"/>
-<text class="name" x="1080.1" y="409.44">Pin_2</text>
-<text class="num" x="1078.23" y="408.34" text-anchor="middle">2</text>
+<text class="name" x="1080.1" y="409.39">Pin_2</text>
+<text class="pn" x="1078.23" y="408.44" text-anchor="middle">2</text>
 <line class="pin" x1="1076.96" y1="411.48" x2="1079.5" y2="411.48"/>
-<text class="name" x="1080.1" y="411.98">Pin_3</text>
-<text class="num" x="1078.23" y="410.88" text-anchor="middle">3</text>
+<text class="name" x="1080.1" y="411.93">Pin_3</text>
+<text class="pn" x="1078.23" y="410.98" text-anchor="middle">3</text>
 <line class="pin" x1="1076.96" y1="414.02" x2="1079.5" y2="414.02"/>
-<text class="name" x="1080.1" y="414.52">Pin_4</text>
-<text class="num" x="1078.23" y="413.42" text-anchor="middle">4</text>
+<text class="name" x="1080.1" y="414.47">Pin_4</text>
+<text class="pn" x="1078.23" y="413.52" text-anchor="middle">4</text>
 <text class="ref" x="1097.28" y="398.21" text-anchor="middle">J13</text>
-<text class="val" x="1097.28" y="422.21" text-anchor="middle">RADIO 5V POWER GH4</text>
+<text class="value" x="1097.28" y="422.21" text-anchor="middle">RADIO 5V POWER GH4</text>
 </g>
 <g data-ref="U2"><title>U2 5V -&gt; 3.3V buck TBD</title>
-<rect class="box" x="104.14" y="466.11" width="35.56" height="17.78"/>
-<line class="pin" x1="101.6" y1="471.19" x2="104.14" y2="471.19"/>
-<text class="name" x="104.74" y="471.69">VIN</text>
-<text class="num" x="102.87" y="470.59" text-anchor="middle">1</text>
-<line class="pin" x1="101.6" y1="473.73" x2="104.14" y2="473.73"/>
-<text class="name" x="104.74" y="474.23">GND</text>
-<text class="num" x="102.87" y="473.13" text-anchor="middle">2</text>
-<line class="pin" x1="101.6" y1="476.27" x2="104.14" y2="476.27"/>
-<text class="name" x="104.74" y="476.77">EN</text>
-<text class="num" x="102.87" y="475.67" text-anchor="middle">3</text>
-<line class="pin" x1="101.6" y1="478.81" x2="104.14" y2="478.81"/>
-<text class="name" x="104.74" y="479.31">OUT</text>
-<text class="num" x="102.87" y="478.21" text-anchor="middle">4</text>
-<text class="ref" x="121.92" y="463" text-anchor="middle">U2</text>
-<text class="val" x="121.92" y="487" text-anchor="middle">5V -&gt; 3.3V buck TBD</text>
+<rect class="box" x="104.14" y="466.09" width="35.56" height="17.78"/>
+<line class="pin" x1="101.6" y1="471.17" x2="104.14" y2="471.17"/>
+<text class="name" x="104.74" y="471.62">VIN</text>
+<text class="pn" x="102.87" y="470.67" text-anchor="middle">1</text>
+<line class="pin" x1="101.6" y1="473.71" x2="104.14" y2="473.71"/>
+<text class="name" x="104.74" y="474.16">GND</text>
+<text class="pn" x="102.87" y="473.21" text-anchor="middle">2</text>
+<line class="pin" x1="101.6" y1="476.25" x2="104.14" y2="476.25"/>
+<text class="name" x="104.74" y="476.7">EN</text>
+<text class="pn" x="102.87" y="475.75" text-anchor="middle">3</text>
+<line class="pin" x1="101.6" y1="478.79" x2="104.14" y2="478.79"/>
+<text class="name" x="104.74" y="479.24">OUT</text>
+<text class="pn" x="102.87" y="478.29" text-anchor="middle">4</text>
+<text class="ref" x="121.92" y="462.98" text-anchor="middle">U2</text>
+<text class="value" x="121.92" y="486.98" text-anchor="middle">5V -&gt; 3.3V buck TBD</text>
 </g>
 <g data-ref="U3"><title>U3 TLV62569DBVR exact circuit TBD</title>
-<rect class="box" x="297.18" y="464.84" width="35.56" height="20.32"/>
-<line class="pin" x1="294.64" y1="469.92" x2="297.18" y2="469.92"/>
-<text class="name" x="297.78" y="470.42">VIN</text>
-<text class="num" x="295.91" y="469.32" text-anchor="middle">1</text>
-<line class="pin" x1="294.64" y1="472.46" x2="297.18" y2="472.46"/>
-<text class="name" x="297.78" y="472.96">GND</text>
-<text class="num" x="295.91" y="471.86" text-anchor="middle">2</text>
-<line class="pin" x1="294.64" y1="475" x2="297.18" y2="475"/>
-<text class="name" x="297.78" y="475.5">EN</text>
-<text class="num" x="295.91" y="474.4" text-anchor="middle">3</text>
-<line class="pin" x1="294.64" y1="477.54" x2="297.18" y2="477.54"/>
-<text class="name" x="297.78" y="478.04">FB</text>
-<text class="num" x="295.91" y="476.94" text-anchor="middle">4</text>
-<line class="pin" x1="294.64" y1="480.08" x2="297.18" y2="480.08"/>
-<text class="name" x="297.78" y="480.58">VOUT</text>
-<text class="num" x="295.91" y="479.48" text-anchor="middle">5</text>
-<text class="ref" x="314.96" y="463" text-anchor="middle">U3</text>
-<text class="val" x="314.96" y="487" text-anchor="middle">TLV62569DBVR exact circuit TBD</text>
+<rect class="box" x="297.18" y="464.82" width="35.56" height="20.32"/>
+<line class="pin" x1="294.64" y1="469.9" x2="297.18" y2="469.9"/>
+<text class="name" x="297.78" y="470.35">VIN</text>
+<text class="pn" x="295.91" y="469.4" text-anchor="middle">1</text>
+<line class="pin" x1="294.64" y1="472.44" x2="297.18" y2="472.44"/>
+<text class="name" x="297.78" y="472.89">GND</text>
+<text class="pn" x="295.91" y="471.94" text-anchor="middle">2</text>
+<line class="pin" x1="294.64" y1="474.98" x2="297.18" y2="474.98"/>
+<text class="name" x="297.78" y="475.43">EN</text>
+<text class="pn" x="295.91" y="474.48" text-anchor="middle">3</text>
+<line class="pin" x1="294.64" y1="477.52" x2="297.18" y2="477.52"/>
+<text class="name" x="297.78" y="477.97">FB</text>
+<text class="pn" x="295.91" y="477.02" text-anchor="middle">4</text>
+<line class="pin" x1="294.64" y1="480.06" x2="297.18" y2="480.06"/>
+<text class="name" x="297.78" y="480.51">VOUT</text>
+<text class="pn" x="295.91" y="479.56" text-anchor="middle">5</text>
+<text class="ref" x="314.96" y="462.98" text-anchor="middle">U3</text>
+<text class="value" x="314.96" y="486.98" text-anchor="middle">TLV62569DBVR exact circuit TBD</text>
 </g>
 <g data-ref="U4"><title>U4 eFuse / protected servo+radio+USB TBD</title>
 <rect class="box" x="132.08" y="600.71" width="35.56" height="22.86"/>
 <line class="pin" x1="129.54" y1="605.79" x2="132.08" y2="605.79"/>
-<text class="name" x="132.68" y="606.29">VIN</text>
-<text class="num" x="130.81" y="605.19" text-anchor="middle">1</text>
+<text class="name" x="132.68" y="606.24">VIN</text>
+<text class="pn" x="130.81" y="605.29" text-anchor="middle">1</text>
 <line class="pin" x1="129.54" y1="608.33" x2="132.08" y2="608.33"/>
-<text class="name" x="132.68" y="608.83">GND</text>
-<text class="num" x="130.81" y="607.73" text-anchor="middle">2</text>
+<text class="name" x="132.68" y="608.78">GND</text>
+<text class="pn" x="130.81" y="607.83" text-anchor="middle">2</text>
 <line class="pin" x1="129.54" y1="610.87" x2="132.08" y2="610.87"/>
-<text class="name" x="132.68" y="611.37">RADIO_EN</text>
-<text class="num" x="130.81" y="610.27" text-anchor="middle">3</text>
+<text class="name" x="132.68" y="611.32">RADIO_EN</text>
+<text class="pn" x="130.81" y="610.37" text-anchor="middle">3</text>
 <line class="pin" x1="129.54" y1="613.41" x2="132.08" y2="613.41"/>
-<text class="name" x="132.68" y="613.91">SERVO_5V</text>
-<text class="num" x="130.81" y="612.81" text-anchor="middle">4</text>
+<text class="name" x="132.68" y="613.86">SERVO_5V</text>
+<text class="pn" x="130.81" y="612.91" text-anchor="middle">4</text>
 <line class="pin" x1="129.54" y1="615.95" x2="132.08" y2="615.95"/>
-<text class="name" x="132.68" y="616.45">RADIO_5V</text>
-<text class="num" x="130.81" y="615.35" text-anchor="middle">5</text>
+<text class="name" x="132.68" y="616.4">RADIO_5V</text>
+<text class="pn" x="130.81" y="615.45" text-anchor="middle">5</text>
 <line class="pin" x1="129.54" y1="618.49" x2="132.08" y2="618.49"/>
-<text class="name" x="132.68" y="618.99">USB_VBUS</text>
-<text class="num" x="130.81" y="617.89" text-anchor="middle">6</text>
+<text class="name" x="132.68" y="618.94">USB_VBUS</text>
+<text class="pn" x="130.81" y="617.99" text-anchor="middle">6</text>
 <text class="ref" x="149.86" y="599.74" text-anchor="middle">U4</text>
-<text class="val" x="149.86" y="624.54" text-anchor="middle">eFuse / protected servo+radio+USB TBD</text>
+<text class="value" x="149.86" y="624.54" text-anchor="middle">eFuse / protected servo+radio+USB TBD</text>
 </g>
 <g data-ref="U7"><title>U7 W25Q128JVSIQ 16MB QSPI</title>
 <rect class="box" x="368.3" y="199.39" width="33.02" height="22.86"/>
 <line class="pin" x1="365.76" y1="201.93" x2="368.3" y2="201.93"/>
-<text class="name" x="368.9" y="202.43">CS</text>
-<text class="num" x="367.03" y="201.33" text-anchor="middle">1</text>
+<text class="name" x="368.9" y="202.38">CS</text>
+<text class="pn" x="367.03" y="201.43" text-anchor="middle">1</text>
 <line class="pin" x1="365.76" y1="204.47" x2="368.3" y2="204.47"/>
-<text class="name" x="368.9" y="204.97">DO</text>
-<text class="num" x="367.03" y="203.87" text-anchor="middle">2</text>
+<text class="name" x="368.9" y="204.92">DO</text>
+<text class="pn" x="367.03" y="203.97" text-anchor="middle">2</text>
 <line class="pin" x1="365.76" y1="207.01" x2="368.3" y2="207.01"/>
-<text class="name" x="368.9" y="207.51">WP</text>
-<text class="num" x="367.03" y="206.41" text-anchor="middle">3</text>
+<text class="name" x="368.9" y="207.46">WP</text>
+<text class="pn" x="367.03" y="206.51" text-anchor="middle">3</text>
 <line class="pin" x1="365.76" y1="209.55" x2="368.3" y2="209.55"/>
-<text class="name" x="368.9" y="210.05">GND</text>
-<text class="num" x="367.03" y="208.95" text-anchor="middle">4</text>
+<text class="name" x="368.9" y="210">GND</text>
+<text class="pn" x="367.03" y="209.05" text-anchor="middle">4</text>
 <line class="pin" x1="365.76" y1="212.09" x2="368.3" y2="212.09"/>
-<text class="name" x="368.9" y="212.59">DI</text>
-<text class="num" x="367.03" y="211.49" text-anchor="middle">5</text>
+<text class="name" x="368.9" y="212.54">DI</text>
+<text class="pn" x="367.03" y="211.59" text-anchor="middle">5</text>
 <line class="pin" x1="365.76" y1="214.63" x2="368.3" y2="214.63"/>
-<text class="name" x="368.9" y="215.13">CLK</text>
-<text class="num" x="367.03" y="214.03" text-anchor="middle">6</text>
+<text class="name" x="368.9" y="215.08">CLK</text>
+<text class="pn" x="367.03" y="214.13" text-anchor="middle">6</text>
 <line class="pin" x1="365.76" y1="217.17" x2="368.3" y2="217.17"/>
-<text class="name" x="368.9" y="217.67">HOLD</text>
-<text class="num" x="367.03" y="216.57" text-anchor="middle">7</text>
+<text class="name" x="368.9" y="217.62">HOLD</text>
+<text class="pn" x="367.03" y="216.67" text-anchor="middle">7</text>
 <line class="pin" x1="365.76" y1="219.71" x2="368.3" y2="219.71"/>
-<text class="name" x="368.9" y="220.21">VCC</text>
-<text class="num" x="367.03" y="219.11" text-anchor="middle">8</text>
+<text class="name" x="368.9" y="220.16">VCC</text>
+<text class="pn" x="367.03" y="219.21" text-anchor="middle">8</text>
 <text class="ref" x="386.08" y="195.62" text-anchor="middle">U7</text>
-<text class="val" x="386.08" y="226.02" text-anchor="middle">W25Q128JVSIQ 16MB QSPI</text>
+<text class="value" x="386.08" y="226.02" text-anchor="middle">W25Q128JVSIQ 16MB QSPI</text>
 </g>
 <g data-ref="U8"><title>U8 UART auto-reset transistor logic TBD</title>
 <rect class="box" x="876.3" y="173.99" width="35.56" height="22.86"/>
 <line class="pin" x1="873.76" y1="179.07" x2="876.3" y2="179.07"/>
-<text class="name" x="876.9" y="179.57">ADAPTER_DTR</text>
-<text class="num" x="875.03" y="178.47" text-anchor="middle">1</text>
+<text class="name" x="876.9" y="179.52">ADAPTER_DTR</text>
+<text class="pn" x="875.03" y="178.57" text-anchor="middle">1</text>
 <line class="pin" x1="873.76" y1="181.61" x2="876.3" y2="181.61"/>
-<text class="name" x="876.9" y="182.11">ADAPTER_RTS</text>
-<text class="num" x="875.03" y="181.01" text-anchor="middle">2</text>
+<text class="name" x="876.9" y="182.06">ADAPTER_RTS</text>
+<text class="pn" x="875.03" y="181.11" text-anchor="middle">2</text>
 <line class="pin" x1="873.76" y1="184.15" x2="876.3" y2="184.15"/>
-<text class="name" x="876.9" y="184.65">CHIP_PU</text>
-<text class="num" x="875.03" y="183.55" text-anchor="middle">3</text>
+<text class="name" x="876.9" y="184.6">CHIP_PU</text>
+<text class="pn" x="875.03" y="183.65" text-anchor="middle">3</text>
 <line class="pin" x1="873.76" y1="186.69" x2="876.3" y2="186.69"/>
-<text class="name" x="876.9" y="187.19">BOOT_GPIO35</text>
-<text class="num" x="875.03" y="186.09" text-anchor="middle">4</text>
+<text class="name" x="876.9" y="187.14">BOOT_GPIO35</text>
+<text class="pn" x="875.03" y="186.19" text-anchor="middle">4</text>
 <line class="pin" x1="873.76" y1="189.23" x2="876.3" y2="189.23"/>
-<text class="name" x="876.9" y="189.73">3V3</text>
-<text class="num" x="875.03" y="188.63" text-anchor="middle">5</text>
+<text class="name" x="876.9" y="189.68">3V3</text>
+<text class="pn" x="875.03" y="188.73" text-anchor="middle">5</text>
 <line class="pin" x1="873.76" y1="191.77" x2="876.3" y2="191.77"/>
-<text class="name" x="876.9" y="192.27">GND</text>
-<text class="num" x="875.03" y="191.17" text-anchor="middle">6</text>
+<text class="name" x="876.9" y="192.22">GND</text>
+<text class="pn" x="875.03" y="191.27" text-anchor="middle">6</text>
 <text class="ref" x="894.08" y="173.02" text-anchor="middle">U8</text>
-<text class="val" x="894.08" y="197.82" text-anchor="middle">UART auto-reset transistor logic TBD</text>
+<text class="value" x="894.08" y="197.82" text-anchor="middle">UART auto-reset transistor logic TBD</text>
 </g>
 <g data-ref="U5"><title>U5 LAN PHY 100M RMII TBD</title>
-<rect class="box" x="789.94" y="629.54" width="35.56" height="48.26"/>
-<line class="pin" x1="787.4" y1="634.62" x2="789.94" y2="634.62"/>
-<text class="name" x="790.54" y="635.12">RMII_CRS_DV</text>
-<text class="num" x="788.67" y="634.02" text-anchor="middle">1</text>
-<line class="pin" x1="787.4" y1="637.16" x2="789.94" y2="637.16"/>
-<text class="name" x="790.54" y="637.66">RXD0</text>
-<text class="num" x="788.67" y="636.56" text-anchor="middle">2</text>
-<line class="pin" x1="787.4" y1="639.7" x2="789.94" y2="639.7"/>
-<text class="name" x="790.54" y="640.2">RXD1</text>
-<text class="num" x="788.67" y="639.1" text-anchor="middle">3</text>
-<line class="pin" x1="787.4" y1="642.24" x2="789.94" y2="642.24"/>
-<text class="name" x="790.54" y="642.74">REF_CLK</text>
-<text class="num" x="788.67" y="641.64" text-anchor="middle">4</text>
-<line class="pin" x1="787.4" y1="644.78" x2="789.94" y2="644.78"/>
-<text class="name" x="790.54" y="645.28">TX_EN</text>
-<text class="num" x="788.67" y="644.18" text-anchor="middle">5</text>
-<line class="pin" x1="787.4" y1="647.32" x2="789.94" y2="647.32"/>
-<text class="name" x="790.54" y="647.82">TXD0</text>
-<text class="num" x="788.67" y="646.72" text-anchor="middle">6</text>
-<line class="pin" x1="787.4" y1="649.86" x2="789.94" y2="649.86"/>
-<text class="name" x="790.54" y="650.36">TXD1</text>
-<text class="num" x="788.67" y="649.26" text-anchor="middle">7</text>
-<line class="pin" x1="787.4" y1="652.4" x2="789.94" y2="652.4"/>
-<text class="name" x="790.54" y="652.9">MDC</text>
-<text class="num" x="788.67" y="651.8" text-anchor="middle">8</text>
-<line class="pin" x1="787.4" y1="654.94" x2="789.94" y2="654.94"/>
-<text class="name" x="790.54" y="655.44">MDIO</text>
-<text class="num" x="788.67" y="654.34" text-anchor="middle">9</text>
-<line class="pin" x1="787.4" y1="657.48" x2="789.94" y2="657.48"/>
-<text class="name" x="790.54" y="657.98">RESET</text>
-<text class="num" x="788.67" y="656.88" text-anchor="middle">10</text>
-<line class="pin" x1="828.04" y1="660.02" x2="825.5" y2="660.02"/>
-<text class="name" x="824.9" y="660.52" text-anchor="end">TX_P</text>
-<text class="num" x="826.77" y="659.42" text-anchor="middle">11</text>
-<line class="pin" x1="828.04" y1="662.56" x2="825.5" y2="662.56"/>
-<text class="name" x="824.9" y="663.06" text-anchor="end">TX_N</text>
-<text class="num" x="826.77" y="661.96" text-anchor="middle">12</text>
-<line class="pin" x1="828.04" y1="665.1" x2="825.5" y2="665.1"/>
-<text class="name" x="824.9" y="665.6" text-anchor="end">RX_P</text>
-<text class="num" x="826.77" y="664.5" text-anchor="middle">13</text>
-<line class="pin" x1="828.04" y1="667.64" x2="825.5" y2="667.64"/>
-<text class="name" x="824.9" y="668.14" text-anchor="end">RX_N</text>
-<text class="num" x="826.77" y="667.04" text-anchor="middle">14</text>
-<line class="pin" x1="787.4" y1="670.18" x2="789.94" y2="670.18"/>
-<text class="name" x="790.54" y="670.68">VDD</text>
-<text class="num" x="788.67" y="669.58" text-anchor="middle">15</text>
-<line class="pin" x1="787.4" y1="672.72" x2="789.94" y2="672.72"/>
-<text class="name" x="790.54" y="673.22">GND</text>
-<text class="num" x="788.67" y="672.12" text-anchor="middle">16</text>
-<text class="ref" x="807.72" y="627.27" text-anchor="middle">U5</text>
-<text class="val" x="807.72" y="680.07" text-anchor="middle">LAN PHY 100M RMII TBD</text>
+<rect class="box" x="789.94" y="629.92" width="35.56" height="48.26"/>
+<line class="pin" x1="787.4" y1="635" x2="789.94" y2="635"/>
+<text class="name" x="790.54" y="635.45">RMII_CRS_DV</text>
+<text class="pn" x="788.67" y="634.5" text-anchor="middle">1</text>
+<line class="pin" x1="787.4" y1="637.54" x2="789.94" y2="637.54"/>
+<text class="name" x="790.54" y="637.99">RXD0</text>
+<text class="pn" x="788.67" y="637.04" text-anchor="middle">2</text>
+<line class="pin" x1="787.4" y1="640.08" x2="789.94" y2="640.08"/>
+<text class="name" x="790.54" y="640.53">RXD1</text>
+<text class="pn" x="788.67" y="639.58" text-anchor="middle">3</text>
+<line class="pin" x1="787.4" y1="642.62" x2="789.94" y2="642.62"/>
+<text class="name" x="790.54" y="643.07">REF_CLK</text>
+<text class="pn" x="788.67" y="642.12" text-anchor="middle">4</text>
+<line class="pin" x1="787.4" y1="645.16" x2="789.94" y2="645.16"/>
+<text class="name" x="790.54" y="645.61">TX_EN</text>
+<text class="pn" x="788.67" y="644.66" text-anchor="middle">5</text>
+<line class="pin" x1="787.4" y1="647.7" x2="789.94" y2="647.7"/>
+<text class="name" x="790.54" y="648.15">TXD0</text>
+<text class="pn" x="788.67" y="647.2" text-anchor="middle">6</text>
+<line class="pin" x1="787.4" y1="650.24" x2="789.94" y2="650.24"/>
+<text class="name" x="790.54" y="650.69">TXD1</text>
+<text class="pn" x="788.67" y="649.74" text-anchor="middle">7</text>
+<line class="pin" x1="787.4" y1="652.78" x2="789.94" y2="652.78"/>
+<text class="name" x="790.54" y="653.23">MDC</text>
+<text class="pn" x="788.67" y="652.28" text-anchor="middle">8</text>
+<line class="pin" x1="787.4" y1="655.32" x2="789.94" y2="655.32"/>
+<text class="name" x="790.54" y="655.77">MDIO</text>
+<text class="pn" x="788.67" y="654.82" text-anchor="middle">9</text>
+<line class="pin" x1="787.4" y1="657.86" x2="789.94" y2="657.86"/>
+<text class="name" x="790.54" y="658.31">RESET</text>
+<text class="pn" x="788.67" y="657.36" text-anchor="middle">10</text>
+<line class="pin" x1="828.04" y1="660.4" x2="825.5" y2="660.4"/>
+<text class="name" x="824.9" y="660.85" text-anchor="end">TX_P</text>
+<text class="pn" x="826.77" y="659.9" text-anchor="middle">11</text>
+<line class="pin" x1="828.04" y1="662.94" x2="825.5" y2="662.94"/>
+<text class="name" x="824.9" y="663.39" text-anchor="end">TX_N</text>
+<text class="pn" x="826.77" y="662.44" text-anchor="middle">12</text>
+<line class="pin" x1="828.04" y1="665.48" x2="825.5" y2="665.48"/>
+<text class="name" x="824.9" y="665.93" text-anchor="end">RX_P</text>
+<text class="pn" x="826.77" y="664.98" text-anchor="middle">13</text>
+<line class="pin" x1="828.04" y1="668.02" x2="825.5" y2="668.02"/>
+<text class="name" x="824.9" y="668.47" text-anchor="end">RX_N</text>
+<text class="pn" x="826.77" y="667.52" text-anchor="middle">14</text>
+<line class="pin" x1="787.4" y1="670.56" x2="789.94" y2="670.56"/>
+<text class="name" x="790.54" y="671.01">VDD</text>
+<text class="pn" x="788.67" y="670.06" text-anchor="middle">15</text>
+<line class="pin" x1="787.4" y1="673.1" x2="789.94" y2="673.1"/>
+<text class="name" x="790.54" y="673.55">GND</text>
+<text class="pn" x="788.67" y="672.6" text-anchor="middle">16</text>
+<text class="ref" x="807.72" y="627.65" text-anchor="middle">U5</text>
+<text class="value" x="807.72" y="680.45" text-anchor="middle">LAN PHY 100M RMII TBD</text>
 </g>
 <g data-ref="T1"><title>T1 Magnetics 100BASE-TX TBD</title>
-<rect class="box" x="941.07" y="654.94" width="35.56" height="27.94"/>
-<line class="pin" x1="938.53" y1="660.02" x2="941.07" y2="660.02"/>
-<text class="name" x="941.67" y="660.52">PHY_TX_P</text>
-<text class="num" x="939.8" y="659.42" text-anchor="middle">1</text>
-<line class="pin" x1="938.53" y1="662.56" x2="941.07" y2="662.56"/>
-<text class="name" x="941.67" y="663.06">PHY_TX_N</text>
-<text class="num" x="939.8" y="661.96" text-anchor="middle">2</text>
-<line class="pin" x1="938.53" y1="665.1" x2="941.07" y2="665.1"/>
-<text class="name" x="941.67" y="665.6">PHY_RX_P</text>
-<text class="num" x="939.8" y="664.5" text-anchor="middle">3</text>
-<line class="pin" x1="938.53" y1="667.64" x2="941.07" y2="667.64"/>
-<text class="name" x="941.67" y="668.14">PHY_RX_N</text>
-<text class="num" x="939.8" y="667.04" text-anchor="middle">4</text>
-<line class="pin" x1="979.17" y1="670.18" x2="976.63" y2="670.18"/>
-<text class="name" x="976.03" y="670.68" text-anchor="end">CABLE_TX_P</text>
-<text class="num" x="977.9" y="669.58" text-anchor="middle">5</text>
-<line class="pin" x1="979.17" y1="672.72" x2="976.63" y2="672.72"/>
-<text class="name" x="976.03" y="673.22" text-anchor="end">CABLE_TX_N</text>
-<text class="num" x="977.9" y="672.12" text-anchor="middle">6</text>
-<line class="pin" x1="979.17" y1="675.26" x2="976.63" y2="675.26"/>
-<text class="name" x="976.03" y="675.76" text-anchor="end">CABLE_RX_P</text>
-<text class="num" x="977.9" y="674.66" text-anchor="middle">7</text>
-<line class="pin" x1="979.17" y1="677.8" x2="976.63" y2="677.8"/>
-<text class="name" x="976.03" y="678.3" text-anchor="end">CABLE_RX_N</text>
-<text class="num" x="977.9" y="677.2" text-anchor="middle">8</text>
-<text class="ref" x="958.85" y="653.71" text-anchor="middle">T1</text>
-<text class="val" x="958.85" y="684.11" text-anchor="middle">Magnetics 100BASE-TX TBD</text>
+<rect class="box" x="941.07" y="655.32" width="35.56" height="27.94"/>
+<line class="pin" x1="938.53" y1="660.4" x2="941.07" y2="660.4"/>
+<text class="name" x="941.67" y="660.85">PHY_TX_P</text>
+<text class="pn" x="939.8" y="659.9" text-anchor="middle">1</text>
+<line class="pin" x1="938.53" y1="662.94" x2="941.07" y2="662.94"/>
+<text class="name" x="941.67" y="663.39">PHY_TX_N</text>
+<text class="pn" x="939.8" y="662.44" text-anchor="middle">2</text>
+<line class="pin" x1="938.53" y1="665.48" x2="941.07" y2="665.48"/>
+<text class="name" x="941.67" y="665.93">PHY_RX_P</text>
+<text class="pn" x="939.8" y="664.98" text-anchor="middle">3</text>
+<line class="pin" x1="938.53" y1="668.02" x2="941.07" y2="668.02"/>
+<text class="name" x="941.67" y="668.47">PHY_RX_N</text>
+<text class="pn" x="939.8" y="667.52" text-anchor="middle">4</text>
+<line class="pin" x1="979.17" y1="670.56" x2="976.63" y2="670.56"/>
+<text class="name" x="976.03" y="671.01" text-anchor="end">CABLE_TX_P</text>
+<text class="pn" x="977.9" y="670.06" text-anchor="middle">5</text>
+<line class="pin" x1="979.17" y1="673.1" x2="976.63" y2="673.1"/>
+<text class="name" x="976.03" y="673.55" text-anchor="end">CABLE_TX_N</text>
+<text class="pn" x="977.9" y="672.6" text-anchor="middle">6</text>
+<line class="pin" x1="979.17" y1="675.64" x2="976.63" y2="675.64"/>
+<text class="name" x="976.03" y="676.09" text-anchor="end">CABLE_RX_P</text>
+<text class="pn" x="977.9" y="675.14" text-anchor="middle">7</text>
+<line class="pin" x1="979.17" y1="678.18" x2="976.63" y2="678.18"/>
+<text class="name" x="976.03" y="678.63" text-anchor="end">CABLE_RX_N</text>
+<text class="pn" x="977.9" y="677.68" text-anchor="middle">8</text>
+<text class="ref" x="958.85" y="654.09" text-anchor="middle">T1</text>
+<text class="value" x="958.85" y="684.49" text-anchor="middle">Magnetics 100BASE-TX TBD</text>
 </g>
 <g data-ref="Y1"><title>Y1 40MHz, +/-10ppm, CL TBD</title>
 <rect class="box" x="227.33" y="118.11" width="10.16" height="5.08"/>
 <line class="pin" x1="224.79" y1="120.65" x2="227.33" y2="120.65"/>
-<text class="name" x="227.93" y="121.15">XTAL_P</text>
-<text class="num" x="226.06" y="120.05" text-anchor="middle">1</text>
+<text class="name" x="227.93" y="121.1">XTAL_P</text>
+<text class="pn" x="226.06" y="120.15" text-anchor="middle">1</text>
 <line class="pin" x1="240.03" y1="120.65" x2="237.49" y2="120.65"/>
-<text class="name" x="236.89" y="121.15" text-anchor="end">XTAL_N</text>
-<text class="num" x="238.76" y="120.05" text-anchor="middle">2</text>
+<text class="name" x="236.89" y="121.1" text-anchor="end">XTAL_N</text>
+<text class="pn" x="238.76" y="120.15" text-anchor="middle">2</text>
 <text class="ref" x="232.41" y="108.65" text-anchor="middle">Y1</text>
-<text class="val" x="232.41" y="132.65" text-anchor="middle">40MHz, +/-10ppm, CL TBD</text>
+<text class="value" x="232.41" y="132.65" text-anchor="middle">40MHz, +/-10ppm, CL TBD</text>
 </g>
 <g data-ref="R1"><title>R1 10k</title>
 <rect class="box" x="96.52" y="114.3" width="5.08" height="2.54"/>
 <line class="pin" x1="93.98" y1="115.57" x2="96.52" y2="115.57"/>
-<text class="name" x="97.12" y="116.07">1</text>
-<text class="num" x="95.25" y="114.97" text-anchor="middle">1</text>
+<text class="name" x="97.12" y="116.02">1</text>
+<text class="pn" x="95.25" y="115.07" text-anchor="middle">1</text>
 <line class="pin" x1="104.14" y1="115.57" x2="101.6" y2="115.57"/>
-<text class="name" x="101" y="116.07" text-anchor="end">2</text>
-<text class="num" x="102.87" y="114.97" text-anchor="middle">2</text>
+<text class="name" x="101" y="116.02" text-anchor="end">2</text>
+<text class="pn" x="102.87" y="115.07" text-anchor="middle">2</text>
 <text class="ref" x="99.06" y="103.57" text-anchor="middle">R1</text>
-<text class="val" x="99.06" y="127.57" text-anchor="middle">10k</text>
+<text class="value" x="99.06" y="127.57" text-anchor="middle">10k</text>
 </g>
 <g data-ref="C1"><title>C1 1uF</title>
 <rect class="box" x="127" y="119.38" width="5.08" height="2.54"/>
 <line class="pin" x1="129.54" y1="115.57" x2="129.54" y2="118.11"/>
-<text class="name" transform="translate(129.54 118.91) rotate(90)">1</text>
-<text class="num" x="130.34" y="116.84" text-anchor="middle">1</text>
+<text class="name" x="129.54" y="118.11" transform="rotate(90 129.54 118.11)">1</text>
+<text class="pn" x="130.14" y="116.84">1</text>
 <line class="pin" x1="129.54" y1="125.73" x2="129.54" y2="123.19"/>
-<text class="name" transform="translate(129.54 122.39) rotate(-90)">2</text>
-<text class="num" x="130.34" y="124.46" text-anchor="middle">2</text>
+<text class="name" x="129.54" y="123.19" transform="rotate(-90 129.54 123.19)">2</text>
+<text class="pn" x="130.14" y="124.46">2</text>
 <text class="ref" x="129.54" y="108.65" text-anchor="middle">C1</text>
-<text class="val" x="129.54" y="132.65" text-anchor="middle">1uF</text>
+<text class="value" x="129.54" y="132.65" text-anchor="middle">1uF</text>
 </g>
 <g data-ref="R2"><title>R2 10k</title>
 <rect class="box" x="96.52" y="204.47" width="5.08" height="2.54"/>
 <line class="pin" x1="93.98" y1="205.74" x2="96.52" y2="205.74"/>
-<text class="name" x="97.12" y="206.24">1</text>
-<text class="num" x="95.25" y="205.14" text-anchor="middle">1</text>
+<text class="name" x="97.12" y="206.19">1</text>
+<text class="pn" x="95.25" y="205.24" text-anchor="middle">1</text>
 <line class="pin" x1="104.14" y1="205.74" x2="101.6" y2="205.74"/>
-<text class="name" x="101" y="206.24" text-anchor="end">2</text>
-<text class="num" x="102.87" y="205.14" text-anchor="middle">2</text>
+<text class="name" x="101" y="206.19" text-anchor="end">2</text>
+<text class="pn" x="102.87" y="205.24" text-anchor="middle">2</text>
 <text class="ref" x="99.06" y="193.74" text-anchor="middle">R2</text>
-<text class="val" x="99.06" y="217.74" text-anchor="middle">10k</text>
+<text class="value" x="99.06" y="217.74" text-anchor="middle">10k</text>
 </g>
 <g data-ref="R3"><title>R3 10k</title>
 <rect class="box" x="342.9" y="200.66" width="5.08" height="2.54"/>
 <line class="pin" x1="340.36" y1="201.93" x2="342.9" y2="201.93"/>
-<text class="name" x="343.5" y="202.43">1</text>
-<text class="num" x="341.63" y="201.33" text-anchor="middle">1</text>
+<text class="name" x="343.5" y="202.38">1</text>
+<text class="pn" x="341.63" y="201.43" text-anchor="middle">1</text>
 <line class="pin" x1="350.52" y1="201.93" x2="347.98" y2="201.93"/>
-<text class="name" x="347.38" y="202.43" text-anchor="end">2</text>
-<text class="num" x="349.25" y="201.33" text-anchor="middle">2</text>
+<text class="name" x="347.38" y="202.38" text-anchor="end">2</text>
+<text class="pn" x="349.25" y="201.43" text-anchor="middle">2</text>
 <text class="ref" x="345.44" y="189.93" text-anchor="middle">R3</text>
-<text class="val" x="345.44" y="213.93" text-anchor="middle">10k</text>
+<text class="value" x="345.44" y="213.93" text-anchor="middle">10k</text>
 </g>
 <g data-ref="R4"><title>R4 4.7k</title>
 <rect class="box" x="565.15" y="135.89" width="5.08" height="2.54"/>
 <line class="pin" x1="562.61" y1="137.16" x2="565.15" y2="137.16"/>
-<text class="name" x="565.75" y="137.66">1</text>
-<text class="num" x="563.88" y="136.56" text-anchor="middle">1</text>
+<text class="name" x="565.75" y="137.61">1</text>
+<text class="pn" x="563.88" y="136.66" text-anchor="middle">1</text>
 <line class="pin" x1="572.77" y1="137.16" x2="570.23" y2="137.16"/>
-<text class="name" x="569.63" y="137.66" text-anchor="end">2</text>
-<text class="num" x="571.5" y="136.56" text-anchor="middle">2</text>
+<text class="name" x="569.63" y="137.61" text-anchor="end">2</text>
+<text class="pn" x="571.5" y="136.66" text-anchor="middle">2</text>
 <text class="ref" x="567.69" y="125.16" text-anchor="middle">R4</text>
-<text class="val" x="567.69" y="149.16" text-anchor="middle">4.7k</text>
+<text class="value" x="567.69" y="149.16" text-anchor="middle">4.7k</text>
 </g>
 <g data-ref="R5"><title>R5 4.7k</title>
 <rect class="box" x="588.01" y="133.35" width="5.08" height="2.54"/>
 <line class="pin" x1="585.47" y1="134.62" x2="588.01" y2="134.62"/>
-<text class="name" x="588.61" y="135.12">1</text>
-<text class="num" x="586.74" y="134.02" text-anchor="middle">1</text>
+<text class="name" x="588.61" y="135.07">1</text>
+<text class="pn" x="586.74" y="134.12" text-anchor="middle">1</text>
 <line class="pin" x1="595.63" y1="134.62" x2="593.09" y2="134.62"/>
-<text class="name" x="592.49" y="135.12" text-anchor="end">2</text>
-<text class="num" x="594.36" y="134.02" text-anchor="middle">2</text>
+<text class="name" x="592.49" y="135.07" text-anchor="end">2</text>
+<text class="pn" x="594.36" y="134.12" text-anchor="middle">2</text>
 <text class="ref" x="590.55" y="122.62" text-anchor="middle">R5</text>
-<text class="val" x="590.55" y="146.62" text-anchor="middle">4.7k</text>
+<text class="value" x="590.55" y="146.62" text-anchor="middle">4.7k</text>
 </g>
 <g data-ref="R6"><title>R6 4.7k</title>
 <rect class="box" x="795.02" y="425.45" width="5.08" height="2.54"/>
 <line class="pin" x1="792.48" y1="426.72" x2="795.02" y2="426.72"/>
-<text class="name" x="795.62" y="427.22">1</text>
-<text class="num" x="793.75" y="426.12" text-anchor="middle">1</text>
+<text class="name" x="795.62" y="427.17">1</text>
+<text class="pn" x="793.75" y="426.22" text-anchor="middle">1</text>
 <line class="pin" x1="802.64" y1="426.72" x2="800.1" y2="426.72"/>
-<text class="name" x="799.5" y="427.22" text-anchor="end">2</text>
-<text class="num" x="801.37" y="426.12" text-anchor="middle">2</text>
+<text class="name" x="799.5" y="427.17" text-anchor="end">2</text>
+<text class="pn" x="801.37" y="426.22" text-anchor="middle">2</text>
 <text class="ref" x="797.56" y="414.72" text-anchor="middle">R6</text>
-<text class="val" x="797.56" y="438.72" text-anchor="middle">4.7k</text>
+<text class="value" x="797.56" y="438.72" text-anchor="middle">4.7k</text>
 </g>
 <g data-ref="R7"><title>R7 4.7k</title>
 <rect class="box" x="811.53" y="427.99" width="5.08" height="2.54"/>
 <line class="pin" x1="808.99" y1="429.26" x2="811.53" y2="429.26"/>
-<text class="name" x="812.13" y="429.76">1</text>
-<text class="num" x="810.26" y="428.66" text-anchor="middle">1</text>
+<text class="name" x="812.13" y="429.71">1</text>
+<text class="pn" x="810.26" y="428.76" text-anchor="middle">1</text>
 <line class="pin" x1="819.15" y1="429.26" x2="816.61" y2="429.26"/>
-<text class="name" x="816.01" y="429.76" text-anchor="end">2</text>
-<text class="num" x="817.88" y="428.66" text-anchor="middle">2</text>
+<text class="name" x="816.01" y="429.71" text-anchor="end">2</text>
+<text class="pn" x="817.88" y="428.76" text-anchor="middle">2</text>
 <text class="ref" x="814.07" y="417.26" text-anchor="middle">R7</text>
-<text class="val" x="814.07" y="441.26" text-anchor="middle">4.7k</text>
+<text class="value" x="814.07" y="441.26" text-anchor="middle">4.7k</text>
 </g>
 <g data-ref="R10"><title>R10 47k</title>
 <rect class="box" x="567.69" y="477.52" width="5.08" height="2.54"/>
 <line class="pin" x1="565.15" y1="478.79" x2="567.69" y2="478.79"/>
-<text class="name" x="568.29" y="479.29">1</text>
-<text class="num" x="566.42" y="478.19" text-anchor="middle">1</text>
+<text class="name" x="568.29" y="479.24">1</text>
+<text class="pn" x="566.42" y="478.29" text-anchor="middle">1</text>
 <line class="pin" x1="575.31" y1="478.79" x2="572.77" y2="478.79"/>
-<text class="name" x="572.17" y="479.29" text-anchor="end">2</text>
-<text class="num" x="574.04" y="478.19" text-anchor="middle">2</text>
+<text class="name" x="572.17" y="479.24" text-anchor="end">2</text>
+<text class="pn" x="574.04" y="478.29" text-anchor="middle">2</text>
 <text class="ref" x="570.23" y="466.79" text-anchor="middle">R10</text>
-<text class="val" x="570.23" y="490.79" text-anchor="middle">47k</text>
+<text class="value" x="570.23" y="490.79" text-anchor="middle">47k</text>
 </g>
 <g data-ref="R11"><title>R11 47k</title>
 <rect class="box" x="582.93" y="480.06" width="5.08" height="2.54"/>
 <line class="pin" x1="580.39" y1="481.33" x2="582.93" y2="481.33"/>
-<text class="name" x="583.53" y="481.83">1</text>
-<text class="num" x="581.66" y="480.73" text-anchor="middle">1</text>
+<text class="name" x="583.53" y="481.78">1</text>
+<text class="pn" x="581.66" y="480.83" text-anchor="middle">1</text>
 <line class="pin" x1="590.55" y1="481.33" x2="588.01" y2="481.33"/>
-<text class="name" x="587.41" y="481.83" text-anchor="end">2</text>
-<text class="num" x="589.28" y="480.73" text-anchor="middle">2</text>
+<text class="name" x="587.41" y="481.78" text-anchor="end">2</text>
+<text class="pn" x="589.28" y="480.83" text-anchor="middle">2</text>
 <text class="ref" x="585.47" y="469.33" text-anchor="middle">R11</text>
-<text class="val" x="585.47" y="493.33" text-anchor="middle">47k</text>
+<text class="value" x="585.47" y="493.33" text-anchor="middle">47k</text>
 </g>
 <g data-ref="R12"><title>R12 47k</title>
 <rect class="box" x="567.69" y="462.28" width="5.08" height="2.54"/>
 <line class="pin" x1="565.15" y1="463.55" x2="567.69" y2="463.55"/>
-<text class="name" x="568.29" y="464.05">1</text>
-<text class="num" x="566.42" y="462.95" text-anchor="middle">1</text>
+<text class="name" x="568.29" y="464">1</text>
+<text class="pn" x="566.42" y="463.05" text-anchor="middle">1</text>
 <line class="pin" x1="575.31" y1="463.55" x2="572.77" y2="463.55"/>
-<text class="name" x="572.17" y="464.05" text-anchor="end">2</text>
-<text class="num" x="574.04" y="462.95" text-anchor="middle">2</text>
+<text class="name" x="572.17" y="464" text-anchor="end">2</text>
+<text class="pn" x="574.04" y="463.05" text-anchor="middle">2</text>
 <text class="ref" x="570.23" y="451.55" text-anchor="middle">R12</text>
-<text class="val" x="570.23" y="475.55" text-anchor="middle">47k</text>
+<text class="value" x="570.23" y="475.55" text-anchor="middle">47k</text>
 </g>
 <g data-ref="R13"><title>R13 47k</title>
 <rect class="box" x="582.93" y="464.82" width="5.08" height="2.54"/>
 <line class="pin" x1="580.39" y1="466.09" x2="582.93" y2="466.09"/>
-<text class="name" x="583.53" y="466.59">1</text>
-<text class="num" x="581.66" y="465.49" text-anchor="middle">1</text>
+<text class="name" x="583.53" y="466.54">1</text>
+<text class="pn" x="581.66" y="465.59" text-anchor="middle">1</text>
 <line class="pin" x1="590.55" y1="466.09" x2="588.01" y2="466.09"/>
-<text class="name" x="587.41" y="466.59" text-anchor="end">2</text>
-<text class="num" x="589.28" y="465.49" text-anchor="middle">2</text>
+<text class="name" x="587.41" y="466.54" text-anchor="end">2</text>
+<text class="pn" x="589.28" y="465.59" text-anchor="middle">2</text>
 <text class="ref" x="585.47" y="454.09" text-anchor="middle">R13</text>
-<text class="val" x="585.47" y="478.09" text-anchor="middle">47k</text>
+<text class="value" x="585.47" y="478.09" text-anchor="middle">47k</text>
 </g>
 <g data-ref="R14"><title>R14 47k</title>
 <rect class="box" x="598.17" y="467.36" width="5.08" height="2.54"/>
 <line class="pin" x1="595.63" y1="468.63" x2="598.17" y2="468.63"/>
-<text class="name" x="598.77" y="469.13">1</text>
-<text class="num" x="596.9" y="468.03" text-anchor="middle">1</text>
+<text class="name" x="598.77" y="469.08">1</text>
+<text class="pn" x="596.9" y="468.13" text-anchor="middle">1</text>
 <line class="pin" x1="605.79" y1="468.63" x2="603.25" y2="468.63"/>
-<text class="name" x="602.65" y="469.13" text-anchor="end">2</text>
-<text class="num" x="604.52" y="468.03" text-anchor="middle">2</text>
+<text class="name" x="602.65" y="469.08" text-anchor="end">2</text>
+<text class="pn" x="604.52" y="468.13" text-anchor="middle">2</text>
 <text class="ref" x="600.71" y="456.63" text-anchor="middle">R14</text>
-<text class="val" x="600.71" y="480.63" text-anchor="middle">47k</text>
+<text class="value" x="600.71" y="480.63" text-anchor="middle">47k</text>
 </g>
 <g data-ref="R20"><title>R20 10k TBD</title>
 <rect class="box" x="577.85" y="271.78" width="5.08" height="2.54"/>
 <line class="pin" x1="575.31" y1="273.05" x2="577.85" y2="273.05"/>
-<text class="name" x="578.45" y="273.55">1</text>
-<text class="num" x="576.58" y="272.45" text-anchor="middle">1</text>
+<text class="name" x="578.45" y="273.5">1</text>
+<text class="pn" x="576.58" y="272.55" text-anchor="middle">1</text>
 <line class="pin" x1="585.47" y1="273.05" x2="582.93" y2="273.05"/>
-<text class="name" x="582.33" y="273.55" text-anchor="end">2</text>
-<text class="num" x="584.2" y="272.45" text-anchor="middle">2</text>
+<text class="name" x="582.33" y="273.5" text-anchor="end">2</text>
+<text class="pn" x="584.2" y="272.55" text-anchor="middle">2</text>
 <text class="ref" x="580.39" y="261.05" text-anchor="middle">R20</text>
-<text class="val" x="580.39" y="285.05" text-anchor="middle">10k TBD</text>
+<text class="value" x="580.39" y="285.05" text-anchor="middle">10k TBD</text>
 </g>
 <g data-ref="R21"><title>R21 10k TBD</title>
 <rect class="box" x="577.85" y="276.86" width="5.08" height="2.54"/>
 <line class="pin" x1="575.31" y1="278.13" x2="577.85" y2="278.13"/>
-<text class="name" x="578.45" y="278.63">1</text>
-<text class="num" x="576.58" y="277.53" text-anchor="middle">1</text>
+<text class="name" x="578.45" y="278.58">1</text>
+<text class="pn" x="576.58" y="277.63" text-anchor="middle">1</text>
 <line class="pin" x1="585.47" y1="278.13" x2="582.93" y2="278.13"/>
-<text class="name" x="582.33" y="278.63" text-anchor="end">2</text>
-<text class="num" x="584.2" y="277.53" text-anchor="middle">2</text>
+<text class="name" x="582.33" y="278.58" text-anchor="end">2</text>
+<text class="pn" x="584.2" y="277.63" text-anchor="middle">2</text>
 <text class="ref" x="580.39" y="266.13" text-anchor="middle">R21</text>
-<text class="val" x="580.39" y="290.13" text-anchor="middle">10k TBD</text>
+<text class="value" x="580.39" y="290.13" text-anchor="middle">10k TBD</text>
 </g>
 <g data-ref="R22"><title>R22 10k TBD</title>
 <rect class="box" x="577.85" y="281.94" width="5.08" height="2.54"/>
 <line class="pin" x1="575.31" y1="283.21" x2="577.85" y2="283.21"/>
-<text class="name" x="578.45" y="283.71">1</text>
-<text class="num" x="576.58" y="282.61" text-anchor="middle">1</text>
+<text class="name" x="578.45" y="283.66">1</text>
+<text class="pn" x="576.58" y="282.71" text-anchor="middle">1</text>
 <line class="pin" x1="585.47" y1="283.21" x2="582.93" y2="283.21"/>
-<text class="name" x="582.33" y="283.71" text-anchor="end">2</text>
-<text class="num" x="584.2" y="282.61" text-anchor="middle">2</text>
+<text class="name" x="582.33" y="283.66" text-anchor="end">2</text>
+<text class="pn" x="584.2" y="282.71" text-anchor="middle">2</text>
 <text class="ref" x="580.39" y="271.21" text-anchor="middle">R22</text>
-<text class="val" x="580.39" y="295.21" text-anchor="middle">10k TBD</text>
+<text class="value" x="580.39" y="295.21" text-anchor="middle">10k TBD</text>
 </g>
 <g data-ref="R23"><title>R23 10k TBD</title>
 <rect class="box" x="577.85" y="287.02" width="5.08" height="2.54"/>
 <line class="pin" x1="575.31" y1="288.29" x2="577.85" y2="288.29"/>
-<text class="name" x="578.45" y="288.79">1</text>
-<text class="num" x="576.58" y="287.69" text-anchor="middle">1</text>
+<text class="name" x="578.45" y="288.74">1</text>
+<text class="pn" x="576.58" y="287.79" text-anchor="middle">1</text>
 <line class="pin" x1="585.47" y1="288.29" x2="582.93" y2="288.29"/>
-<text class="name" x="582.33" y="288.79" text-anchor="end">2</text>
-<text class="num" x="584.2" y="287.69" text-anchor="middle">2</text>
+<text class="name" x="582.33" y="288.74" text-anchor="end">2</text>
+<text class="pn" x="584.2" y="287.79" text-anchor="middle">2</text>
 <text class="ref" x="580.39" y="276.29" text-anchor="middle">R23</text>
-<text class="val" x="580.39" y="300.29" text-anchor="middle">10k TBD</text>
+<text class="value" x="580.39" y="300.29" text-anchor="middle">10k TBD</text>
 </g>
 <g data-ref="R24"><title>R24 10k TBD</title>
 <rect class="box" x="577.85" y="292.1" width="5.08" height="2.54"/>
 <line class="pin" x1="575.31" y1="293.37" x2="577.85" y2="293.37"/>
-<text class="name" x="578.45" y="293.87">1</text>
-<text class="num" x="576.58" y="292.77" text-anchor="middle">1</text>
+<text class="name" x="578.45" y="293.82">1</text>
+<text class="pn" x="576.58" y="292.87" text-anchor="middle">1</text>
 <line class="pin" x1="585.47" y1="293.37" x2="582.93" y2="293.37"/>
-<text class="name" x="582.33" y="293.87" text-anchor="end">2</text>
-<text class="num" x="584.2" y="292.77" text-anchor="middle">2</text>
+<text class="name" x="582.33" y="293.82" text-anchor="end">2</text>
+<text class="pn" x="584.2" y="292.87" text-anchor="middle">2</text>
 <text class="ref" x="580.39" y="281.37" text-anchor="middle">R24</text>
-<text class="val" x="580.39" y="305.37" text-anchor="middle">10k TBD</text>
+<text class="value" x="580.39" y="305.37" text-anchor="middle">10k TBD</text>
 </g>
 <g data-ref="C2"><title>C2 10uF</title>
 <rect class="box" x="158.75" y="535.94" width="5.08" height="2.54"/>
 <line class="pin" x1="161.29" y1="532.13" x2="161.29" y2="534.67"/>
-<text class="name" transform="translate(161.29 535.47) rotate(90)">1</text>
-<text class="num" x="162.09" y="533.4" text-anchor="middle">1</text>
+<text class="name" x="161.29" y="534.67" transform="rotate(90 161.29 534.67)">1</text>
+<text class="pn" x="161.89" y="533.4">1</text>
 <line class="pin" x1="161.29" y1="542.29" x2="161.29" y2="539.75"/>
-<text class="name" transform="translate(161.29 538.95) rotate(-90)">2</text>
-<text class="num" x="162.09" y="541.02" text-anchor="middle">2</text>
+<text class="name" x="161.29" y="539.75" transform="rotate(-90 161.29 539.75)">2</text>
+<text class="pn" x="161.89" y="541.02">2</text>
 <text class="ref" x="161.29" y="525.21" text-anchor="middle">C2</text>
-<text class="val" x="161.29" y="549.21" text-anchor="middle">10uF</text>
+<text class="value" x="161.29" y="549.21" text-anchor="middle">10uF</text>
 </g>
 <g data-ref="C3"><title>C3 100nF</title>
 <rect class="box" x="194.31" y="535.94" width="5.08" height="2.54"/>
 <line class="pin" x1="196.85" y1="532.13" x2="196.85" y2="534.67"/>
-<text class="name" transform="translate(196.85 535.47) rotate(90)">1</text>
-<text class="num" x="197.65" y="533.4" text-anchor="middle">1</text>
+<text class="name" x="196.85" y="534.67" transform="rotate(90 196.85 534.67)">1</text>
+<text class="pn" x="197.45" y="533.4">1</text>
 <line class="pin" x1="196.85" y1="542.29" x2="196.85" y2="539.75"/>
-<text class="name" transform="translate(196.85 538.95) rotate(-90)">2</text>
-<text class="num" x="197.65" y="541.02" text-anchor="middle">2</text>
+<text class="name" x="196.85" y="539.75" transform="rotate(-90 196.85 539.75)">2</text>
+<text class="pn" x="197.45" y="541.02">2</text>
 <text class="ref" x="196.85" y="525.21" text-anchor="middle">C3</text>
-<text class="val" x="196.85" y="549.21" text-anchor="middle">100nF</text>
+<text class="value" x="196.85" y="549.21" text-anchor="middle">100nF</text>
 </g>
 <g data-ref="C4"><title>C4 10uF</title>
 <rect class="box" x="280.67" y="535.94" width="5.08" height="2.54"/>
 <line class="pin" x1="283.21" y1="532.13" x2="283.21" y2="534.67"/>
-<text class="name" transform="translate(283.21 535.47) rotate(90)">1</text>
-<text class="num" x="284.01" y="533.4" text-anchor="middle">1</text>
+<text class="name" x="283.21" y="534.67" transform="rotate(90 283.21 534.67)">1</text>
+<text class="pn" x="283.81" y="533.4">1</text>
 <line class="pin" x1="283.21" y1="542.29" x2="283.21" y2="539.75"/>
-<text class="name" transform="translate(283.21 538.95) rotate(-90)">2</text>
-<text class="num" x="284.01" y="541.02" text-anchor="middle">2</text>
+<text class="name" x="283.21" y="539.75" transform="rotate(-90 283.21 539.75)">2</text>
+<text class="pn" x="283.81" y="541.02">2</text>
 <text class="ref" x="283.21" y="525.21" text-anchor="middle">C4</text>
-<text class="val" x="283.21" y="549.21" text-anchor="middle">10uF</text>
+<text class="value" x="283.21" y="549.21" text-anchor="middle">10uF</text>
 </g>
 <g data-ref="C5"><title>C5 100nF</title>
 <rect class="box" x="316.23" y="535.94" width="5.08" height="2.54"/>
 <line class="pin" x1="318.77" y1="532.13" x2="318.77" y2="534.67"/>
-<text class="name" transform="translate(318.77 535.47) rotate(90)">1</text>
-<text class="num" x="319.57" y="533.4" text-anchor="middle">1</text>
+<text class="name" x="318.77" y="534.67" transform="rotate(90 318.77 534.67)">1</text>
+<text class="pn" x="319.37" y="533.4">1</text>
 <line class="pin" x1="318.77" y1="542.29" x2="318.77" y2="539.75"/>
-<text class="name" transform="translate(318.77 538.95) rotate(-90)">2</text>
-<text class="num" x="319.57" y="541.02" text-anchor="middle">2</text>
+<text class="name" x="318.77" y="539.75" transform="rotate(-90 318.77 539.75)">2</text>
+<text class="pn" x="319.37" y="541.02">2</text>
 <text class="ref" x="318.77" y="525.21" text-anchor="middle">C5</text>
-<text class="val" x="318.77" y="549.21" text-anchor="middle">100nF</text>
+<text class="value" x="318.77" y="549.21" text-anchor="middle">100nF</text>
 </g>
 <g data-ref="C6"><title>C6 1uF</title>
 <rect class="box" x="341.63" y="264.16" width="5.08" height="2.54"/>
 <line class="pin" x1="344.17" y1="260.35" x2="344.17" y2="262.89"/>
-<text class="name" transform="translate(344.17 263.69) rotate(90)">1</text>
-<text class="num" x="344.97" y="261.62" text-anchor="middle">1</text>
+<text class="name" x="344.17" y="262.89" transform="rotate(90 344.17 262.89)">1</text>
+<text class="pn" x="344.77" y="261.62">1</text>
 <line class="pin" x1="344.17" y1="270.51" x2="344.17" y2="267.97"/>
-<text class="name" transform="translate(344.17 267.17) rotate(-90)">2</text>
-<text class="num" x="344.97" y="269.24" text-anchor="middle">2</text>
+<text class="name" x="344.17" y="267.97" transform="rotate(-90 344.17 267.97)">2</text>
+<text class="pn" x="344.77" y="269.24">2</text>
 <text class="ref" x="344.17" y="253.43" text-anchor="middle">C6</text>
-<text class="val" x="344.17" y="277.43" text-anchor="middle">1uF</text>
+<text class="value" x="344.17" y="277.43" text-anchor="middle">1uF</text>
 </g>
 <g data-ref="C7"><title>C7 100nF</title>
 <rect class="box" x="386.08" y="264.16" width="5.08" height="2.54"/>
 <line class="pin" x1="388.62" y1="260.35" x2="388.62" y2="262.89"/>
-<text class="name" transform="translate(388.62 263.69) rotate(90)">1</text>
-<text class="num" x="389.42" y="261.62" text-anchor="middle">1</text>
+<text class="name" x="388.62" y="262.89" transform="rotate(90 388.62 262.89)">1</text>
+<text class="pn" x="389.22" y="261.62">1</text>
 <line class="pin" x1="388.62" y1="270.51" x2="388.62" y2="267.97"/>
-<text class="name" transform="translate(388.62 267.17) rotate(-90)">2</text>
-<text class="num" x="389.42" y="269.24" text-anchor="middle">2</text>
+<text class="name" x="388.62" y="267.97" transform="rotate(-90 388.62 267.97)">2</text>
+<text class="pn" x="389.22" y="269.24">2</text>
 <text class="ref" x="388.62" y="253.43" text-anchor="middle">C7</text>
-<text class="val" x="388.62" y="277.43" text-anchor="middle">100nF</text>
+<text class="value" x="388.62" y="277.43" text-anchor="middle">100nF</text>
 </g>
 <g data-ref="C8"><title>C8 1uF</title>
-<rect class="box" x="76.2" y="694.73" width="5.08" height="2.54"/>
-<line class="pin" x1="78.74" y1="690.92" x2="78.74" y2="693.46"/>
-<text class="name" transform="translate(78.74 694.26) rotate(90)">1</text>
-<text class="num" x="79.54" y="692.19" text-anchor="middle">1</text>
-<line class="pin" x1="78.74" y1="701.08" x2="78.74" y2="698.54"/>
-<text class="name" transform="translate(78.74 697.74) rotate(-90)">2</text>
-<text class="num" x="79.54" y="699.81" text-anchor="middle">2</text>
-<text class="ref" x="78.74" y="684" text-anchor="middle">C8</text>
-<text class="val" x="78.74" y="708" text-anchor="middle">1uF</text>
+<rect class="box" x="76.2" y="694.69" width="5.08" height="2.54"/>
+<line class="pin" x1="78.74" y1="690.88" x2="78.74" y2="693.42"/>
+<text class="name" x="78.74" y="693.42" transform="rotate(90 78.74 693.42)">1</text>
+<text class="pn" x="79.34" y="692.15">1</text>
+<line class="pin" x1="78.74" y1="701.04" x2="78.74" y2="698.5"/>
+<text class="name" x="78.74" y="698.5" transform="rotate(-90 78.74 698.5)">2</text>
+<text class="pn" x="79.34" y="699.77">2</text>
+<text class="ref" x="78.74" y="683.96" text-anchor="middle">C8</text>
+<text class="value" x="78.74" y="707.96" text-anchor="middle">1uF</text>
 </g>
 <g data-ref="C9"><title>C9 100nF</title>
-<rect class="box" x="109.22" y="694.73" width="5.08" height="2.54"/>
-<line class="pin" x1="111.76" y1="690.92" x2="111.76" y2="693.46"/>
-<text class="name" transform="translate(111.76 694.26) rotate(90)">1</text>
-<text class="num" x="112.56" y="692.19" text-anchor="middle">1</text>
-<line class="pin" x1="111.76" y1="701.08" x2="111.76" y2="698.54"/>
-<text class="name" transform="translate(111.76 697.74) rotate(-90)">2</text>
-<text class="num" x="112.56" y="699.81" text-anchor="middle">2</text>
-<text class="ref" x="111.76" y="684" text-anchor="middle">C9</text>
-<text class="val" x="111.76" y="708" text-anchor="middle">100nF</text>
+<rect class="box" x="109.22" y="694.69" width="5.08" height="2.54"/>
+<line class="pin" x1="111.76" y1="690.88" x2="111.76" y2="693.42"/>
+<text class="name" x="111.76" y="693.42" transform="rotate(90 111.76 693.42)">1</text>
+<text class="pn" x="112.36" y="692.15">1</text>
+<line class="pin" x1="111.76" y1="701.04" x2="111.76" y2="698.5"/>
+<text class="name" x="111.76" y="698.5" transform="rotate(-90 111.76 698.5)">2</text>
+<text class="pn" x="112.36" y="699.77">2</text>
+<text class="ref" x="111.76" y="683.96" text-anchor="middle">C9</text>
+<text class="value" x="111.76" y="707.96" text-anchor="middle">100nF</text>
 </g>
 <g data-ref="C10"><title>C10 1uF</title>
-<rect class="box" x="172.72" y="694.73" width="5.08" height="2.54"/>
-<line class="pin" x1="175.26" y1="690.92" x2="175.26" y2="693.46"/>
-<text class="name" transform="translate(175.26 694.26) rotate(90)">1</text>
-<text class="num" x="176.06" y="692.19" text-anchor="middle">1</text>
-<line class="pin" x1="175.26" y1="701.08" x2="175.26" y2="698.54"/>
-<text class="name" transform="translate(175.26 697.74) rotate(-90)">2</text>
-<text class="num" x="176.06" y="699.81" text-anchor="middle">2</text>
-<text class="ref" x="175.26" y="684" text-anchor="middle">C10</text>
-<text class="val" x="175.26" y="708" text-anchor="middle">1uF</text>
+<rect class="box" x="172.72" y="694.69" width="5.08" height="2.54"/>
+<line class="pin" x1="175.26" y1="690.88" x2="175.26" y2="693.42"/>
+<text class="name" x="175.26" y="693.42" transform="rotate(90 175.26 693.42)">1</text>
+<text class="pn" x="175.86" y="692.15">1</text>
+<line class="pin" x1="175.26" y1="701.04" x2="175.26" y2="698.5"/>
+<text class="name" x="175.26" y="698.5" transform="rotate(-90 175.26 698.5)">2</text>
+<text class="pn" x="175.86" y="699.77">2</text>
+<text class="ref" x="175.26" y="683.96" text-anchor="middle">C10</text>
+<text class="value" x="175.26" y="707.96" text-anchor="middle">1uF</text>
 </g>
 <g data-ref="C11"><title>C11 100nF</title>
-<rect class="box" x="205.74" y="694.73" width="5.08" height="2.54"/>
-<line class="pin" x1="208.28" y1="690.92" x2="208.28" y2="693.46"/>
-<text class="name" transform="translate(208.28 694.26) rotate(90)">1</text>
-<text class="num" x="209.08" y="692.19" text-anchor="middle">1</text>
-<line class="pin" x1="208.28" y1="701.08" x2="208.28" y2="698.54"/>
-<text class="name" transform="translate(208.28 697.74) rotate(-90)">2</text>
-<text class="num" x="209.08" y="699.81" text-anchor="middle">2</text>
-<text class="ref" x="208.28" y="684" text-anchor="middle">C11</text>
-<text class="val" x="208.28" y="708" text-anchor="middle">100nF</text>
+<rect class="box" x="205.74" y="694.69" width="5.08" height="2.54"/>
+<line class="pin" x1="208.28" y1="690.88" x2="208.28" y2="693.42"/>
+<text class="name" x="208.28" y="693.42" transform="rotate(90 208.28 693.42)">1</text>
+<text class="pn" x="208.88" y="692.15">1</text>
+<line class="pin" x1="208.28" y1="701.04" x2="208.28" y2="698.5"/>
+<text class="name" x="208.28" y="698.5" transform="rotate(-90 208.28 698.5)">2</text>
+<text class="pn" x="208.88" y="699.77">2</text>
+<text class="ref" x="208.28" y="683.96" text-anchor="middle">C11</text>
+<text class="value" x="208.28" y="707.96" text-anchor="middle">100nF</text>
 </g>
 <g data-ref="C12"><title>C12 10nF</title>
-<rect class="box" x="238.76" y="694.73" width="5.08" height="2.54"/>
-<line class="pin" x1="241.3" y1="690.92" x2="241.3" y2="693.46"/>
-<text class="name" transform="translate(241.3 694.26) rotate(90)">1</text>
-<text class="num" x="242.1" y="692.19" text-anchor="middle">1</text>
-<line class="pin" x1="241.3" y1="701.08" x2="241.3" y2="698.54"/>
-<text class="name" transform="translate(241.3 697.74) rotate(-90)">2</text>
-<text class="num" x="242.1" y="699.81" text-anchor="middle">2</text>
-<text class="ref" x="241.3" y="684" text-anchor="middle">C12</text>
-<text class="val" x="241.3" y="708" text-anchor="middle">10nF</text>
+<rect class="box" x="238.76" y="694.69" width="5.08" height="2.54"/>
+<line class="pin" x1="241.3" y1="690.88" x2="241.3" y2="693.42"/>
+<text class="name" x="241.3" y="693.42" transform="rotate(90 241.3 693.42)">1</text>
+<text class="pn" x="241.9" y="692.15">1</text>
+<line class="pin" x1="241.3" y1="701.04" x2="241.3" y2="698.5"/>
+<text class="name" x="241.3" y="698.5" transform="rotate(-90 241.3 698.5)">2</text>
+<text class="pn" x="241.9" y="699.77">2</text>
+<text class="ref" x="241.3" y="683.96" text-anchor="middle">C12</text>
+<text class="value" x="241.3" y="707.96" text-anchor="middle">10nF</text>
 </g>
 <g data-ref="C13"><title>C13 4.7uF</title>
-<rect class="box" x="298.45" y="694.73" width="5.08" height="2.54"/>
-<line class="pin" x1="300.99" y1="690.92" x2="300.99" y2="693.46"/>
-<text class="name" transform="translate(300.99 694.26) rotate(90)">1</text>
-<text class="num" x="301.79" y="692.19" text-anchor="middle">1</text>
-<line class="pin" x1="300.99" y1="701.08" x2="300.99" y2="698.54"/>
-<text class="name" transform="translate(300.99 697.74) rotate(-90)">2</text>
-<text class="num" x="301.79" y="699.81" text-anchor="middle">2</text>
-<text class="ref" x="300.99" y="684" text-anchor="middle">C13</text>
-<text class="val" x="300.99" y="708" text-anchor="middle">4.7uF</text>
+<rect class="box" x="298.45" y="694.69" width="5.08" height="2.54"/>
+<line class="pin" x1="300.99" y1="690.88" x2="300.99" y2="693.42"/>
+<text class="name" x="300.99" y="693.42" transform="rotate(90 300.99 693.42)">1</text>
+<text class="pn" x="301.59" y="692.15">1</text>
+<line class="pin" x1="300.99" y1="701.04" x2="300.99" y2="698.5"/>
+<text class="name" x="300.99" y="698.5" transform="rotate(-90 300.99 698.5)">2</text>
+<text class="pn" x="301.59" y="699.77">2</text>
+<text class="ref" x="300.99" y="683.96" text-anchor="middle">C13</text>
+<text class="value" x="300.99" y="707.96" text-anchor="middle">4.7uF</text>
 </g>
 <g data-ref="C14"><title>C14 100nF</title>
-<rect class="box" x="331.47" y="694.73" width="5.08" height="2.54"/>
-<line class="pin" x1="334.01" y1="690.92" x2="334.01" y2="693.46"/>
-<text class="name" transform="translate(334.01 694.26) rotate(90)">1</text>
-<text class="num" x="334.81" y="692.19" text-anchor="middle">1</text>
-<line class="pin" x1="334.01" y1="701.08" x2="334.01" y2="698.54"/>
-<text class="name" transform="translate(334.01 697.74) rotate(-90)">2</text>
-<text class="num" x="334.81" y="699.81" text-anchor="middle">2</text>
-<text class="ref" x="334.01" y="684" text-anchor="middle">C14</text>
-<text class="val" x="334.01" y="708" text-anchor="middle">100nF</text>
+<rect class="box" x="331.47" y="694.69" width="5.08" height="2.54"/>
+<line class="pin" x1="334.01" y1="690.88" x2="334.01" y2="693.42"/>
+<text class="name" x="334.01" y="693.42" transform="rotate(90 334.01 693.42)">1</text>
+<text class="pn" x="334.61" y="692.15">1</text>
+<line class="pin" x1="334.01" y1="701.04" x2="334.01" y2="698.5"/>
+<text class="name" x="334.01" y="698.5" transform="rotate(-90 334.01 698.5)">2</text>
+<text class="pn" x="334.61" y="699.77">2</text>
+<text class="ref" x="334.01" y="683.96" text-anchor="middle">C14</text>
+<text class="value" x="334.01" y="707.96" text-anchor="middle">100nF</text>
 </g>
 <g data-ref="C15"><title>C15 10nF</title>
-<rect class="box" x="364.49" y="694.73" width="5.08" height="2.54"/>
-<line class="pin" x1="367.03" y1="690.92" x2="367.03" y2="693.46"/>
-<text class="name" transform="translate(367.03 694.26) rotate(90)">1</text>
-<text class="num" x="367.83" y="692.19" text-anchor="middle">1</text>
-<line class="pin" x1="367.03" y1="701.08" x2="367.03" y2="698.54"/>
-<text class="name" transform="translate(367.03 697.74) rotate(-90)">2</text>
-<text class="num" x="367.83" y="699.81" text-anchor="middle">2</text>
-<text class="ref" x="367.03" y="684" text-anchor="middle">C15</text>
-<text class="val" x="367.03" y="708" text-anchor="middle">10nF</text>
+<rect class="box" x="364.49" y="694.69" width="5.08" height="2.54"/>
+<line class="pin" x1="367.03" y1="690.88" x2="367.03" y2="693.42"/>
+<text class="name" x="367.03" y="693.42" transform="rotate(90 367.03 693.42)">1</text>
+<text class="pn" x="367.63" y="692.15">1</text>
+<line class="pin" x1="367.03" y1="701.04" x2="367.03" y2="698.5"/>
+<text class="name" x="367.03" y="698.5" transform="rotate(-90 367.03 698.5)">2</text>
+<text class="pn" x="367.63" y="699.77">2</text>
+<text class="ref" x="367.03" y="683.96" text-anchor="middle">C15</text>
+<text class="value" x="367.03" y="707.96" text-anchor="middle">10nF</text>
 </g>
 <g data-ref="C16"><title>C16 10uF</title>
 <rect class="box" x="76.2" y="535.94" width="5.08" height="2.54"/>
 <line class="pin" x1="78.74" y1="532.13" x2="78.74" y2="534.67"/>
-<text class="name" transform="translate(78.74 535.47) rotate(90)">1</text>
-<text class="num" x="79.54" y="533.4" text-anchor="middle">1</text>
+<text class="name" x="78.74" y="534.67" transform="rotate(90 78.74 534.67)">1</text>
+<text class="pn" x="79.34" y="533.4">1</text>
 <line class="pin" x1="78.74" y1="542.29" x2="78.74" y2="539.75"/>
-<text class="name" transform="translate(78.74 538.95) rotate(-90)">2</text>
-<text class="num" x="79.54" y="541.02" text-anchor="middle">2</text>
+<text class="name" x="78.74" y="539.75" transform="rotate(-90 78.74 539.75)">2</text>
+<text class="pn" x="79.34" y="541.02">2</text>
 <text class="ref" x="78.74" y="525.21" text-anchor="middle">C16</text>
-<text class="val" x="78.74" y="549.21" text-anchor="middle">10uF</text>
+<text class="value" x="78.74" y="549.21" text-anchor="middle">10uF</text>
 </g>
 <g data-ref="C17"><title>C17 22pF TBD</title>
 <rect class="box" x="222.25" y="142.24" width="5.08" height="2.54"/>
 <line class="pin" x1="224.79" y1="138.43" x2="224.79" y2="140.97"/>
-<text class="name" transform="translate(224.79 141.77) rotate(90)">1</text>
-<text class="num" x="225.59" y="139.7" text-anchor="middle">1</text>
+<text class="name" x="224.79" y="140.97" transform="rotate(90 224.79 140.97)">1</text>
+<text class="pn" x="225.39" y="139.7">1</text>
 <line class="pin" x1="224.79" y1="148.59" x2="224.79" y2="146.05"/>
-<text class="name" transform="translate(224.79 145.25) rotate(-90)">2</text>
-<text class="num" x="225.59" y="147.32" text-anchor="middle">2</text>
+<text class="name" x="224.79" y="146.05" transform="rotate(-90 224.79 146.05)">2</text>
+<text class="pn" x="225.39" y="147.32">2</text>
 <text class="ref" x="224.79" y="131.51" text-anchor="middle">C17</text>
-<text class="val" x="224.79" y="155.51" text-anchor="middle">22pF TBD</text>
+<text class="value" x="224.79" y="155.51" text-anchor="middle">22pF TBD</text>
 </g>
 <g data-ref="C18"><title>C18 22pF TBD</title>
 <rect class="box" x="237.49" y="142.24" width="5.08" height="2.54"/>
 <line class="pin" x1="240.03" y1="138.43" x2="240.03" y2="140.97"/>
-<text class="name" transform="translate(240.03 141.77) rotate(90)">1</text>
-<text class="num" x="240.83" y="139.7" text-anchor="middle">1</text>
+<text class="name" x="240.03" y="140.97" transform="rotate(90 240.03 140.97)">1</text>
+<text class="pn" x="240.63" y="139.7">1</text>
 <line class="pin" x1="240.03" y1="148.59" x2="240.03" y2="146.05"/>
-<text class="name" transform="translate(240.03 145.25) rotate(-90)">2</text>
-<text class="num" x="240.83" y="147.32" text-anchor="middle">2</text>
+<text class="name" x="240.03" y="146.05" transform="rotate(-90 240.03 146.05)">2</text>
+<text class="pn" x="240.63" y="147.32">2</text>
 <text class="ref" x="240.03" y="131.51" text-anchor="middle">C18</text>
-<text class="val" x="240.03" y="155.51" text-anchor="middle">22pF TBD</text>
+<text class="value" x="240.03" y="155.51" text-anchor="middle">22pF TBD</text>
 </g>
 <g data-ref="R8"><title>R8 4.02k 1%</title>
 <rect class="box" x="278.13" y="283.21" width="5.08" height="2.54"/>
 <line class="pin" x1="275.59" y1="284.48" x2="278.13" y2="284.48"/>
-<text class="name" x="278.73" y="284.98">1</text>
-<text class="num" x="276.86" y="283.88" text-anchor="middle">1</text>
+<text class="name" x="278.73" y="284.93">1</text>
+<text class="pn" x="276.86" y="283.98" text-anchor="middle">1</text>
 <line class="pin" x1="285.75" y1="284.48" x2="283.21" y2="284.48"/>
-<text class="name" x="282.61" y="284.98" text-anchor="end">2</text>
-<text class="num" x="284.48" y="283.88" text-anchor="middle">2</text>
+<text class="name" x="282.61" y="284.93" text-anchor="end">2</text>
+<text class="pn" x="284.48" y="283.98" text-anchor="middle">2</text>
 <text class="ref" x="280.67" y="271.78" text-anchor="middle">R8</text>
-<text class="val" x="280.67" y="297.18" text-anchor="middle">4.02k 1%</text>
+<text class="value" x="280.67" y="297.18" text-anchor="middle">4.02k 1%</text>
 </g>
 <g data-ref="R9"><title>R9 4.02k 1%</title>
 <rect class="box" x="242.57" y="283.21" width="5.08" height="2.54"/>
 <line class="pin" x1="240.03" y1="284.48" x2="242.57" y2="284.48"/>
-<text class="name" x="243.17" y="284.98">1</text>
-<text class="num" x="241.3" y="283.88" text-anchor="middle">1</text>
+<text class="name" x="243.17" y="284.93">1</text>
+<text class="pn" x="241.3" y="283.98" text-anchor="middle">1</text>
 <line class="pin" x1="250.19" y1="284.48" x2="247.65" y2="284.48"/>
-<text class="name" x="247.05" y="284.98" text-anchor="end">2</text>
-<text class="num" x="248.92" y="283.88" text-anchor="middle">2</text>
+<text class="name" x="247.05" y="284.93" text-anchor="end">2</text>
+<text class="pn" x="248.92" y="283.98" text-anchor="middle">2</text>
 <text class="ref" x="245.11" y="271.78" text-anchor="middle">R9</text>
-<text class="val" x="245.11" y="297.18" text-anchor="middle">4.02k 1%</text>
+<text class="value" x="245.11" y="297.18" text-anchor="middle">4.02k 1%</text>
 </g>
-<text class="net" x="616.585" y="136.66">CAM_I2C_SDA</text>
-<text class="net" x="628.015" y="134.12">CAM_I2C_SCL</text>
-<text class="net" x="622.935" y="272.55">RADIO_SDIO_D0</text>
-<text class="net" x="622.935" y="277.63">RADIO_SDIO_D1</text>
-<text class="net" x="622.935" y="282.71">RADIO_SDIO_D2</text>
-<text class="net" x="622.935" y="287.79">RADIO_SDIO_D3</text>
-<text class="net" x="622.935" y="292.87">RADIO_SDIO_CMD</text>
-<text class="net" x="617.855" y="463.05">SDMMC_D2</text>
-<text class="net" x="625.475" y="465.59">SDMMC_D3</text>
-<text class="net" x="633.095" y="468.13">SDMMC_CMD</text>
-<text class="net" x="617.855" y="478.29">SDMMC_D0</text>
-<text class="net" x="625.475" y="480.83">SDMMC_D1</text>
+<text class="net" x="617.22" y="136.66">CAM_I2C_SDA</text>
+<text class="net" x="628.65" y="134.12">CAM_I2C_SCL</text>
+<text class="net" x="622.3" y="272.55">RADIO_SDIO_D0</text>
+<text class="net" x="622.3" y="277.63">RADIO_SDIO_D1</text>
+<text class="net" x="622.3" y="282.71">RADIO_SDIO_D2</text>
+<text class="net" x="622.3" y="287.79">RADIO_SDIO_D3</text>
+<text class="net" x="622.3" y="292.87">RADIO_SDIO_CMD</text>
+<text class="net" x="618.49" y="463.05">SDMMC_D2</text>
+<text class="net" x="626.11" y="465.59">SDMMC_D3</text>
+<text class="net" x="633.73" y="468.13">SDMMC_CMD</text>
+<text class="net" x="618.49" y="478.29">SDMMC_D0</text>
+<text class="net" x="626.11" y="480.83">SDMMC_D1</text>
 <text class="net" x="838.2" y="426.22">EXT_I2C_SDA</text>
-<text class="net" x="846.455" y="428.76">EXT_I2C_SCL</text>
+<text class="net" x="847.09" y="428.76">EXT_I2C_SCL</text>
 <text class="net" x="358.14" y="201.43">FLASH_CS</text>
 <text class="net" x="116.84" y="115.07">CHIP_PU</text>
-<text class="net" x="275.59" y="270.645" transform="rotate(-90 275.59 271.145)">CAM_REXT</text>
-<text class="net" x="240.03" y="270.645" transform="rotate(-90 240.03 271.145)">DSI_REXT</text>
+<text class="net" x="275.59" y="270.01" transform="rotate(-90 275.59 270.51)">CAM_REXT</text>
+<text class="net" x="240.03" y="270.01" transform="rotate(-90 240.03 270.51)">DSI_REXT</text>
 <text class="net" x="224.79" y="129.04" transform="rotate(-90 224.79 129.54)">XTAL_P</text>
 <text class="net" x="240.03" y="129.04" transform="rotate(-90 240.03 129.54)">XTAL_N</text>
 <text class="net" x="161.29" y="531.63">+3V3</text>
 <text class="net" x="161.29" y="541.79">GND</text>
 <text class="net" x="283.21" y="531.63">CORE_1V2</text>
 <text class="net" x="283.21" y="541.79">GND</text>
-<text class="net" x="78.74" y="690.42">PSRAM_1V9</text>
-<text class="net" x="78.74" y="700.58">GND</text>
-<text class="net" x="175.26" y="690.42">MIPI_2V5</text>
-<text class="net" x="175.26" y="700.58">GND</text>
-<text class="net" x="300.99" y="690.42">+3V3</text>
-<text class="net" x="300.99" y="700.58">GND</text>
+<text class="net" x="78.74" y="690.38">PSRAM_1V9</text>
+<text class="net" x="78.74" y="700.54">GND</text>
+<text class="net" x="175.26" y="690.38">MIPI_2V5</text>
+<text class="net" x="175.26" y="700.54">GND</text>
+<text class="net" x="300.99" y="690.38">+3V3</text>
+<text class="net" x="300.99" y="700.54">GND</text>
 <text class="net" x="344.17" y="259.85">FLASH_VDD</text>
 <text class="net" x="344.17" y="270.01">GND</text>
 <text class="net" x="549.91" y="272.55" transform="rotate(-90 549.91 273.05)">+3V3</text>
@@ -1963,15 +1962,15 @@
 <text class="net" x="1084.58" y="408.44">RADIO_5V_SW</text>
 <text class="net" x="1084.58" y="410.98">GND</text>
 <text class="net" x="1084.58" y="413.52">GND</text>
-<text class="net" x="109.22" y="470.69">+5V_IN</text>
-<text class="net" x="109.22" y="473.23">GND</text>
-<text class="net" x="109.22" y="475.77">+5V_IN</text>
-<text class="net" x="109.22" y="478.31">+3V3</text>
-<text class="net" x="302.26" y="469.42">+3V3</text>
-<text class="net" x="302.26" y="471.96">GND</text>
-<text class="net" x="302.26" y="474.5">CORE_EN</text>
-<text class="net" x="302.26" y="477.04">CORE_FB</text>
-<text class="net" x="302.26" y="479.58">CORE_1V2</text>
+<text class="net" x="109.22" y="470.67">+5V_IN</text>
+<text class="net" x="109.22" y="473.21">GND</text>
+<text class="net" x="109.22" y="475.75">+5V_IN</text>
+<text class="net" x="109.22" y="478.29">+3V3</text>
+<text class="net" x="302.26" y="469.4">+3V3</text>
+<text class="net" x="302.26" y="471.94">GND</text>
+<text class="net" x="302.26" y="474.48">CORE_EN</text>
+<text class="net" x="302.26" y="477.02">CORE_FB</text>
+<text class="net" x="302.26" y="479.56">CORE_1V2</text>
 <text class="net" x="137.16" y="605.29">+5V_IN</text>
 <text class="net" x="137.16" y="607.83">GND</text>
 <text class="net" x="137.16" y="610.37">RADIO_PWR_EN</text>
@@ -1991,18 +1990,18 @@
 <text class="net" x="881.38" y="186.19">RMII_TXD1_BOOT_GPIO35</text>
 <text class="net" x="881.38" y="188.73">+3V3</text>
 <text class="net" x="881.38" y="191.27">GND</text>
-<text class="net" x="795.02" y="634.12">RMII_CRS_DV</text>
-<text class="net" x="795.02" y="636.66">RMII_RXD0</text>
-<text class="net" x="795.02" y="639.2">RMII_RXD1</text>
-<text class="net" x="795.02" y="641.74">RMII_REFCLK</text>
-<text class="net" x="795.02" y="644.28">RMII_TXEN</text>
-<text class="net" x="795.02" y="646.82">RMII_TXD0</text>
-<text class="net" x="795.02" y="649.36">RMII_TXD1_BOOT_GPIO35</text>
-<text class="net" x="795.02" y="651.9">RMII_MDC</text>
-<text class="net" x="795.02" y="654.44">RMII_MDIO</text>
-<text class="net" x="795.02" y="656.98">RMII_PHY_RESET</text>
-<text class="net" x="795.02" y="669.68">+3V3</text>
-<text class="net" x="795.02" y="672.22">GND</text>
+<text class="net" x="795.02" y="634.5">RMII_CRS_DV</text>
+<text class="net" x="795.02" y="637.04">RMII_RXD0</text>
+<text class="net" x="795.02" y="639.58">RMII_RXD1</text>
+<text class="net" x="795.02" y="642.12">RMII_REFCLK</text>
+<text class="net" x="795.02" y="644.66">RMII_TXEN</text>
+<text class="net" x="795.02" y="647.2">RMII_TXD0</text>
+<text class="net" x="795.02" y="649.74">RMII_TXD1_BOOT_GPIO35</text>
+<text class="net" x="795.02" y="652.28">RMII_MDC</text>
+<text class="net" x="795.02" y="654.82">RMII_MDIO</text>
+<text class="net" x="795.02" y="657.36">RMII_PHY_RESET</text>
+<text class="net" x="795.02" y="670.06">+3V3</text>
+<text class="net" x="795.02" y="672.6">GND</text>
 <text class="net" x="101.6" y="115.07">+3V3</text>
 <text class="net" x="129.54" y="117.61" transform="rotate(-90 129.54 118.11)">GND</text>
 <text class="net" x="101.6" y="205.24">+3V3</text>
@@ -2014,32 +2013,32 @@
 <text class="net" x="240.03" y="140.47" transform="rotate(-90 240.03 140.97)">GND</text>
 <text class="net" x="278.13" y="283.98" transform="rotate(-180 278.13 284.48)">GND</text>
 <text class="net" x="242.57" y="283.98" transform="rotate(-180 242.57 284.48)">GND</text>
-<text class="heading" x="44" y="72" font-size="3.8">01  ESP32-P4 / BOOT / FLASH / CLOCK</text>
-<text class="heading" x="44" y="80" font-size="1.9">P4X v3.x; reset and oscillator load need verification</text>
-<text class="heading" x="454" y="72" font-size="3.8">02  CAMERA CSI-2</text>
-<text class="heading" x="454" y="80" font-size="1.9">15-pin RPi camera connector and separate I2C pull-ups</text>
-<text class="heading" x="454" y="237" font-size="3.8">03  RADIO SDIO</text>
-<text class="heading" x="454" y="245" font-size="1.9">15-pin FFC, ESP32-C5 daughtercard, no power via ribbon</text>
-<text class="heading" x="454" y="417" font-size="3.8">04  MICROSD / SDMMC</text>
-<text class="heading" x="454" y="425" font-size="1.9">4-bit SDMMC; separate card power control remains TBD</text>
-<text class="heading" x="454" y="587" font-size="3.8">05  USB HIGH-SPEED TYPE-C OTG</text>
-<text class="heading" x="454" y="595" font-size="1.9">CC/DRP and VBUS role switching unresolved</text>
-<text class="heading" x="44" y="432" font-size="3.8">06  POWER TREE &amp; DECOUPLING</text>
-<text class="heading" x="44" y="440" font-size="1.9">Regulators and eFuse remain provisional logic blocks</text>
-<text class="heading" x="751" y="72" font-size="3.8">07  UART / I2C / SPI</text>
-<text class="heading" x="751" y="80" font-size="1.9">UART0 flashing, UART1 MSP, UART2 CRSF, external I2C, SPI</text>
-<text class="heading" x="974" y="72" font-size="3.8">08  GPIO / SERVO / POWER CONNECTORS</text>
-<text class="heading" x="974" y="80" font-size="1.9">3x13 header; shared 5 V servo rail, independent radio power</text>
-<text class="heading" x="751" y="556" font-size="3.8">09  100BASE-TX ETHERNET</text>
-<text class="heading" x="751" y="564" font-size="1.9">Direct PHY-magnetics-cable wiring; real device/straps still TBD</text>
-<text class="heading" x="35" y="42" font-size="2.5">A0 DRAFT / Layout grouped by circuit; critical power and PHY details not fabrication-ready</text>
-<path class="nc" d="M241.57,256.81 L243.57,258.81 M241.57,258.81 L243.57,256.81"/>
-<path class="nc" d="M244.11,256.81 L246.11,258.81 M244.11,258.81 L246.11,256.81"/>
-<path class="nc" d="M246.65,256.81 L248.65,258.81 M246.65,258.81 L248.65,256.81"/>
-<path class="nc" d="M249.19,256.81 L251.19,258.81 M249.19,258.81 L251.19,256.81"/>
-<path class="nc" d="M251.73,256.81 L253.73,258.81 M251.73,258.81 L253.73,256.81"/>
-<path class="nc" d="M254.27,256.81 L256.27,258.81 M254.27,258.81 L256.27,256.81"/>
-<path class="nc" d="M221.25,167.91 L223.25,169.91 M221.25,169.91 L223.25,167.91"/>
-<path class="nc" d="M195.85,180.61 L197.85,182.61 M195.85,182.61 L197.85,180.61"/>
-<g transform="translate(795 777)" font-family="Arial,sans-serif" fill="#314766"><rect x="-4" y="-3" width="380" height="52" fill="white" stroke="#9ba8b4" stroke-width=".3"/><text x="4" y="8" font-size="4">ROV-GND-P4 Rev A / P4X — GROUPED SCHEMATIC</text><text x="4" y="17" font-size="2.6">VStreamer × Winject • KiCad source-derived preview</text><text x="4" y="26" font-size="2.5">PRELIMINARY — USB/PHY/POWER hardware incomplete</text><text x="4" y="36" font-size="2.3">Native KiCad ERC/export required before release</text></g>
+<text class="header" x="44" y="72" font-size="3.8">01  ESP32-P4 / BOOT / FLASH / CLOCK</text>
+<text class="header" x="44" y="80" font-size="1.9">P4X v3.x; reset and oscillator load need verification</text>
+<text class="header" x="454" y="72" font-size="3.8">02  CAMERA CSI-2</text>
+<text class="header" x="454" y="80" font-size="1.9">15-pin RPi camera connector and separate I2C pull-ups</text>
+<text class="header" x="454" y="237" font-size="3.8">03  RADIO SDIO</text>
+<text class="header" x="454" y="245" font-size="1.9">15-pin FFC, ESP32-C5 daughtercard, no power via ribbon</text>
+<text class="header" x="454" y="417" font-size="3.8">04  MICROSD / SDMMC</text>
+<text class="header" x="454" y="425" font-size="1.9">4-bit SDMMC; separate card power control remains TBD</text>
+<text class="header" x="454" y="587" font-size="3.8">05  USB HIGH-SPEED TYPE-C OTG</text>
+<text class="header" x="454" y="595" font-size="1.9">CC/DRP and VBUS role switching unresolved</text>
+<text class="header" x="44" y="432" font-size="3.8">06  POWER TREE &amp; DECOUPLING</text>
+<text class="header" x="44" y="440" font-size="1.9">Regulators and eFuse remain provisional logic blocks</text>
+<text class="header" x="751" y="72" font-size="3.8">07  UART / I2C / SPI</text>
+<text class="header" x="751" y="80" font-size="1.9">UART0 flashing, UART1 MSP, UART2 CRSF, external I2C, SPI</text>
+<text class="header" x="974" y="72" font-size="3.8">08  GPIO / SERVO / POWER CONNECTORS</text>
+<text class="header" x="974" y="80" font-size="1.9">3x13 header; shared 5 V servo rail, independent radio power</text>
+<text class="header" x="751" y="556" font-size="3.8">09  100BASE-TX ETHERNET</text>
+<text class="header" x="751" y="564" font-size="1.9">Direct PHY-magnetics-cable wiring; real device/straps still TBD</text>
+<text class="header" x="35" y="42" font-size="2.5">A0 DRAFT / Layout grouped by circuit; critical power and PHY details not fabrication-ready</text>
+<path class="nc" d="M241.57 256.81L243.57 258.81M241.57 258.81L243.57 256.81"/>
+<path class="nc" d="M244.11 256.81L246.11 258.81M244.11 258.81L246.11 256.81"/>
+<path class="nc" d="M246.65 256.81L248.65 258.81M246.65 258.81L248.65 256.81"/>
+<path class="nc" d="M249.19 256.81L251.19 258.81M249.19 258.81L251.19 256.81"/>
+<path class="nc" d="M251.73 256.81L253.73 258.81M251.73 258.81L253.73 256.81"/>
+<path class="nc" d="M254.27 256.81L256.27 258.81M254.27 258.81L256.27 256.81"/>
+<path class="nc" d="M221.25 167.91L223.25 169.91M221.25 169.91L223.25 167.91"/>
+<path class="nc" d="M195.85 180.61L197.85 182.61M195.85 182.61L197.85 180.61"/>
+<rect x="795" y="774" width="380" height="56" fill="white" stroke="#a5adb7" stroke-width=".3"/><text class="header" x="805" y="789" font-size="4">ROV-GND-P4 Rev A — GROUPED CIRCUITS</text><text class="header" x="805" y="800" font-size="2.7">Source-derived vector preview • native KiCad review required</text><text class="header" x="805" y="810" font-size="2.7">Preliminary hardware — not fabrication-ready</text>
 </svg>
