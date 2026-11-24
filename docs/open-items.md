@@ -8,5 +8,5 @@
 6. **SPI:** one 6-pin JST-GH for 3V3/GND/CLK/MOSI/MISO/CS0; optional CS1–CS5 are on the 3×13 GPIO header only (no SPI-EXT connector). Confirm ESP-IDF support for six hardware chip-selects or use software CS fallback.
 7. **RF card:** QPF4507 pin-level reference, C5 TX/RX switching, 2.4 GHz unused port termination, fast detector selection and power monitors.
 8. **Power tree:** input range and connectors; host and radio current budgets, sequencing, brownout, back-power prevention, thermals.
-9. **Mechanical:** board outline, mounting holes, FPC mating-cycle rating, 100 mm cable orientation, keyed connector placement and labeling.
+9. **Mechanical:** verify proposed **80 × 80 mm board** with physically accurate component footprints. West edge mixes standing JST GH (UART1/UART2/I²C/SPI) and side-entry GH (UART0/Ethernet). Check individual KiCad footprint and assembled harness STEP models, height and bend radius of standing plug wires, mounting holes, FPC mating-cycle rating, 100 mm SDIO cable orientation, keyed connector placement and labeling.
 10. **Manufacturing:** PCB stack-up and DFM, JST-GH footprint variants, component sourcing and assembly house, schematic/KiCad libraries, license choice.

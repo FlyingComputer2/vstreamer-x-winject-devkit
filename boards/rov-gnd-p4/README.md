@@ -11,3 +11,4 @@ Standalone ESP32-P4 camera/encoder host board. Work-in-progress architecture; CA
 - One external I²C (separate from camera).
 - 100BASE-TX Ethernet PHY + onboard magnetics + four-contact JST-GH cable interface.
 - 3×13 GND/5V/Signal servo-style GPIO expansion; see [draft map](../../docs/gpio-map-draft.md).
+- [80 × 80 mm top-view measured placement](../../docs/placement-rev-a.md): mixed top-entry GH (UART1/UART2/I²C/SPI) and side-entry GH (UART0/Ethernet); mechanical study, not routed PCB.

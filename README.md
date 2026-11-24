@@ -30,7 +30,7 @@ See [SDIO cable contract](docs/radio-sdio-interface.md).
 
 ## Design documents
 
-- [100 × 100 mm square board placement and footprint sizing](docs/placement-rev-a.md) ([dimensioned 1:1 SVG](docs/rov-gnd-p4-placement-rev-a.svg)); preliminary until exact connector courtyards and cable access are verified.
+- [80 × 80 mm mixed-orientation JST-GH board placement study](docs/placement-rev-a.md) ([dimensioned 1:1 SVG](docs/rov-gnd-p4-placement-rev-a.svg)); housing dimensions and sample courtyards to physical scale; not yet verified for mated cable access and final component footprints.
 
 - [Architecture and connector decisions](docs/architecture.md)
 - [Radio SDIO interface and FPC pinout](docs/radio-sdio-interface.md)

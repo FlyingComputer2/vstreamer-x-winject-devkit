@@ -25,7 +25,7 @@
 
 ## Mechanical envelope and connector-edge layout
 
-Rev A placement: **100 × 100 mm square, preliminary and connector-body-sized**. North: camera CSI-2. West: one USB-C HS OTG and six JST-GH ports in order UART0, UART1, UART2, I²C, SPI, Ethernet. East: 3×13 servo/GPIO. South: radio SDIO FPC, radio power JST, main 5 V input. See [placement draft](placement-rev-a.md) and [concept diagram](rov-gnd-p4-placement-rev-a.svg). This size assumes ~3 mm gaps between the seven connector bodies on the west edge; actual latches, cable overmolds, mounting holes, connector courtyards and clearances remain to be verified.
+Rev A placement: **80 × 80 mm square, preliminary mixed-orientation JST-GH sizing study**. North: camera CSI-2. West: one USB-C HS OTG and six JST-GH ports in order UART0, UART1, UART2, I²C, SPI, Ethernet. East: 3×13 servo/GPIO. South: radio SDIO FPC, radio power JST, main 5 V input. See [placement draft](placement-rev-a.md) and [concept diagram](rov-gnd-p4-placement-rev-a.svg). West-edge connector mix: UART0 6P and Ethernet 4P JST-GH side-entry facing west; UART1 4P, UART2 4P, external I²C 4P and SPI 6P JST-GH **top-entry**, with their long axes extending east. The drawing uses known housing dimensions, sample KiCad top-entry footprint envelopes and 2 mm inter-envelope gaps. Actual selected 3D STEP models, mated cable bends, mounting holes and USB/courtyard clearances remain to be verified.
 
 ## WINJECT-RADIO-C5 card
 
