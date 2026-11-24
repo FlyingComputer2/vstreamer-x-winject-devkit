@@ -1,0 +1,72 @@
+name: KiCad schematic validation
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/kicad-validate.yml'
+      - 'boards/rov-gnd-p4/kicad/**'
+  pull_request:
+    paths:
+      - '.github/workflows/kicad-validate.yml'
+      - 'boards/rov-gnd-p4/kicad/**'
+
+permissions:
+  contents: read
+
+jobs:
+  schematic:
+    name: KiCad 9 load, export and ERC
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    env:
+      QT_QPA_PLATFORM: offscreen
+    steps:
+      - name: Check out project
+        uses: actions/checkout@v4
+
+      - name: Install KiCad 9
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y software-properties-common
+          sudo add-apt-repository -y ppa:kicad/kicad-9.0-releases
+          sudo apt-get update
+          sudo DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends kicad
+          kicad-cli version
+
+      - name: Export schematic PDF (fails when schematic cannot load)
+        run: |
+          mkdir -p "$GITHUB_WORKSPACE/kicad-validation"
+          kicad-cli sch export pdf \
+            -o "$GITHUB_WORKSPACE/kicad-validation/rov-gnd-p4.pdf" \
+            boards/rov-gnd-p4/kicad/rov-gnd-p4.kicad_sch
+
+      - name: Produce electrical rule check (draft, report-only)
+        shell: bash
+        run: |
+          set +e
+          kicad-cli sch erc --severity-all --exit-code-violations --format json \
+            -o "$GITHUB_WORKSPACE/kicad-validation/ERC.json" \
+            boards/rov-gnd-p4/kicad/rov-gnd-p4.kicad_sch
+          rc=$?
+          {
+            echo "### ESP32-P4 schematic: KiCad ERC"
+            echo "KiCad ERC exit code: \`$rc\`"
+            echo ""
+            if [ "$rc" -eq 0 ]; then
+              echo "No reported ERC violations."
+            elif [ "$rc" -eq 5 ]; then
+              echo "ERC violations exist in this draft. See the uploaded JSON report."
+            else
+              echo "ERC failed to execute; check the logs. This is not an ERC result."
+            fi
+          } >> "$GITHUB_STEP_SUMMARY"
+          if [ "$rc" -ne 0 ] && [ "$rc" -ne 5 ]; then exit "$rc"; fi
+
+      - name: Save KiCad validation artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: rov-gnd-p4-kicad-validation
+          path: kicad-validation/
+          if-no-files-found: warn
