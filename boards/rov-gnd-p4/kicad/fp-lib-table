@@ -1,1 +1,1 @@
-(fp_lib_table (lib (name "ESPRESSIF_LOCAL") (type "KiCad") (uri "${KIPRJMOD}/ESPRESSIF_LOCAL.pretty") (options "") (descr "Official Espressif QFN footprint")))
+(fp_lib_table (lib (name "ESPRESSIF_LOCAL") (type "KiCad") (uri "${KIPRJMOD}/ESPRESSIF_LOCAL.pretty") (options "") (descr "Official Espressif QFN footprint")) (lib (name "DEVKIT_FOOTPRINTS") (type "KiCad") (uri "${KIPRJMOD}/DEVKIT_FOOTPRINTS.pretty") (options "") (descr "Project-local GH and servo header")))
