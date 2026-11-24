@@ -73,11 +73,11 @@
 <text x="108.55" y="42.075" font-family="Arial,sans-serif" font-size="2.3" text-anchor="middle" fill="#fff" font-weight="bold">microSD</text>
 <text x="108.6" y="51" font-family="Arial,sans-serif" font-size="1.75" text-anchor="middle" fill="#374e66" font-weight="normal">Molex 5033981892</text>
 <rect x="67" y="78" width="11" height="8" fill="#fbffff" stroke="#4e6571" stroke-width=".35" rx=".4"/>
-<text x="72.5" y="83.2" font-family="Arial,sans-serif" font-size="2.6" text-anchor="middle" fill="#fff" font-weight="bold">PHY*</text>
+<text x="72.5" y="83.2" font-family="Arial,sans-serif" font-size="2.6" text-anchor="middle" fill="#284258" font-weight="bold">PHY*</text>
 <rect x="71" y="87" width="14" height="7" fill="#fbffff" stroke="#4e6571" stroke-width=".35" rx=".4"/>
-<text x="74" y="92.55" font-family="Arial,sans-serif" font-size="2.3" text-anchor="middle" fill="#fff" font-weight="bold">Mag.*</text>
+<text x="78" y="91.55" font-family="Arial,sans-serif" font-size="2.3" text-anchor="middle" fill="#284258" font-weight="bold">Mag.*</text>
 <rect x="99" y="75" width="14" height="10" fill="#fbffff" stroke="#4e6571" stroke-width=".35" rx=".4"/>
-<text x="106" y="81.15" font-family="Arial,sans-serif" font-size="2.5" text-anchor="middle" fill="#fff" font-weight="bold">PWR*</text>
+<text x="106" y="81.15" font-family="Arial,sans-serif" font-size="2.5" text-anchor="middle" fill="#284258" font-weight="bold">PWR*</text>
 <text x="102" y="89" font-family="Arial,sans-serif" font-size="1.7" text-anchor="start" fill="#567080" font-weight="normal">* provisional area</text>
 <circle cx="117" cy="50" r=".95" stroke="#fff" stroke-width=".13" fill="#0c7f81"/>
 <circle cx="119.54" cy="50" r=".95" stroke="#fff" stroke-width=".13" fill="#ae762b"/>
@@ -122,7 +122,7 @@
 <text x="119.5" y="46.2" font-family="Arial,sans-serif" font-size="2.2" text-anchor="middle" fill="#364f5f" font-weight="normal">GPIO 3×13</text>
 <text x="119.5" y="85.4" font-family="Arial,sans-serif" font-size="1.75" text-anchor="middle" fill="#364f5f" font-weight="normal">2.54 pitch</text>
 <rect x="52" y="99.75" width="8.25" height="4.25" fill="#b67b32" stroke="#4e6571" stroke-width=".35" rx=".4"/>
-<text x="65.125" y="102.625" font-family="Arial,sans-serif" font-size="1.7" text-anchor="middle" fill="#fff" font-weight="bold">VIN*</text>
+<text x="56.125" y="102.625" font-family="Arial,sans-serif" font-size="1.7" text-anchor="middle" fill="#fff" font-weight="bold">VIN*</text>
 <rect x="106" y="99.75" width="8.25" height="4.25" fill="#b67b32" stroke="#4e6571" stroke-width=".35" rx=".4"/>
 <text x="110.125" y="102.575" font-family="Arial,sans-serif" font-size="1.6" text-anchor="middle" fill="#fff" font-weight="bold">R-PWR*</text>
 <circle cx="64" cy="29.3" r="1.55" fill="#fff" stroke="#3c805b" stroke-width=".35"/>
