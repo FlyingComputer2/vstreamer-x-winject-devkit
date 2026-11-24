@@ -1,61 +1,69 @@
-# ROV-GND-P4 Rev A — footprint-based square placement
+# ROV-GND-P4 Rev A — 100 × 100 mm square placement
 
-Status: **mechanical sizing study, not routed or manufacturing-ready**.
+Status: **mechanical concept based on component body widths, not a routed PCB or final connector-courtyard validation**.
 
-## Working board dimension: **110 × 110 mm**
+![Dimensioned 100 mm top-view placement](rov-gnd-p4-placement-rev-a.svg)
 
-The previous 120 × 120 mm outline was an unverified envelope. Reducing to **110 × 110 mm** is realistic as a starting point using the eight required connector bodies on the west edge. The west edge dictates the minimum practical size; the 3×13 servo header does not.
+The SVG physical board outline is 100 mm × 100 mm when printed at 100% with no page scaling. The drawing is a footprint *study*, not a manufactured PCB or an authoritative KiCad 3D model.
 
-![Nominally dimensioned 110 × 110 mm top-view placement](rov-gnd-p4-placement-rev-a.svg)
+## Why 100 mm
 
-The SVG declares its physical dimensions in millimeters. **Print at 100% (without "fit to page")** to obtain a nominal 1:1 board outline. Connector bodies are measured/approximated by representative part dimensions, not yet final KiCad courtyards.
+The **second USB-C (FS/JTAG) has been removed**. The P4 retains native USB FS/JTAG, with GPIO24 D− and GPIO25 D+ routed **only to the east 3×13 GPIO header**, to be used with an optional separate USB-C adapter.
 
-### West edge connector packing (north to south)
+West edge required: **one USB-C HS OTG + six JST-GH connectors**.
 
-| Connection | Quantity | Candidate width per body along board edge |
-|---|---:|---:|
-| USB-C 2.0 connector (HS OTG, FS/JTAG) | 2 | ~8.94 mm |
-| JST-GH 6P (UART0 / FLASH; SPI) | 2 | ~10.75 mm |
-| JST-GH 4P (UART1, UART2, external I²C, Ethernet) | 4 | ~8.25 mm |
-| **Total connector bodies** | **8** | **72.38 mm** |
-| 7 × 3 mm between successive connector bodies | | 21.0 mm |
-| Top and bottom unoccupied edge length | | 16.62 mm |
-| **Total west edge** | | **110.0 mm** |
+| Item | Dimension |
+|---|---:|
+| One USB-C body (reference width) | ~8.94 mm |
+| Two JST-GH 6P bodies, 10.75 mm each | 21.50 mm |
+| Four JST-GH 4P bodies, 8.25 mm each | 33.00 mm |
+| **Total connector bodies** | **63.44 mm** |
+| Six gaps × 3 mm | 18.00 mm |
+| Two end margins | 18.56 mm |
+| **Total west edge** | **100.00 mm** |
 
-Representative candidate footprints: JST `SM06B-GHS-TB` 6P (10.75 mm), `SM04B-GHS-TB` 4P (8.25 mm), and USB-C receptacle width approximately 8.94 mm. Actual final mating widths and USB connector keep-outs may change. This is a **minimum connector-body packing test**, not a mechanical signoff.
+Note: measurements are **representative connector body widths**, not guaranteed courtyard/latch/cable-boot spacing. Before freezing the outline, verify exact chosen connector drawings and actual cable insertion/removal access.
 
-Exact west body start/stop locations relative to the northwest corner (mm, top-down):
+### West edge coordinates, north to south
+
+Measured from the northwest edge corner, in mm:
 
 | Connector | Start y | End y |
 |---|---:|---:|
-| USB-C HS/OTG | 6.00 | 14.94 |
-| USB-C FS/JTAG | 17.94 | 26.88 |
-| UART0 JST-GH 6P | 29.88 | 40.63 |
-| UART1 JST-GH 4P | 43.63 | 51.88 |
-| UART2 JST-GH 4P | 54.88 | 63.13 |
-| External I²C JST-GH 4P | 66.13 | 74.38 |
-| SPI JST-GH 6P | 77.38 | 88.13 |
-| Ethernet JST-GH 4P | 91.13 | 99.38 |
+| USB-C HS/OTG | 9.28 | 18.22 |
+| UART0 GH 6P | 21.22 | 31.97 |
+| UART1 GH 4P | 34.97 | 43.22 |
+| UART2 GH 4P | 46.22 | 54.47 |
+| External I2C GH 4P | 57.47 | 65.72 |
+| SPI GH 6P | 68.72 | 79.47 |
+| Ethernet GH 4P | 82.47 | 90.72 |
 
-These eight connectors require approximately 10.62 mm at the south end and 6 mm at the north end for leftover board edge. **3 mm gaps may be too tight for a finger-operated GH latch or thick USB cable overmolds**; check harness mating with actual 3D models and a physical print before layout release. If hand access is difficult, increase outline or move one connector rather than compressing below safe clearances.
+Nominal margins at top and bottom: **9.28 mm each**.
 
-### Other edges
+## Compass layout
 
-- **North:** 15-pin 1.0 mm Raspberry Pi-style CSI-2 camera FPC centered and exiting north. Place P4 near north-center to keep high-speed MIPI short.
-- **East:** 3×13 pin 2.54 mm pitch servo-style header, GND / 5V / SIGNAL logically when reading from outer board edge inward. The centers of its 13 rows span **30.48 mm**; body/cable clearance extends beyond.
-- **South:** centered 15-pin 1.0 mm radio SDIO FPC exiting south, with separate radio power JST and separate main 5 V supply connector (power connector selections TBD).
-- **Inside:** place Ethernet PHY/magnetics near southwest, microSD near northeast, P4 near CSI, and power supply toward southeast. These are zoning recommendations not final routed footprints.
+### North: Camera
+15-pin, 1.0 mm pitch Raspberry Pi-style CSI-2 FPC, camera cable exits north. P4 sits close to north-center to minimize MIPI trace length.
 
-## Mounting and routing
+### West: External connectors
+From north to south: **USB-C HS OTG**, UART0 (6-pin GH), UART1 (4-pin GH), UART2 (4-pin GH), I²C (4-pin GH), SPI (6-pin GH), Ethernet (4-pin GH). The Ethernet PHY and magnetics remain *on the board*. **No onboard USB FS/JTAG port and no SPI-EXT JST-GH**.
 
-- Show four **provisional** corner mounting holes. Actual hole diameter, keep-out and screw-head clearance must be selected after connector footprints are placed.
-- Protect 3.3 V-only GPIO signal pins from 5 V electrical input; the GND/5V/SIGNAL ordering is standard for servo-style connections.
-- The SPI-EXT JST-GH connector was removed. CS1–CS5 are provided on the GPIO header instead.
-- Native USB FS/JTAG and UART0 are separate interfaces, with two USB-C ports and separate 6-pin UART0 auto-flash JST-GH.
-- Keep CSI and SDIO FPC ports clearly labeled despite their identical cable form factor.
-- Keep the SDIO cable target at 100 mm, single-ended, with interleaved GND and power via separate connector.
-- Final P4 GPIO map/strapping/power circuitry is **not signed off**. See [GPIO map](gpio-map-draft.md) and [open hardware items](open-items.md).
+### East: GPIO / servo
+3×13 at 2.54 mm pitch, logical GND / 5 V / signal rows 3–13, two power-only rows at top. Signals are GPIO4, GPIO5, GPIO6, GPIO13, GPIO32, GPIO33, GPIO22, GPIO23, GPIO54, GPIO25/USB FS D+ and GPIO24/USB FS D−. The optional FS USB-C breakout must use D± plus GND, fit required Type-C CC pull-downs and ESD, and **must not connect cable VBUS directly to the header 5 V supply rail**.
 
-## Decision
+### South: Radio
+15-pin SDIO 1.0 mm-pitch FPC centered on south, plus separate JST radio power and main 5 V input. Radio flex contains SDIO + interleaved GND only; target cable length is 100 mm.
 
-**Use 110 × 110 mm as the Rev A mechanical baseline**. At 100 × 100 mm, the eight west connectors need narrower gaps, tighter end margins, or moving a connector to another edge. A 110 mm square should be mechanically plausible but should not be interpreted as the minimum manufacturable dimensions without 3D courtyard and cable-access verification.
+### Interior
+P4 near CSI north-center; microSD accessible on northeast; ethernet magnetics southwest; regulators and radio power protection southeast. All are provisional component zones.
+
+## Validation before a final board outline
+
+1. Check actual USB-C/JST-GH **courtyards, cable overmolds and latch clearances**, not just body width.
+2. Verify 3×13 header polarity, row/pin numbering, 5 V distribution and servo-cable access.
+3. Ensure microSD extraction, both FPC latches, and four mounting screws remain accessible.
+4. Audit P4 pin map, boot straps, USB HS OTG power design, UART0 DTR/RTS, Ethernet and camera routing.
+5. Keep native USB FS/JTAG D± on header short for optional external adapter; GPIO is 3.3 V-only.
+6. Increase board to 105 or 110 mm if connector/latch keepouts or routing require it.
+
+**Mechanical baseline:** 100 × 100 mm square; awaiting footprint and cable fit verification.
