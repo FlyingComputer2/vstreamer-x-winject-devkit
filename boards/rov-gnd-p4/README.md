@@ -1,6 +1,6 @@
 # ROV-GND-P4
 
-Standalone ESP32-P4 camera/encoder host board. Work-in-progress architecture; CAD and BOM not yet started.
+Standalone ESP32-P4 camera/encoder host board. **An initial KiCad schematic is now available** under [kicad/](kicad/README.md); this is a first-pass electrical design requiring component selection, ERC validation and routing. No validated fabrication-ready PCB or BOM exists.
 
 - Camera CSI-2 (15-pin); independent I²C.
 - microSD socket on **underside**, card opening at north edge, using native SDMMC; validate top/bottom SMT overlap with camera connector.
