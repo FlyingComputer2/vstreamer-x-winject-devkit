@@ -28,6 +28,10 @@ See [SDIO cable contract](docs/radio-sdio-interface.md).
 - 100BASE-TX Ethernet with onboard PHY and magnetics; four-wire custom JST-GH twisted-pair cable-side connection.
 - 3×13 GND/5V/GPIO servo-style header exposing CS1–CS5, GPIO33 spare, GPIO22/23/54 and optional FS/JTAG GPIO24/25.
 
+## KiCad hardware design
+
+- [ESP32-P4 host initial KiCad schematic](boards/rov-gnd-p4/kicad/rov-gnd-p4.kicad_sch) and [project instructions / open electrical issues](boards/rov-gnd-p4/kicad/README.md). Based on the supplied Waveshare ESP32-P4-WIFI6-DEV-KIT schematic; targets ESP32-P4X v3.x with an external C5 radio FFC. **First pass: NOT ERC-cleared or ready for fabrication.**
+
 ## Design documents
 
 - [50 × 50 mm all-standing JST-GH layout study](docs/placement-rev-a.md) ([dimensioned 1:1 SVG](docs/rov-gnd-p4-placement-rev-a.svg)); **hard 50 × 50 mm outline**; all eight GH connectors are top-entry, USB-C alone is side-entry, underside microSD opens at north edge, M2 corner-hole positions fixed provisionally. Missing components and 6-layer routing still require fit checks.
