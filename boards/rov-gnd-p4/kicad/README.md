@@ -55,3 +55,7 @@ Note: KiCad CLI/GUI is not available in this environment, so this draft was stru
 ## Reproducible footprints
 
 GH 4P and GH 6P and the custom 39-pad 3×13 servo header footprints now live under `DEVKIT_FOOTPRINTS.pretty/`. These no longer depend on the global KiCad libraries being installed to resolve, and the generated servo header has **39 physical plated through holes at 2.54 mm pitch**. The actual 50×50 mm board routing and mating-harness keep-outs still need 3D validation.
+
+## MIPI PHY reference resistors
+
+The first schematic now includes **R8 (CSI_REXT to GND) and R9 (DSI_REXT to GND), each 4.02 kΩ ±1%**, following the [Espressif ESP32-P4 schematic checklist](https://docs.espressif.com/projects/esp-hardware-design-guidelines/en/latest/esp32p4/schematic-checklist-esp32p4.html) and the R42/R43 reference circuits on the Waveshare drawing. The associated unused DSI high-speed lanes remain explicitly no-connect. R8/R9 footprint choices are pending manufacturing DFM.
