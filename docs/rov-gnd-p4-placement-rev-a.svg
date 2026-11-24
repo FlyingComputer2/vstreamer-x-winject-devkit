@@ -1,145 +1,118 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="175mm" height="138mm" viewBox="0 0 175 138" role="img" aria-labelledby="title desc">
-<title id="title">ROV-GND-P4 Rev A — 80 mm PCB, physically scaled mixed JST-GH connector body placement</title><desc id="desc">Manufacturer housing dimensions plotted 1 mm per SVG unit, top-entry KiCad courtyard envelopes shown dashed. The PCB is 80 by 80 mm. Other packages selected by part numbers except preliminary power and PHY zones.</desc>
-<rect width="175" height="138" fill="#f7fafc"/>
-<text x="85" y="6" font-family="Arial,sans-serif" font-size="4.1" text-anchor="middle" fill="#153c57" font-weight="bold">ROV-GND-P4 · 80 × 80 mm placement study</text>
-<text x="85" y="11" font-family="Arial,sans-serif" font-size="2.6" text-anchor="middle" fill="#547184" font-weight="normal">TOP VIEW · 1 mm drawing unit = 1 mm physical · not routed</text>
-<rect x="48" y="24" width="80" height="80" fill="#e9f4eb" stroke="#146842" stroke-width="0.75"/>
-<path d="M58 24 V104 M48 34 H128" fill="none" stroke="#96baa0" stroke-width=".14"/>
-<path d="M68 24 V104 M48 44 H128" fill="none" stroke="#96baa0" stroke-width=".14"/>
-<path d="M78 24 V104 M48 54 H128" fill="none" stroke="#96baa0" stroke-width=".14"/>
-<path d="M88 24 V104 M48 64 H128" fill="none" stroke="#96baa0" stroke-width=".14"/>
-<path d="M98 24 V104 M48 74 H128" fill="none" stroke="#96baa0" stroke-width=".14"/>
-<path d="M108 24 V104 M48 84 H128" fill="none" stroke="#96baa0" stroke-width=".14"/>
-<path d="M118 24 V104 M48 94 H128" fill="none" stroke="#96baa0" stroke-width=".14"/>
-<path d="M48 21 V18 H128 V21 M131 24 H134 V104 H131" stroke="#536a7f" stroke-width=".3" fill="none"/>
-<text x="88" y="17" font-family="Arial,sans-serif" font-size="2.65" text-anchor="middle" fill="#334b61" font-weight="normal">80 mm</text>
-<text x="136" y="64" transform="rotate(90 136 64)" fill="#334b61" font-size="2.65" font-family="Arial,sans-serif" text-anchor="middle">80 mm</text>
-<text x="88" y="23.1" font-family="Arial,sans-serif" font-size="2.25" text-anchor="middle" fill="#116c86" font-weight="normal">NORTH · CAMERA CSI</text>
-<rect x="48" y="30.35" width="9.17" height="9.4" fill="none" stroke="#b43a9d" stroke-width=".35" stroke-dasharray="1 .7"/>
-<rect x="48" y="30.58" width="9.17" height="8.94" rx=".4" fill="#b67b32" stroke="#2f5260" stroke-width=".25"/>
-<text x="44.8" y="35.95" font-family="Arial,sans-serif" font-size="2.7" text-anchor="end" fill="#27425a" font-weight="normal">USB HS OTG</text>
-<rect x="48" y="41.75" width="4.25" height="11.25" fill="none" stroke="#b43a9d" stroke-width=".35" stroke-dasharray="1 .7"/>
-<rect x="48" y="42" width="4.25" height="10.75" rx=".4" fill="#b67b32" stroke="#2f5260" stroke-width=".25"/>
-<text x="44.8" y="48.275" font-family="Arial,sans-serif" font-size="2.7" text-anchor="end" fill="#27425a" font-weight="normal">UART0 · 6P</text>
-<rect x="53.3" y="55" width="9.46" height="6.6" fill="none" stroke="#b43a9d" stroke-width=".35" stroke-dasharray="1 .7"/>
-<rect x="54.25" y="56.275" width="8.25" height="4.05" rx=".4" fill="#0a9184" stroke="#2f5260" stroke-width=".25"/>
-<path d="M55.45 56.975 v2.7" stroke="#f7fff9" stroke-width=".35"/>
-<path d="M56.7 56.975 v2.7" stroke="#f7fff9" stroke-width=".35"/>
-<path d="M57.95 56.975 v2.7" stroke="#f7fff9" stroke-width=".35"/>
-<path d="M59.2 56.975 v2.7" stroke="#f7fff9" stroke-width=".35"/>
-<circle cx="56.25" cy="58.3" r=".8" fill="#fff" opacity=".35"/>
-<text x="44.8" y="59.2" font-family="Arial,sans-serif" font-size="2.7" text-anchor="end" fill="#27425a" font-weight="normal">UART1 · 4P</text>
-<text x="67.2" y="58.95" font-family="Arial,sans-serif" font-size="2.1" text-anchor="middle" fill="#068577" font-weight="normal">+Z</text>
-<rect x="53.3" y="63.6" width="9.46" height="6.6" fill="none" stroke="#b43a9d" stroke-width=".35" stroke-dasharray="1 .7"/>
-<rect x="54.25" y="64.875" width="8.25" height="4.05" rx=".4" fill="#0a9184" stroke="#2f5260" stroke-width=".25"/>
-<path d="M55.45 65.575 v2.7" stroke="#f7fff9" stroke-width=".35"/>
-<path d="M56.7 65.575 v2.7" stroke="#f7fff9" stroke-width=".35"/>
-<path d="M57.95 65.575 v2.7" stroke="#f7fff9" stroke-width=".35"/>
-<path d="M59.2 65.575 v2.7" stroke="#f7fff9" stroke-width=".35"/>
-<circle cx="56.25" cy="66.9" r=".8" fill="#fff" opacity=".35"/>
-<text x="44.8" y="67.8" font-family="Arial,sans-serif" font-size="2.7" text-anchor="end" fill="#27425a" font-weight="normal">UART2 · 4P</text>
-<text x="67.2" y="67.55" font-family="Arial,sans-serif" font-size="2.1" text-anchor="middle" fill="#068577" font-weight="normal">+Z</text>
-<rect x="53.3" y="72.2" width="9.46" height="6.6" fill="none" stroke="#b43a9d" stroke-width=".35" stroke-dasharray="1 .7"/>
-<rect x="54.25" y="73.475" width="8.25" height="4.05" rx=".4" fill="#0a9184" stroke="#2f5260" stroke-width=".25"/>
-<path d="M55.45 74.175 v2.7" stroke="#f7fff9" stroke-width=".35"/>
-<path d="M56.7 74.175 v2.7" stroke="#f7fff9" stroke-width=".35"/>
-<path d="M57.95 74.175 v2.7" stroke="#f7fff9" stroke-width=".35"/>
-<path d="M59.2 74.175 v2.7" stroke="#f7fff9" stroke-width=".35"/>
-<circle cx="56.25" cy="75.5" r=".8" fill="#fff" opacity=".35"/>
-<text x="44.8" y="76.4" font-family="Arial,sans-serif" font-size="2.7" text-anchor="end" fill="#27425a" font-weight="normal">I²C · 4P</text>
-<text x="67.2" y="76.15" font-family="Arial,sans-serif" font-size="2.1" text-anchor="middle" fill="#068577" font-weight="normal">+Z</text>
-<rect x="53.3" y="80.8" width="11.46" height="6.1" fill="none" stroke="#b43a9d" stroke-width=".35" stroke-dasharray="1 .7"/>
-<rect x="54.25" y="81.825" width="10.75" height="4.05" rx=".4" fill="#0a9184" stroke="#2f5260" stroke-width=".25"/>
-<path d="M55.45 82.525 v2.7" stroke="#f7fff9" stroke-width=".35"/>
-<path d="M56.7 82.525 v2.7" stroke="#f7fff9" stroke-width=".35"/>
-<path d="M57.95 82.525 v2.7" stroke="#f7fff9" stroke-width=".35"/>
-<path d="M59.2 82.525 v2.7" stroke="#f7fff9" stroke-width=".35"/>
-<path d="M60.45 82.525 v2.7" stroke="#f7fff9" stroke-width=".35"/>
-<path d="M61.7 82.525 v2.7" stroke="#f7fff9" stroke-width=".35"/>
-<circle cx="56.25" cy="83.85" r=".8" fill="#fff" opacity=".35"/>
-<text x="44.8" y="84.75" font-family="Arial,sans-serif" font-size="2.7" text-anchor="end" fill="#27425a" font-weight="normal">SPI · 6P</text>
-<text x="67.2" y="84.5" font-family="Arial,sans-serif" font-size="2.1" text-anchor="middle" fill="#068577" font-weight="normal">+Z</text>
-<rect x="48" y="88.9" width="4.25" height="8.75" fill="none" stroke="#b43a9d" stroke-width=".35" stroke-dasharray="1 .7"/>
-<rect x="48" y="89.15" width="4.25" height="8.25" rx=".4" fill="#b67b32" stroke="#2f5260" stroke-width=".25"/>
-<text x="44.8" y="94.175" font-family="Arial,sans-serif" font-size="2.7" text-anchor="end" fill="#27425a" font-weight="normal">ETH · 4P</text>
-<rect x="78.15" y="24.8" width="19.7" height="6.9" fill="#326f9d" stroke="#4e6571" stroke-width=".35" rx=".4"/>
-<text x="88" y="29.35" font-family="Arial,sans-serif" font-size="2.4" text-anchor="middle" fill="#fff" font-weight="bold">CSI-2 15P</text>
-<rect x="78.15" y="96.3" width="19.7" height="6.9" fill="#326f9d" stroke="#4e6571" stroke-width=".35" rx=".4"/>
-<text x="88" y="100.8" font-family="Arial,sans-serif" font-size="2.3" text-anchor="middle" fill="#fff" font-weight="bold">RADIO SDIO</text>
-<rect x="82" y="46" width="10" height="10" fill="#d9e5ef" stroke="#4e6571" stroke-width=".35" rx=".4"/>
-<text x="87" y="52.7" font-family="Arial,sans-serif" font-size="3.6" text-anchor="middle" fill="#1d3e55" font-weight="bold">P4</text>
-<path d="M88 32 V45.4 M88 57 V95.9" stroke="#287ca2" stroke-width=".6" stroke-dasharray="1.5 1.3" fill="none"/>
-<rect x="102" y="34" width="13.1" height="14.05" fill="#8494a4" stroke="#4e6571" stroke-width=".35" rx=".4"/>
-<text x="108.55" y="42.075" font-family="Arial,sans-serif" font-size="2.3" text-anchor="middle" fill="#fff" font-weight="bold">microSD</text>
-<text x="108.6" y="51" font-family="Arial,sans-serif" font-size="1.75" text-anchor="middle" fill="#374e66" font-weight="normal">Molex 5033981892</text>
-<rect x="67" y="78" width="11" height="8" fill="#fbffff" stroke="#4e6571" stroke-width=".35" rx=".4"/>
-<text x="72.5" y="83.2" font-family="Arial,sans-serif" font-size="2.6" text-anchor="middle" fill="#284258" font-weight="bold">PHY*</text>
-<rect x="71" y="87" width="14" height="7" fill="#fbffff" stroke="#4e6571" stroke-width=".35" rx=".4"/>
-<text x="78" y="91.55" font-family="Arial,sans-serif" font-size="2.3" text-anchor="middle" fill="#284258" font-weight="bold">Mag.*</text>
-<rect x="99" y="75" width="14" height="10" fill="#fbffff" stroke="#4e6571" stroke-width=".35" rx=".4"/>
-<text x="106" y="81.15" font-family="Arial,sans-serif" font-size="2.5" text-anchor="middle" fill="#284258" font-weight="bold">PWR*</text>
-<text x="102" y="89" font-family="Arial,sans-serif" font-size="1.7" text-anchor="start" fill="#567080" font-weight="normal">* provisional area</text>
-<circle cx="117" cy="50" r=".95" stroke="#fff" stroke-width=".13" fill="#0c7f81"/>
-<circle cx="119.54" cy="50" r=".95" stroke="#fff" stroke-width=".13" fill="#ae762b"/>
-<circle cx="122.08" cy="50" r=".95" stroke="#fff" stroke-width=".13" fill="#627384"/>
-<circle cx="117" cy="52.54" r=".95" stroke="#fff" stroke-width=".13" fill="#0c7f81"/>
-<circle cx="119.54" cy="52.54" r=".95" stroke="#fff" stroke-width=".13" fill="#ae762b"/>
-<circle cx="122.08" cy="52.54" r=".95" stroke="#fff" stroke-width=".13" fill="#627384"/>
-<circle cx="117" cy="55.08" r=".95" stroke="#fff" stroke-width=".13" fill="#137f94"/>
-<circle cx="119.54" cy="55.08" r=".95" stroke="#fff" stroke-width=".13" fill="#ae762b"/>
-<circle cx="122.08" cy="55.08" r=".95" stroke="#fff" stroke-width=".13" fill="#627384"/>
-<circle cx="117" cy="57.62" r=".95" stroke="#fff" stroke-width=".13" fill="#137f94"/>
-<circle cx="119.54" cy="57.62" r=".95" stroke="#fff" stroke-width=".13" fill="#ae762b"/>
-<circle cx="122.08" cy="57.62" r=".95" stroke="#fff" stroke-width=".13" fill="#627384"/>
-<circle cx="117" cy="60.16" r=".95" stroke="#fff" stroke-width=".13" fill="#137f94"/>
-<circle cx="119.54" cy="60.16" r=".95" stroke="#fff" stroke-width=".13" fill="#ae762b"/>
-<circle cx="122.08" cy="60.16" r=".95" stroke="#fff" stroke-width=".13" fill="#627384"/>
-<circle cx="117" cy="62.7" r=".95" stroke="#fff" stroke-width=".13" fill="#137f94"/>
-<circle cx="119.54" cy="62.7" r=".95" stroke="#fff" stroke-width=".13" fill="#ae762b"/>
-<circle cx="122.08" cy="62.7" r=".95" stroke="#fff" stroke-width=".13" fill="#627384"/>
-<circle cx="117" cy="65.24" r=".95" stroke="#fff" stroke-width=".13" fill="#137f94"/>
-<circle cx="119.54" cy="65.24" r=".95" stroke="#fff" stroke-width=".13" fill="#ae762b"/>
-<circle cx="122.08" cy="65.24" r=".95" stroke="#fff" stroke-width=".13" fill="#627384"/>
-<circle cx="117" cy="67.78" r=".95" stroke="#fff" stroke-width=".13" fill="#137f94"/>
-<circle cx="119.54" cy="67.78" r=".95" stroke="#fff" stroke-width=".13" fill="#ae762b"/>
-<circle cx="122.08" cy="67.78" r=".95" stroke="#fff" stroke-width=".13" fill="#627384"/>
-<circle cx="117" cy="70.32" r=".95" stroke="#fff" stroke-width=".13" fill="#137f94"/>
-<circle cx="119.54" cy="70.32" r=".95" stroke="#fff" stroke-width=".13" fill="#ae762b"/>
-<circle cx="122.08" cy="70.32" r=".95" stroke="#fff" stroke-width=".13" fill="#627384"/>
-<circle cx="117" cy="72.86" r=".95" stroke="#fff" stroke-width=".13" fill="#137f94"/>
-<circle cx="119.54" cy="72.86" r=".95" stroke="#fff" stroke-width=".13" fill="#ae762b"/>
-<circle cx="122.08" cy="72.86" r=".95" stroke="#fff" stroke-width=".13" fill="#627384"/>
-<circle cx="117" cy="75.4" r=".95" stroke="#fff" stroke-width=".13" fill="#137f94"/>
-<circle cx="119.54" cy="75.4" r=".95" stroke="#fff" stroke-width=".13" fill="#ae762b"/>
-<circle cx="122.08" cy="75.4" r=".95" stroke="#fff" stroke-width=".13" fill="#627384"/>
-<circle cx="117" cy="77.94" r=".95" stroke="#fff" stroke-width=".13" fill="#137f94"/>
-<circle cx="119.54" cy="77.94" r=".95" stroke="#fff" stroke-width=".13" fill="#ae762b"/>
-<circle cx="122.08" cy="77.94" r=".95" stroke="#fff" stroke-width=".13" fill="#627384"/>
-<circle cx="117" cy="80.48" r=".95" stroke="#fff" stroke-width=".13" fill="#137f94"/>
-<circle cx="119.54" cy="80.48" r=".95" stroke="#fff" stroke-width=".13" fill="#ae762b"/>
-<circle cx="122.08" cy="80.48" r=".95" stroke="#fff" stroke-width=".13" fill="#627384"/>
-<rect x="115.3" y="47.7" width="8.75" height="35.3" fill="none" stroke="#596879" stroke-width=".27" stroke-dasharray="1 .6"/>
-<text x="119.5" y="46.2" font-family="Arial,sans-serif" font-size="2.2" text-anchor="middle" fill="#364f5f" font-weight="normal">GPIO 3×13</text>
-<text x="119.5" y="85.4" font-family="Arial,sans-serif" font-size="1.75" text-anchor="middle" fill="#364f5f" font-weight="normal">2.54 pitch</text>
-<rect x="52" y="99.75" width="8.25" height="4.25" fill="#b67b32" stroke="#4e6571" stroke-width=".35" rx=".4"/>
-<text x="56.125" y="102.625" font-family="Arial,sans-serif" font-size="1.7" text-anchor="middle" fill="#fff" font-weight="bold">VIN*</text>
-<rect x="106" y="99.75" width="8.25" height="4.25" fill="#b67b32" stroke="#4e6571" stroke-width=".35" rx=".4"/>
-<text x="110.125" y="102.575" font-family="Arial,sans-serif" font-size="1.6" text-anchor="middle" fill="#fff" font-weight="bold">R-PWR*</text>
-<circle cx="64" cy="29.3" r="1.55" fill="#fff" stroke="#3c805b" stroke-width=".35"/>
-<circle cx="64" cy="29.3" r="3.6" fill="none" stroke="#3c805b" stroke-width=".25" stroke-dasharray="1.1 .6"/>
-<circle cx="121" cy="29.3" r="1.55" fill="#fff" stroke="#3c805b" stroke-width=".35"/>
-<circle cx="121" cy="29.3" r="3.6" fill="none" stroke="#3c805b" stroke-width=".25" stroke-dasharray="1.1 .6"/>
-<circle cx="65" cy="97" r="1.55" fill="#fff" stroke="#3c805b" stroke-width=".35"/>
-<circle cx="65" cy="97" r="3.6" fill="none" stroke="#3c805b" stroke-width=".25" stroke-dasharray="1.1 .6"/>
-<circle cx="121" cy="97" r="1.55" fill="#fff" stroke="#3c805b" stroke-width=".35"/>
-<circle cx="121" cy="97" r="3.6" fill="none" stroke="#3c805b" stroke-width=".25" stroke-dasharray="1.1 .6"/>
-<text x="88" y="110" font-family="Arial,sans-serif" font-size="2.45" text-anchor="middle" fill="#116c86" font-weight="normal">SOUTH · SDIO / 5 V INPUT / RADIO POWER</text>
-<rect x="13" y="113" width="4" height="3" fill="#0a9184" rx=".3"/>
-<text x="19" y="115.7" font-family="Arial,sans-serif" font-size="2.35" text-anchor="start" fill="#294058" font-weight="normal">Top-entry GH (cable up +Z)</text>
-<rect x="94" y="113" width="4" height="3" fill="#b67b32" rx=".3"/>
-<text x="100" y="115.7" font-family="Arial,sans-serif" font-size="2.35" text-anchor="start" fill="#294058" font-weight="normal">Side-entry GH (cable outward)</text>
-<rect x="13" y="119" width="4" height="3" fill="none" stroke="#b43a9d" stroke-width=".4" stroke-dasharray="1 .5"/>
-<text x="19" y="121.7" font-family="Arial,sans-serif" font-size="2.25" text-anchor="start" fill="#294058" font-weight="normal">Nominal footprint envelope (not cable keep-out)</text>
-<text x="85" y="128.2" font-family="Arial,sans-serif" font-size="2.2" text-anchor="middle" fill="#567080" font-weight="normal">Actual dimensions: GH / USB-C / P4 / FPC / microSD / pin pitch. PHY, magnetics and power blocks are placeholders.</text>
-<text x="85" y="133.4" font-family="Arial,sans-serif" font-size="2.25" text-anchor="middle" fill="#567080" font-weight="normal">3D cable access, solder-pad/courtyard verification and board routing remain OPEN.</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="180mm" height="137mm" viewBox="0 0 180 137" role="img" aria-labelledby="tt dd">
+<title id="tt">ROV-GND-P4 50 by 50 mm top-view Rev A placement</title><desc id="dd">Precisely scaled 50mm square PCB top view. All eight JST-GH connectors are standing top-entry, USB-C lies sideways, camera north, radio SDIO south, 3 by 13 header east, four mounting holes at exact corners with center offset 3.5mm, microSD on bottom with north-facing edge opening. No copper routing represented.</desc>
+<rect width="180" height="137" fill="#f9fbfc"/>
+<text x="108" y="7" font-family="Arial,sans-serif" font-size="4.1" font-weight="bold" text-anchor="middle" fill="#153850">ROV-GND-P4 · 50 × 50 mm hard outline</text>
+<text x="108" y="12" font-family="Arial,sans-serif" font-size="2.5" text-anchor="middle" fill="#547087">Top-view mechanical packing study · all GH vertical +Z · bottom microSD</text>
+<rect x="58" y="22" width="50" height="50" fill="#e7f2e9" stroke="#246e4b" stroke-width=".6"/>
+<path d="M68 22 V72 M58 32 H108" fill="none" stroke="#7da990" stroke-width=".1"/>
+<path d="M78 22 V72 M58 42 H108" fill="none" stroke="#7da990" stroke-width=".1"/>
+<path d="M88 22 V72 M58 52 H108" fill="none" stroke="#7da990" stroke-width=".1"/>
+<path d="M98 22 V72 M58 62 H108" fill="none" stroke="#7da990" stroke-width=".1"/>
+<path d="M58 19 V16 H108 V19 M111 22 H114 V72 H111" fill="none" stroke="#60758b" stroke-width=".3"/>
+<text x="83" y="15.2" font-family="Arial" font-size="2.7" text-anchor="middle" fill="#2b455c">50 mm</text>
+<text x="115" y="47" transform="rotate(90 115 47)" font-family="Arial" font-size="2.7" text-anchor="middle" fill="#2b455c">50 mm</text>
+<rect x="84.8" y="22" width="13.1" height="14.05" fill="#edc9d0" fill-opacity=".45" stroke="#bc6883" stroke-width=".4" stroke-dasharray="1 .7"/>
+<text x="91.35" y="27" text-anchor="middle" font-family="Arial" font-size="2.3" font-weight="bold" fill="#9b455e">microSD B.Cu</text>
+<rect x="73.15" y="22.4" width="19.7" height="6.9" rx=".25" fill="#226b8c" stroke="#325c6c" stroke-width=".3" />
+<text x="83" y="26.55" font-family="Arial" font-size="2.5" fill="white" text-anchor="middle">CAMERA CSI</text>
+<rect x="58" y="42.53" width="9.17" height="8.94" rx=".25" fill="#315c95" stroke="#325c6c" stroke-width=".3" />
+<text x="62.59" y="46.23" font-family="Arial" font-size="2" fill="white" text-anchor="middle">USB-C</text><text x="62.59" y="49.03" font-family="Arial" font-size="1.6" fill="white" text-anchor="middle">HS OTG</text>
+<rect x="58.7" y="31" width="9.46" height="6.6" rx=".25" fill="#0b8a79" stroke="#325c6c" stroke-width=".3" stroke-dasharray="1.0 .55"/>
+<rect x="59.31" y="32.27" width="8.25" height="4.05" fill="#068e78" stroke="#08554d" stroke-width=".2"/>
+<text x="63.43" y="35.04" text-anchor="middle" font-family="Arial" font-size="2.2" fill="white" font-weight="bold">VIN</text>
+<rect x="58.7" y="55.4" width="9.46" height="6.6" rx=".25" fill="#0b8a79" stroke="#325c6c" stroke-width=".3" stroke-dasharray="1.0 .55"/>
+<rect x="59.31" y="56.67" width="8.25" height="4.05" fill="#068e78" stroke="#08554d" stroke-width=".2"/>
+<text x="63.43" y="59.44" text-anchor="middle" font-family="Arial" font-size="2.2" fill="white" font-weight="bold">R PWR</text>
+<rect x="70" y="31" width="11.46" height="6.6" rx=".25" fill="#0b8a79" stroke="#325c6c" stroke-width=".3" stroke-dasharray="1.0 .55"/>
+<rect x="70.36" y="32.27" width="10.75" height="4.05" fill="#068e78" stroke="#08554d" stroke-width=".2"/>
+<text x="75.73" y="35.04" text-anchor="middle" font-family="Arial" font-size="2.2" fill="white" font-weight="bold">UART0</text>
+<rect x="70" y="39" width="9.46" height="6.6" rx=".25" fill="#0b8a79" stroke="#325c6c" stroke-width=".3" stroke-dasharray="1.0 .55"/>
+<rect x="70.61" y="40.27" width="8.25" height="4.05" fill="#068e78" stroke="#08554d" stroke-width=".2"/>
+<text x="74.73" y="43.04" text-anchor="middle" font-family="Arial" font-size="2.2" fill="white" font-weight="bold">UART1</text>
+<rect x="70" y="47" width="9.46" height="6.6" rx=".25" fill="#0b8a79" stroke="#325c6c" stroke-width=".3" stroke-dasharray="1.0 .55"/>
+<rect x="70.61" y="48.27" width="8.25" height="4.05" fill="#068e78" stroke="#08554d" stroke-width=".2"/>
+<text x="74.73" y="51.04" text-anchor="middle" font-family="Arial" font-size="2.2" fill="white" font-weight="bold">UART2</text>
+<rect x="70" y="55.4" width="9.46" height="6.6" rx=".25" fill="#0b8a79" stroke="#325c6c" stroke-width=".3" stroke-dasharray="1.0 .55"/>
+<rect x="70.61" y="56.67" width="8.25" height="4.05" fill="#068e78" stroke="#08554d" stroke-width=".2"/>
+<text x="74.73" y="59.44" text-anchor="middle" font-family="Arial" font-size="2.2" fill="white" font-weight="bold">I2C</text>
+<rect x="82.5" y="31" width="11.46" height="6.6" rx=".25" fill="#0b8a79" stroke="#325c6c" stroke-width=".3" stroke-dasharray="1.0 .55"/>
+<rect x="82.86" y="32.27" width="10.75" height="4.05" fill="#068e78" stroke="#08554d" stroke-width=".2"/>
+<text x="88.23" y="35.04" text-anchor="middle" font-family="Arial" font-size="2.2" fill="white" font-weight="bold">SPI</text>
+<rect x="82.5" y="55.4" width="9.46" height="6.6" rx=".25" fill="#0b8a79" stroke="#325c6c" stroke-width=".3" stroke-dasharray="1.0 .55"/>
+<rect x="83.11" y="56.67" width="8.25" height="4.05" fill="#068e78" stroke="#08554d" stroke-width=".2"/>
+<text x="87.23" y="59.44" text-anchor="middle" font-family="Arial" font-size="2.2" fill="white" font-weight="bold">ETH</text>
+<rect x="82.5" y="42.5" width="10" height="10" rx=".25" fill="#8496ab" stroke="#325c6c" stroke-width=".3" />
+<text x="87.5" y="47.4" font-family="Arial" font-size="2.7" fill="white" text-anchor="middle" font-weight="bold">ESP32</text><text x="87.5" y="50.5" font-family="Arial" font-size="2.7" fill="white" text-anchor="middle" font-weight="bold">P4</text>
+<rect x="94.9" y="30.45" width="8.5" height="33.1" rx=".25" fill="#fff0c9" stroke="#ab842b" stroke-width=".3" />
+<circle cx="96.35" cy="31.76" r=".83" fill="#117d88" stroke="#fff" stroke-width=".12"/>
+<circle cx="98.89" cy="31.76" r=".83" fill="#a87931" stroke="#fff" stroke-width=".12"/>
+<circle cx="101.43" cy="31.76" r=".83" fill="#475569" stroke="#fff" stroke-width=".12"/>
+<circle cx="96.35" cy="34.3" r=".83" fill="#a87931" stroke="#fff" stroke-width=".12"/>
+<circle cx="98.89" cy="34.3" r=".83" fill="#a87931" stroke="#fff" stroke-width=".12"/>
+<circle cx="101.43" cy="34.3" r=".83" fill="#475569" stroke="#fff" stroke-width=".12"/>
+<circle cx="96.35" cy="36.84" r=".83" fill="#117d88" stroke="#fff" stroke-width=".12"/>
+<circle cx="98.89" cy="36.84" r=".83" fill="#a87931" stroke="#fff" stroke-width=".12"/>
+<circle cx="101.43" cy="36.84" r=".83" fill="#475569" stroke="#fff" stroke-width=".12"/>
+<circle cx="96.35" cy="39.38" r=".83" fill="#117d88" stroke="#fff" stroke-width=".12"/>
+<circle cx="98.89" cy="39.38" r=".83" fill="#a87931" stroke="#fff" stroke-width=".12"/>
+<circle cx="101.43" cy="39.38" r=".83" fill="#475569" stroke="#fff" stroke-width=".12"/>
+<circle cx="96.35" cy="41.92" r=".83" fill="#117d88" stroke="#fff" stroke-width=".12"/>
+<circle cx="98.89" cy="41.92" r=".83" fill="#a87931" stroke="#fff" stroke-width=".12"/>
+<circle cx="101.43" cy="41.92" r=".83" fill="#475569" stroke="#fff" stroke-width=".12"/>
+<circle cx="96.35" cy="44.46" r=".83" fill="#117d88" stroke="#fff" stroke-width=".12"/>
+<circle cx="98.89" cy="44.46" r=".83" fill="#a87931" stroke="#fff" stroke-width=".12"/>
+<circle cx="101.43" cy="44.46" r=".83" fill="#475569" stroke="#fff" stroke-width=".12"/>
+<circle cx="96.35" cy="47" r=".83" fill="#117d88" stroke="#fff" stroke-width=".12"/>
+<circle cx="98.89" cy="47" r=".83" fill="#a87931" stroke="#fff" stroke-width=".12"/>
+<circle cx="101.43" cy="47" r=".83" fill="#475569" stroke="#fff" stroke-width=".12"/>
+<circle cx="96.35" cy="49.54" r=".83" fill="#117d88" stroke="#fff" stroke-width=".12"/>
+<circle cx="98.89" cy="49.54" r=".83" fill="#a87931" stroke="#fff" stroke-width=".12"/>
+<circle cx="101.43" cy="49.54" r=".83" fill="#475569" stroke="#fff" stroke-width=".12"/>
+<circle cx="96.35" cy="52.08" r=".83" fill="#117d88" stroke="#fff" stroke-width=".12"/>
+<circle cx="98.89" cy="52.08" r=".83" fill="#a87931" stroke="#fff" stroke-width=".12"/>
+<circle cx="101.43" cy="52.08" r=".83" fill="#475569" stroke="#fff" stroke-width=".12"/>
+<circle cx="96.35" cy="54.62" r=".83" fill="#117d88" stroke="#fff" stroke-width=".12"/>
+<circle cx="98.89" cy="54.62" r=".83" fill="#a87931" stroke="#fff" stroke-width=".12"/>
+<circle cx="101.43" cy="54.62" r=".83" fill="#475569" stroke="#fff" stroke-width=".12"/>
+<circle cx="96.35" cy="57.16" r=".83" fill="#117d88" stroke="#fff" stroke-width=".12"/>
+<circle cx="98.89" cy="57.16" r=".83" fill="#a87931" stroke="#fff" stroke-width=".12"/>
+<circle cx="101.43" cy="57.16" r=".83" fill="#475569" stroke="#fff" stroke-width=".12"/>
+<circle cx="96.35" cy="59.7" r=".83" fill="#117d88" stroke="#fff" stroke-width=".12"/>
+<circle cx="98.89" cy="59.7" r=".83" fill="#a87931" stroke="#fff" stroke-width=".12"/>
+<circle cx="101.43" cy="59.7" r=".83" fill="#475569" stroke="#fff" stroke-width=".12"/>
+<circle cx="96.35" cy="62.24" r=".83" fill="#117d88" stroke="#fff" stroke-width=".12"/>
+<circle cx="98.89" cy="62.24" r=".83" fill="#a87931" stroke="#fff" stroke-width=".12"/>
+<circle cx="101.43" cy="62.24" r=".83" fill="#475569" stroke="#fff" stroke-width=".12"/>
+<rect x="73.15" y="64.7" width="19.7" height="6.9" rx=".25" fill="#226b8c" stroke="#325c6c" stroke-width=".3" />
+<text x="83" y="68.85" font-family="Arial" font-size="2.5" fill="white" text-anchor="middle">RADIO SDIO</text>
+<circle cx="61.5" cy="25.5" r="3.25" fill="none" stroke="#cc5961" stroke-dasharray=".7 .6" stroke-width=".25"/>
+<circle cx="61.5" cy="25.5" r="1.1" fill="white" stroke="#387154" stroke-width=".35"/>
+<circle cx="104.5" cy="25.5" r="3.25" fill="none" stroke="#cc5961" stroke-dasharray=".7 .6" stroke-width=".25"/>
+<circle cx="104.5" cy="25.5" r="1.1" fill="white" stroke="#387154" stroke-width=".35"/>
+<circle cx="61.5" cy="68.5" r="3.25" fill="none" stroke="#cc5961" stroke-dasharray=".7 .6" stroke-width=".25"/>
+<circle cx="61.5" cy="68.5" r="1.1" fill="white" stroke="#387154" stroke-width=".35"/>
+<circle cx="104.5" cy="68.5" r="3.25" fill="none" stroke="#cc5961" stroke-dasharray=".7 .6" stroke-width=".25"/>
+<circle cx="104.5" cy="68.5" r="1.1" fill="white" stroke="#387154" stroke-width=".35"/>
+<text x="83" y="20.9" font-family="Arial" font-size="2.2" font-weight="bold" fill="#216e86" text-anchor="middle">NORTH: CSI-2 + microSD edge (underside)</text>
+<text x="83" y="77.5" font-family="Arial" font-size="2.4" font-weight="bold" fill="#216e86" text-anchor="middle">SOUTH: WINJECT SDIO</text>
+<text x="53" y="47" transform="rotate(-90 53 47)" font-family="Arial" font-size="2.2" font-weight="bold" fill="#216e86" text-anchor="middle">WEST</text>
+<text x="113" y="47" transform="rotate(90 113 47)" font-family="Arial" font-size="2.2" font-weight="bold" fill="#216e86" text-anchor="middle">GPIO EAST</text>
+<rect x="119" y="26" width="3" height="2.8" fill="#068e78"/>
+<text x="124" y="28.5" font-size="2.6" font-family="Arial" fill="#284457">Standing JST-GH ×8</text>
+<rect x="119" y="32" width="3" height="2.8" fill="#315c95"/>
+<text x="124" y="34.5" font-size="2.6" font-family="Arial" fill="#284457">USB-C lying ×1</text>
+<rect x="119" y="38" width="3" height="2.8" fill="#edc9d0" stroke="#bc6883" stroke-dasharray="1 .6"/>
+<text x="124" y="40.5" font-size="2.5" font-family="Arial" fill="#284457">microSD on bottom (B.Cu)</text>
+<circle cx="120.5" cy="46.5" r="3.25" fill="none" stroke="#cc5961" stroke-width=".3" stroke-dasharray=".8 .6"/>
+<text x="127" y="47.3" font-size="2.4" font-family="Arial" fill="#284457">M2 corner screw keep-out</text>
+<text x="119" y="56" font-size="2.5" font-family="Arial" fill="#284457">GPIO: 3×13 @ 2.54 mm</text>
+<text x="119" y="61" font-size="2.5" font-family="Arial" fill="#284457">Molex FPC ×2: 19.7×6.9</text>
+<text x="119" y="66" font-size="2.5" font-family="Arial" fill="#284457">P4: 10×10 mm body</text>
+<text x="119" y="71" font-size="2.5" font-family="Arial" fill="#284457">USB: ~9.17×8.94 mm</text>
+<text x="82" y="85" font-size="2.8" font-family="Arial" text-anchor="middle" fill="#24475c" font-weight="bold">Provisional component placement / edge and corner geometry</text>
+<text x="82" y="90" font-size="2.25" font-family="Arial" text-anchor="middle" fill="#64748b">GH dashed = estimated SMT footprint envelope; solid = vendor housing dimensions.</text>
+<text x="82" y="95" font-size="2.25" font-family="Arial" text-anchor="middle" fill="#64748b">Unshown: PHY, magnetics, flash, PSRAM, power, ESD and routing (must be fit-tested).</text>
+<text x="82" y="100" font-size="2.25" font-family="Arial" text-anchor="middle" fill="#64748b">Opposite-side microSD physically overlaps CSI and SPI XY projections: check SMT/via keep-outs.</text>
+<text x="82" y="107" font-size="2.25" font-family="Arial" text-anchor="middle" fill="#64748b">Print at actual SVG physical size (180×137 mm) without scaling for 1:1 PCB size.</text>
+<text x="82" y="115" font-size="2.25" font-family="Arial" text-anchor="middle" fill="#64748b">50 × 50 is a hard constraint; 6-layer routing and cable access are not yet verified.</text>
 </svg>

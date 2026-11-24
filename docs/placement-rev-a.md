@@ -1,51 +1,72 @@
-# ROV-GND-P4 Rev A — mixed-orientation GH, physically scaled 80 × 80 mm study
+# ROV-GND-P4 Rev A — 50 × 50 mm square, all GH standing
 
-**Status:** revised footprint/body placement study; **NOT a released PCB**. West edge now mixes top-entry (standing) and side-entry (lying) JST GH parts. In the diagram, 1 SVG unit = 1 mm physical: print at **100%, no scaling** for 80 mm board outline.
+**Hard requirement: 50 × 50 mm PCB outline.** This replaces the previous 80 mm target. The diagram is a **real-scale, preliminary physical packing study**. It is not a finished KiCad placement, routed PCB or confirmed assembled mechanical fit.
 
-![Measured-dimension board diagram](rov-gnd-p4-placement-rev-a.svg)
+![50 mm square top view, all vertical JST-GH, USB side-entry, bottom-side microSD](rov-gnd-p4-placement-rev-a.svg)
 
-## Connector selection
+Print the SVG at its declared physical size with **100% scaling**: the board green outline should measure 50 × 50 mm.
 
-| Port | Proposed exact part | Orientation | Plastic body along west edge | Footprint envelope along edge used for placement |
-|---|---|---|---:|---:|
-| USB HS OTG | `GCT USB4085-GF-A` | Right-angle, cable W | 8.94 mm | 9.40 mm |
-| UART0 · 6P | `JST SM06B-GHS-TB` | Right-angle, cable W | 10.75 mm | 11.25 mm |
-| UART1 · 4P | `JST BM04B-GHS-TBT` | Top-entry, pin axis E–W, cable +Z | 4.05 mm | 6.60 mm |
-| UART2 · 4P | `JST BM04B-GHS-TBT` | Top-entry, pin axis E–W, cable +Z | 4.05 mm | 6.60 mm |
-| I²C · 4P | `JST BM04B-GHS-TBT` | Top-entry, pin axis E–W, cable +Z | 4.05 mm | 6.60 mm |
-| SPI · 6P | `JST BM06B-GHS-TBT` | Top-entry, pin axis E–W, cable +Z | 4.05 mm | 6.10 mm |
-| ETH · 4P | `JST SM04B-GHS-TB` | Right-angle, cable W | 8.25 mm | 8.75 mm |
+## Edge and side strategy
 
-**Sources:** JST GH drawing: https://www.marutsu.co.jp/contents/shop/marutsu/datasheet/BM04B-GHS-TBT%28LF%29%28SN%29.pdf ; vertical GH KiCad examples: https://wiki.adom.inc/adom/bm04b-ghs-tbt/files/bm04b-ghs-tbt.kicad_mod and https://wiki.adom.inc/adom/bm06b-ghs-tbt/files/bm06b-ghs-tbt.kicad_mod ; USB-C GCT drawing: https://www.mouser.com/datasheet/2/837/USB4085-2888250.pdf .
+- **North (top):** Camera 15-pin 1.0 mm CSI-2 FPC, cable exits north. **microSD is on the underside of the PCB with its card slot accessible at the north edge**; top CSI and bottom microSD exit at different heights. This two-sided overlap and any cover/cable access require physical testing.
+- **West:** **Only the USB-C receptacle is side-entry** (USB HS OTG). **All eight JST-GH connectors are vertical/top-entry, cable exits +Z**, concentrated in two banks and two west-edge slots, Pixhawk-style. They do **not** need to lie in a single edge-aligned row.
+- **East:** 3×13, 2.54 mm servo-style GPIO header. All 39 contacts retained, including GPIO24/25 for native USB FS/JTAG through an external adapter. The header is assumed to be a normal through-hole type; requires full PCB-side clearances.
+- **South:** Radio 15-pin 1.0 mm SDIO FPC, cable exits south. Radio power on a **top-entry GH near the west side**, not a separate south-edge side-entry connector.
+- **Mounting:** four **corner mounting holes**, nominally M2 clearance drill Ø2.2 mm, centered at (3.5,3.5), (46.5,3.5), (3.5,46.5), (46.5,46.5) mm. Provisional **Ø6.5 mm keep-out** shown around each screw head. Hole size and head clearance to be finalized with chosen hardware.
 
-**Important distinction:** the *plastic body width* of a rotated top-entry GH is only **4.05 mm**, but its SMT pads and courtyard extend farther. The drawing therefore uses **6.60 mm** top-entry 4P and **6.10 mm** top-entry 6P envelopes based on footprint examples, and **estimated** 0.5 mm additional clearance for the two right-angle GH bodies and the USB body. Reconfirm all footprints from the definitive KiCad library before fixing connector spacing. Cabling above the board also needs full 3D checks.
+### Exact candidate parts and estimated footprint envelopes
 
-### Actual physical sizing and boundary conditions
+| Component | Candidate part | Body dimensions | Drawn envelope / status |
+|---|---|---|---|
+| Vertical GH 4P ×6 | JST `BM04B-GHS-TBT(LF)(SN)` | 8.25 × 4.05 mm | **9.46 × 6.60 mm** conservative placeholder for pads/courtyard |
+| Vertical GH 6P ×2 | JST `BM06B-GHS-TBT(LF)(SN)` | 10.75 × 4.05 mm | **11.46 × 6.60 mm** conservative placeholder for pads/courtyard |
+| Side-entry USB-C ×1 | GCT `USB4085-GF-A` candidate | ~9.17 × 8.94 mm as oriented | Body-only approximation; actual USB-C pad/courtyard must be checked |
+| Camera FPC ×1 | Molex `0522071533` candidate | ~19.7 × 6.9 mm | Housing-sized; solder pads and latch clearance not modeled |
+| Radio SDIO FPC ×1 | Same mechanical connector family | ~19.7 × 6.9 mm | Housing-sized; different electrical pinout |
+| microSD (bottom) ×1 | Molex `503398-1892` candidate | 13.1 × 14.05 mm | Bottom-side housing; ejection at north edge |
+| GPIO header | 3×13 @ 2.54 mm | row pitch span 30.48 mm | Pins illustrated; final body/courtyard not chosen |
+| ESP32-P4 | QFN package | nominal 10 × 10 mm | Body-only; thermal/pad and route keep-outs not modeled |
 
-- Board: **80 × 80 mm**, top view, millimeter-scale SVG.
-- Mixed GH + USB West envelope lengths total: **55.30 mm**.
-- Six envelope gaps × 2.00 mm = **12.00 mm**.
-- Combined west occupancy = **67.30 mm**, remaining **12.70 mm**, placed with **6.35 mm** nominal end margins.
-- JST top-entry part body is 8.25 mm (4P) or 10.75 mm (6P) **inboard**; entry opening points up away from board (+Z). It is not electrically different from right-angle JST GH.
-- GCT USB4085-GF-A USB Type-C body shown **8.94 × 9.17 mm** (USB2.0 480 Mbps HS OTG).
-- ESP32-P4 QFN104 package is **10 × 10 mm**.
-- Two 15P 1.0 mm-pitch Molex `0522071533` reference FFC/FPC bodies shown **19.7 × 6.9 mm**, with CSI north and radio SDIO south. **Confirm actual choice and FFC contact side/orientation.** Source: https://s3.amazonaws.com/snapeda/datasheet/522071533_Molex.pdf .
-- Molex microSD `5033981892` socket shown **13.1 × 14.05 mm**. Source: https://www.molex.com/content/dam/molex/molex-dot-com/en_us/pdf/product-reference-guides/987651-8263.pdf .
-- 3×13 servo header has **2.54 mm** pin pitch, with first-to-last row center span **30.48 mm**. GND/5V/signal ordering is unchanged; USB FS/JTAG D−/D+ GPIO24/GPIO25 stay only on this header, no onboard FS connector.
-- South main power and radio power are drawn as **candidate 4-pin GH side-entry bodies**; exact connector and current rating remain unresolved. Their labels `VIN*` and `R-PWR*` indicate placeholders.
-- PHY, magnetics and buck regulator zones are **functional placement placeholders, not validated manufacturer dimensions**.
-- Corner holes are preliminary and **not** mechanically approved.
+References for parts/dimensions:
+- [JST 4P top-entry GH](https://jlcpcb.com/partdetail/JST-BM04B_GHS_TBT_LF_SN/C161692)
+- [JST 6P top-entry GH](https://jlcpcb.com/partdetail/JST-BM06B_GHS_TBT_LF_SN/C189892)
+- [Molex 503398-1892 microSD](https://www.lcsc.com/product-detail/SD-Card-Memory-Card-Connector_MOLEX-5033981892_C428492.html)
+- [Molex 0522071533 CSI FPC](https://www.digikey.com/en/products/detail/molex/0522071533/4444512)
 
-## Cable clearance and PCB constraints
+**Note:** top-entry 4P and 6P footprint envelopes are drawn larger than plastic-body dimensions. They are conservative *estimates* based on previously identified third-party KiCad footprint examples, **not final manufacturer-approved courtyard footprints**.
 
-1. Top-entry GH cables emerge perpendicular to the PCB. Check mating housing height, insulation bend radius and removal access, including adjacent standing plugs and the enclosure roof.
-2. Side-entry GH cables project outward to the west. Check actual connector rotation, latch access and JST mating plug orientation.
-3. A printed housing size alone is insufficient for final PCB DRC. Verify **KiCad courtyard and SMT mounting pads** for selected exact variants. The dashed envelopes are indicative until chosen footprint files are imported.
-4. UART0 6P and Ethernet 4P deliberately remain side-entry for external harness access. UART1/2, external I²C and SPI switch to top-entry (standing).
-5. Ensure PCB mount screws, camera FPC latch, radio SDIO latch, microSD extraction, 3×13 header and USB shell are accessible with cables installed.
-6. Native USB FS/JTAG from GPIO24/25 requires a separate external USB-C adapter with GND/CC/ESD and no direct cable VBUS-to-servo 5V backfeed.
-7. P4 GPIO/boot-strap routing, USB-C HS host VBUS and Ethernet PHY routing are not yet verified.
+## Top-side component placement coordinates
 
-## Recommendation
+Board origin is **northwest/top-left corner** (x eastward, y southward). All dimensions in mm. GH outer rectangles include the preliminary courtyard envelopes.
 
-**Use 80 × 80 mm as a promising new mechanical target**, **not** a committed PCB outline. Re-run physical placement using vendor STEP models / KiCad exact footprints and full mated-harness models; grow to 85–90 mm if any west-edge courtyard, routing or mounting clearance fails.
+| Component | Side | x | y | Envelope W × H |
+|---|---|---:|---:|---|
+| CAMERA CSI | F.Cu | 15.15 | 0.40 | 19.70 × 6.90 |
+| USB-C HS OTG | F.Cu | 0.00 | 20.53 | 9.17 × 8.94 |
+| VIN | F.Cu | 0.70 | 9.00 | 9.46 × 6.60 |
+| RADIO PWR | F.Cu | 0.70 | 33.40 | 9.46 × 6.60 |
+| UART0 | F.Cu | 12.00 | 9.00 | 11.46 × 6.60 |
+| UART1 | F.Cu | 12.00 | 17.00 | 9.46 × 6.60 |
+| UART2 | F.Cu | 12.00 | 25.00 | 9.46 × 6.60 |
+| I2C | F.Cu | 12.00 | 33.40 | 9.46 × 6.60 |
+| SPI | F.Cu | 24.50 | 9.00 | 11.46 × 6.60 |
+| ETH | F.Cu | 24.50 | 33.40 | 9.46 × 6.60 |
+| ESP32-P4 | F.Cu | 24.50 | 20.50 | 10.00 × 10.00 |
+| GPIO 3x13 | F.Cu | 36.90 | 8.45 | 8.50 × 33.10 |
+| RADIO SDIO | F.Cu | 15.15 | 42.70 | 19.70 × 6.90 |
+| microSD edge | B.Cu | 26.80 | 0.00 | 13.10 × 14.05 |
+
+At this **rectangular-envelope level**, no top-side blocks overlap, and no shown top/bottom footprints intersect the four **3.25 mm-radius corner screw-head keep-outs**. This does **not** establish full physical feasibility, because many IC/power parts are not yet instantiated and there are no mated GH housings or 3D cable bend envelopes.
+
+### Critical checks before approving 50 mm design
+
+1. **High-speed camera routing:** the upper GH bank lies between CSI connector and P4. Real MIPI CSI pair escape, continuous reference planes, any vias and crosstalk need routing verification. This may demand a different P4/GH arrangement or inner-layer routing.
+2. **microSD 2-sided overlap:** bottom microSD overlaps the XY footprints of north CSI and one GH. Confirm top/bottom SMT pad, via, stencil, soldering and card-insertion clearance, including the possibility of a thick case wall.
+3. **Missing electronics:** add actual ESP32-P4 PSRAM/flash, decoupling, PMIC/buck rails, microSD protection, 100BASE-TX PHY/magnetics/ESD and all GH/USB electronics. These are **not yet floorplanned**. A **6-layer PCB is recommended for investigation**, not proven adequate.
+4. **Power:** GH contacts are typically 1 A/contact class; determine main 5 V and radio 5 V current limits and whether an alternate high-current feed is needed for any servo loads.
+5. **GPIO header + screws:** use actual 3×13 header 3D footprint and selected M2 screws to verify corner clearance; do not assume the bare pin-center model covers plastic and cable mating.
+6. **Harness clearances:** all eight GH cables emerge above the board; check height, extraction grip, wiring strain, heat flow and overlap with the USB-C plug.
+7. **FPC contacts/cables:** independently check CSI and SDIO flex cable orientation, contact side and latch access; using the same FPC size does not mean their signals are interchangeable.
+8. **Electrical pin assignment:** unchanged **provisional**, not signed-off. Boot straps, UART, EMAC, PSRAM, SDMMC and FS USB GPIO mapping remain to be verified.
+
+**Design status:** 50 × 50 mechanical hard constraint **adopted**; all-GH-standing/USB-lying/corner-hole/edge-access microSD placement **proposed**. Manufacturability and routability are **not yet demonstrated**.

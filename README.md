@@ -30,7 +30,7 @@ See [SDIO cable contract](docs/radio-sdio-interface.md).
 
 ## Design documents
 
-- [80 × 80 mm mixed-orientation JST-GH board placement study](docs/placement-rev-a.md) ([dimensioned 1:1 SVG](docs/rov-gnd-p4-placement-rev-a.svg)); housing dimensions and sample courtyards to physical scale; not yet verified for mated cable access and final component footprints.
+- [50 × 50 mm all-standing JST-GH layout study](docs/placement-rev-a.md) ([dimensioned 1:1 SVG](docs/rov-gnd-p4-placement-rev-a.svg)); **hard 50 × 50 mm outline**; all eight GH connectors are top-entry, USB-C alone is side-entry, underside microSD opens at north edge, M2 corner-hole positions fixed provisionally. Missing components and 6-layer routing still require fit checks.
 
 - [Architecture and connector decisions](docs/architecture.md)
 - [Radio SDIO interface and FPC pinout](docs/radio-sdio-interface.md)
