@@ -1,6 +1,6 @@
 # Draft ESP32-P4 GPIO map — NOT VERIFIED
 
-This captures the *latest design discussion*, not a datasheet-checked pinout. A full pin-mux/strap audit is required before PCB routing. In particular, BOOT, CHIP_PU/EN, Ethernet GPIO35, SDMMC and USB dedicated pins have been sources of confusion; **do not treat this document as a released netlist**.
+This captures the *latest design discussion*, partially crosschecked against the official v3.x Espressif ESP32-P4X symbol and schematic checklist; a complete signal-mux and boot-strap audit is still required. A full pin-mux/strap audit is required before PCB routing. In particular, BOOT, CHIP_PU/EN, Ethernet GPIO35, SDMMC and USB dedicated pins have been sources of confusion; **do not treat this document as a released netlist**.
 
 ## Signal allocation proposals
 
@@ -21,7 +21,7 @@ This captures the *latest design discussion*, not a datasheet-checked pinout. A 
 | USB HS OTG D−/D+ | Dedicated USB pins | Verify actual package nets |
 | Ethernet RMII CRS_DV, RXD0, RXD1 | 28 / 29 / 30 | Provisional |
 | Ethernet RMII REF_CLK, TX_EN | 50 / 49 | Provisional |
-| Ethernet RMII TXD0, TXD1 | 34 / 35 | **Critical: boot strap conflict to review** |
+| Ethernet RMII TXD0, TXD1 | 34 / 35 | **Critical: GPIO35 is boot strap (normal boot requires high); reassign TXD1 or add verified isolation/boot-strapping** |
 | Ethernet MDC, MDIO, PHY_RESET | 31 / 52 / 51 | Provisional |
 | Camera control GPIO | 45 | Provisional |
 | microSD power enable | 47 | Provisional |
@@ -83,3 +83,9 @@ Totals: **13 GND + 13 5V + 2 3V3 + 11 signal = 39 contacts**. All 11 signal pins
 - GPIO24 D− and GPIO25 D+ are exposed **only on this header** for optional native USB FS/JTAG via an external USB-C adapter. They are also general GPIOs when USB is inactive, but **cannot be used for unrelated GPIO functions simultaneously with USB**. There is no onboard FS USB-C port or onboard USB/GPIO switching path. External adapter: short D± wiring, GND, Type-C CC resistors and ESD as needed; **do not tie external USB VBUS to the shared 5 V servo rail**.
 - **CS1–CS5 are connected only to this 3×13 GPIO header**, not to a separate SPI-EXT connector. Each pin can be configured as a SPI chip select or another GPIO function, not both at once. To attach a second SPI device, share CLK/MOSI/MISO/GND from the main SPI JST-GH and bring its CS wire from this header.
 - This header is a design allocation only, not a finalized electrical netlist or manufacturing drawing; check actual pinout, boot straps and package capabilities before routing.
+
+## Silicon revision and initial KiCad schematic
+
+The [initial KiCad schematic](../boards/rov-gnd-p4/kicad/rov-gnd-p4.kicad_sch) uses **ESP32-P4NRW32X v3.x** and official Espressif physical-pad mapping. On v3.x, **physical pin 54 is VDD_HP_1 (1.2 V supply)**, while **GPIO54 remains available on physical pin 98** and is the proposed ADC2_CH5 pin of the expansion header. These are distinct.
+
+GPIO35, GPIO36, GPIO37 and GPIO38 participate in boot strapping. **GPIO35=high** is normal SPI boot; GPIO35=low and GPIO36=high selects joint download. The tentative RMII TXD1 assignment to GPIO35 must be reviewed and is not approved for hardware fabrication. Camera SDMMC0, UART0 and USB data pins have higher confidence than custom flexible GPIO-matrix mappings. [Espressif schematic checklist](https://docs.espressif.com/projects/esp-hardware-design-guidelines/en/latest/esp32p4/schematic-checklist-esp32p4.html).
