@@ -31,7 +31,14 @@ jobs:
           sudo apt-get install -y software-properties-common
           sudo add-apt-repository -y ppa:kicad/kicad-9.0-releases
           sudo apt-get update
-          sudo DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends kicad
+          sudo DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends kicad kicad-libraries
+          # Headless CI needs the standard KiCad global footprint library table.
+          mkdir -p "$HOME/.config/kicad/9.0"
+          if [ -f /usr/share/kicad/template/fp-lib-table ]; then
+            cp /usr/share/kicad/template/fp-lib-table "$HOME/.config/kicad/9.0/fp-lib-table"
+          else
+            printf '(fp_lib_table (lib (name "Connector_JST") (type "KiCad") (uri "${KICAD9_FOOTPRINT_DIR}/Connector_JST.pretty") (options "") (descr "")) (lib (name "Connector_PinHeader_2.54mm") (type "KiCad") (uri "${KICAD9_FOOTPRINT_DIR}/Connector_PinHeader_2.54mm.pretty") (options "") (descr "")))\n' > "$HOME/.config/kicad/9.0/fp-lib-table"
+          fi
           kicad-cli version
 
       - name: Export schematic PDF (fails when schematic cannot load)
@@ -49,6 +56,15 @@ jobs:
             -o "$GITHUB_WORKSPACE/kicad-validation/ERC.json" \
             boards/rov-gnd-p4/kicad/rov-gnd-p4.kicad_sch
           rc=$?
+          python3 - "$GITHUB_WORKSPACE/kicad-validation/ERC.json" <<'PY'
+          import json, collections, sys
+          with open(sys.argv[1]) as f:
+              data = json.load(f)
+          violations = [v for sheet in data['sheets'] for v in sheet['violations']]
+          print("ERC total:", len(violations))
+          print("By severity:", dict(collections.Counter(v['severity'] for v in violations)))
+          print("By type:", dict(collections.Counter(v['type'] for v in violations)))
+          PY
           {
             echo "### ESP32-P4 schematic: KiCad ERC"
             echo "KiCad ERC exit code: \`$rc\`"
