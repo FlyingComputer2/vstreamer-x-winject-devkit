@@ -4,12 +4,12 @@
 - [ ] Choose precise ESP32-P4 and ESP32-C5 silicon ordering codes/revisions.
 - [ ] Verify P4 power/PSRAM/flash reference circuit and all GPIO/strapping assignments.
 - [ ] Lock FPC contact orientation and 6-pin JST-GH cable pin numbering.
-- [ ] Verify USB-C FS and HS CC/VBUS protection and role-control scheme.
+- [ ] Verify the single onboard USB-C HS OTG CC/VBUS protection, role control and power switching; separately validate external native USB FS/JTAG adapter wiring from GPIO24/25 and GND.
 
 ## Stage 1 — standalone ROV-GND-P4
 - [ ] 3.3 V and core supply measurements; boot/reset behavior.
 - [ ] UART0 auto-flash via external adapter, DTR/RTS controls, logs.
-- [ ] USB FS/JTAG enumerate and flash; GPIO24/25 jumper mode.
+- [ ] Native USB FS/JTAG enumerate/flash via an external USB-C device adapter on GPIO24/25; no onboard FS port or USB/GPIO selection jumpers.
 - [ ] USB HS OTG device and host modes with power protection.
 - [ ] Camera MIPI CSI and its independent I²C.
 - [ ] microSD sustained read/write; check errors.

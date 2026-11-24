@@ -21,7 +21,7 @@ See [SDIO cable contract](docs/radio-sdio-interface.md).
 ## P4 carrier features
 
 - ESP32-P4, camera CSI-2 (15-pin Raspberry Pi-style connector), microSD slot.
-- Two USB-C ports: native **USB FS/JTAG** and **USB HS OTG** (host/device for VStreamer).
+- **One onboard USB-C** for VStreamer USB HS OTG (host/device). Native USB FS/JTAG has **no onboard USB-C**: GPIO24 (D−) and GPIO25 (D+) are exposed on the 3×13 header for an optional external USB-C adapter.
 - UART0 flashing/logging via **6-pin JST-GH** with external auto-reset/boot controls; UART1 MSP DisplayPort; UART2 CRSF / S.Port via individual 4-pin JST-GH connectors.
 - One external I²C bus **separate** from the camera's I²C.
 - One external GP-SPI2 bus via a **single 6-pin JST-GH** connector labelled **SPI** (3V3, GND, CLK, MOSI, MISO, CS0). Optional CS1–CS5 are available **only on the 3×13 GPIO/servo header**, with no separate SPI-EXT connector and no shared IRQ.
@@ -30,7 +30,7 @@ See [SDIO cable contract](docs/radio-sdio-interface.md).
 
 ## Design documents
 
-- [110 × 110 mm square board placement and footprint sizing](docs/placement-rev-a.md) ([dimensioned 1:1 SVG](docs/rov-gnd-p4-placement-rev-a.svg)); preliminary until exact connector courtyards and cable access are verified.
+- [100 × 100 mm square board placement and footprint sizing](docs/placement-rev-a.md) ([dimensioned 1:1 SVG](docs/rov-gnd-p4-placement-rev-a.svg)); preliminary until exact connector courtyards and cable access are verified.
 
 - [Architecture and connector decisions](docs/architecture.md)
 - [Radio SDIO interface and FPC pinout](docs/radio-sdio-interface.md)

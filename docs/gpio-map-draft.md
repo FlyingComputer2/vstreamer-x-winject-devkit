@@ -17,7 +17,7 @@ This captures the *latest design discussion*, not a datasheet-checked pinout. A 
 | microSD CLK / CMD | 43 / 44 | Provisional |
 | SPI CLK / MOSI / MISO / CS0 | 9 / 8 / 10 / 7 | Provisional |
 | Optional SPI CS1..CS5; GPIO33 spare (3×13 GPIO header) | 4 / 5 / 6 / 13 / 32 / 33 | Provisional, no separate SPI-EXT connector |
-| USB FS Serial/JTAG D−/D+ | 24 / 25 | Provisional, GPIO only when USB disconnected |
+| Native USB FS/JTAG D−/D+ | 24 / 25 | 3×13 GPIO header only; optional external USB-C adapter; no dedicated onboard FS port |
 | USB HS OTG D−/D+ | Dedicated USB pins | Verify actual package nets |
 | Ethernet RMII CRS_DV, RXD0, RXD1 | 28 / 29 / 30 | Provisional |
 | Ethernet RMII REF_CLK, TX_EN | 50 / 49 | Provisional |
@@ -42,7 +42,7 @@ This captures the *latest design discussion*, not a datasheet-checked pinout. A 
 | 13 | IN/OUT | Optional SPI CS4 (GPIO header) | Shared with SPI |
 | 22 | IN/OUT | Free / analog candidate | **ADC capability not verified** |
 | 23 | IN/OUT | Free / analog candidate | **ADC capability not verified** |
-| 24 | IN/OUT | USB FS D− / GPIO | Must isolate FS USB connector in GPIO mode |
+| 24 | IN/OUT | USB FS D− / GPIO | No onboard FS port; external USB adapter must be disconnected for unrelated GPIO loads |
 | 25 | IN/OUT | USB FS D+ / GPIO | Must isolate FS USB connector in GPIO mode |
 | 32 | IN/OUT | Optional SPI CS5 (GPIO header) | Shared with SPI |
 | 33 | IN/OUT | GPIO header spare | Shared connector |
@@ -80,6 +80,6 @@ Totals: **13 GND + 13 5V + 2 3V3 + 11 signal = 39 contacts**. All 11 signal pins
 
 - Rows 3–13 use the conventional **GND / 5 V / signal** servo-header arrangement. Label the polarity and pin 1 clearly; GPIO signals remain 3.3 V-only (not 5 V tolerant). Exact header mechanical pitch, footprint and orientation are TBD.
 - 5 V is a **shared rail** repeated along the middle column and row 2, *not* thirteen independent regulated outputs. Design trace width, connector current per contact, total current limit and any protective fuse/eFuse accordingly. Same for 3V3.
-- GPIO24/25 shared with built-in **USB Full-Speed Serial/JTAG** must have physical data-path selection/isolation; GPIO mode and USB mode cannot run at the same time. USB D+ = GPIO25, D− = GPIO24.
+- GPIO24 D− and GPIO25 D+ are exposed **only on this header** for optional native USB FS/JTAG via an external USB-C adapter. They are also general GPIOs when USB is inactive, but **cannot be used for unrelated GPIO functions simultaneously with USB**. There is no onboard FS USB-C port or onboard USB/GPIO switching path. External adapter: short D± wiring, GND, Type-C CC resistors and ESD as needed; **do not tie external USB VBUS to the shared 5 V servo rail**.
 - **CS1–CS5 are connected only to this 3×13 GPIO header**, not to a separate SPI-EXT connector. Each pin can be configured as a SPI chip select or another GPIO function, not both at once. To attach a second SPI device, share CLK/MOSI/MISO/GND from the main SPI JST-GH and bring its CS wire from this header.
 - This header is a design allocation only, not a finalized electrical netlist or manufacturing drawing; check actual pinout, boot straps and package capabilities before routing.
