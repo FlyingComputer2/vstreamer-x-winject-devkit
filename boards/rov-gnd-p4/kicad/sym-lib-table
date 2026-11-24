@@ -1,0 +1,1 @@
+(sym_lib_table (lib (name "DEVKIT") (type "KiCad") (uri "${KIPRJMOD}/DEVKIT.kicad_sym") (options "") (descr "Project-local development-kit symbols")))
