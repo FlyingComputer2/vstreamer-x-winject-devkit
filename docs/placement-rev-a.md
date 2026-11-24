@@ -1,80 +1,61 @@
-# ROV-GND-P4 Rev A — square mechanical placement draft
+# ROV-GND-P4 Rev A — footprint-based square placement
 
-Status: **mechanical concept / not routed / dimensions provisional**.
+Status: **mechanical sizing study, not routed or manufacturing-ready**.
 
-## Board form factor
+## Working board dimension: **110 × 110 mm**
 
-- **Initial envelope:** 120 × 120 mm square (including connectors; exact outline and mounting keep-outs TBD).
-- **Top view convention:** north = camera edge, west = communication connectors, east = GPIO/servo header, south = replaceable radio interface.
-- **PCB:** initial four-layer stack-up with uninterrupted reference ground plane below the high-speed routes. Footprints and edge-clearance/mechanical courtyard checks are required before choosing a smaller board.
-- **Mounting holes:** four near corners, exact center offsets and screw diameter TBD once the connector courtyards are fixed.
+The previous 120 × 120 mm outline was an unverified envelope. Reducing to **110 × 110 mm** is realistic as a starting point using the eight required connector bodies on the west edge. The west edge dictates the minimum practical size; the 3×13 servo header does not.
 
-![Conceptual component placement](rov-gnd-p4-placement-rev-a.svg)
+![Nominally dimensioned 110 × 110 mm top-view placement](rov-gnd-p4-placement-rev-a.svg)
 
-## Edge assignments
+The SVG declares its physical dimensions in millimeters. **Print at 100% (without "fit to page")** to obtain a nominal 1:1 board outline. Connector bodies are measured/approximated by representative part dimensions, not yet final KiCad courtyards.
 
-### North — camera
+### West edge connector packing (north to south)
 
-- A 15-contact, 1.0 mm-pitch Raspberry Pi-style **CSI-2 camera FPC** near the center of the north edge.
-- Face its cable exit toward north; check connector top/bottom-contact orientation and latch accessibility.
-- The P4 should sit immediately south of the CSI interface, with a clean and short MIPI route and no switching power components nearby.
-- Keep camera I²C separate from the exposed I²C bus.
+| Connection | Quantity | Candidate width per body along board edge |
+|---|---:|---:|
+| USB-C 2.0 connector (HS OTG, FS/JTAG) | 2 | ~8.94 mm |
+| JST-GH 6P (UART0 / FLASH; SPI) | 2 | ~10.75 mm |
+| JST-GH 4P (UART1, UART2, external I²C, Ethernet) | 4 | ~8.25 mm |
+| **Total connector bodies** | **8** | **72.38 mm** |
+| 7 × 3 mm between successive connector bodies | | 21.0 mm |
+| Top and bottom unoccupied edge length | | 16.62 mm |
+| **Total west edge** | | **110.0 mm** |
 
-### West — GH and USB
+Representative candidate footprints: JST `SM06B-GHS-TB` 6P (10.75 mm), `SM04B-GHS-TB` 4P (8.25 mm), and USB-C receptacle width approximately 8.94 mm. Actual final mating widths and USB connector keep-outs may change. This is a **minimum connector-body packing test**, not a mechanical signoff.
 
-Recommended **north to south** arrangement:
+Exact west body start/stop locations relative to the northwest corner (mm, top-down):
 
-| Position | Connection | Contact count |
-|---:|---|---:|
-| 1 | USB-C **HS/OTG** (VStreamer host/device) | USB-C |
-| 2 | USB-C **FS/JTAG** (native peripheral; *not* a USB-to-UART bridge) | USB-C |
-| 3 | **UART0 / FLASH** (3V3 ref, GND, TX0, RX0, DTR, RTS) | JST-GH 6 |
-| 4 | **UART1 / MSP DisplayPort** | JST-GH 4 |
-| 5 | **UART2 / CRSF-S.Port** | JST-GH 4 |
-| 6 | **I²C / external** | JST-GH 4 |
-| 7 | **SPI** (3V3, GND, CLK, MOSI, MISO, CS0) | JST-GH 6 |
-| 8 | **Ethernet / 100BASE-TX cable** (magnetics on PCB) | JST-GH 4 |
+| Connector | Start y | End y |
+|---|---:|---:|
+| USB-C HS/OTG | 6.00 | 14.94 |
+| USB-C FS/JTAG | 17.94 | 26.88 |
+| UART0 JST-GH 6P | 29.88 | 40.63 |
+| UART1 JST-GH 4P | 43.63 | 51.88 |
+| UART2 JST-GH 4P | 54.88 | 63.13 |
+| External I²C JST-GH 4P | 66.13 | 74.38 |
+| SPI JST-GH 6P | 77.38 | 88.13 |
+| Ethernet JST-GH 4P | 91.13 | 99.38 |
 
-- All west-facing connectors should have cable exit and finger/latch clearance.
-- Ethernet PHY, magnetics and cable-side ESD near the southwest corner; do not run its twisted-pair copper beneath MIPI.
-- Keep USB ESD/protection close to the connector; route USB differential pairs to P4 over a continuous ground plane.
-- **There is no SPI-EXT connector**: CS1–CS5 are GPIO/servo-header signals only.
+These eight connectors require approximately 10.62 mm at the south end and 6 mm at the north end for leftover board edge. **3 mm gaps may be too tight for a finger-operated GH latch or thick USB cable overmolds**; check harness mating with actual 3D models and a physical print before layout release. If hand access is difficult, increase outline or move one connector rather than compressing below safe clearances.
 
-### East — 3×13 servo-style GPIO
+### Other edges
 
-Vertical header centered on the east edge. Logical row order remains:
+- **North:** 15-pin 1.0 mm Raspberry Pi-style CSI-2 camera FPC centered and exiting north. Place P4 near north-center to keep high-speed MIPI short.
+- **East:** 3×13 pin 2.54 mm pitch servo-style header, GND / 5V / SIGNAL logically when reading from outer board edge inward. The centers of its 13 rows span **30.48 mm**; body/cable clearance extends beyond.
+- **South:** centered 15-pin 1.0 mm radio SDIO FPC exiting south, with separate radio power JST and separate main 5 V supply connector (power connector selections TBD).
+- **Inside:** place Ethernet PHY/magnetics near southwest, microSD near northeast, P4 near CSI, and power supply toward southeast. These are zoning recommendations not final routed footprints.
 
-- Row 1: GND / 3V3 / 3V3
-- Row 2: GND / 5V / 5V
-- Rows 3–13: GND / 5V / GPIO4, GPIO5, GPIO6, GPIO13, GPIO32, GPIO33, GPIO22, GPIO23, GPIO54, GPIO25/D+, GPIO24/D− (respectively).
+## Mounting and routing
 
-Place the **signal column closest to the P4/core**, 5 V in the middle and GND at the exterior. This preserves logical GND/5V/signal when reading inward from the east edge. Final silk orientation and physical pin-1 numbering will be explicitly defined with the chosen footprint. The 5 V rail is shared and must be current-limited/protected; signal pins remain 3.3 V-only.
+- Show four **provisional** corner mounting holes. Actual hole diameter, keep-out and screw-head clearance must be selected after connector footprints are placed.
+- Protect 3.3 V-only GPIO signal pins from 5 V electrical input; the GND/5V/SIGNAL ordering is standard for servo-style connections.
+- The SPI-EXT JST-GH connector was removed. CS1–CS5 are provided on the GPIO header instead.
+- Native USB FS/JTAG and UART0 are separate interfaces, with two USB-C ports and separate 6-pin UART0 auto-flash JST-GH.
+- Keep CSI and SDIO FPC ports clearly labeled despite their identical cable form factor.
+- Keep the SDIO cable target at 100 mm, single-ended, with interleaved GND and power via separate connector.
+- Final P4 GPIO map/strapping/power circuitry is **not signed off**. See [GPIO map](gpio-map-draft.md) and [open hardware items](open-items.md).
 
-### South — replaceable radio
+## Decision
 
-- Centrally placed 15-contact / 1.0 mm-pitch FPC labelled **WINJECT SDIO**, latching and exiting south.
-- Immediately adjacent **radio 5 V power JST**, separate from the FPC. Confirm the connector part number/current rating.
-- **Main 5 V input** at southwest south edge, separate from radio power output (input connector/voltage range TBD).
-- SDIO cable is 100 mm and carries only DAT0–DAT3, CMD, CLK and interleaved ground; no differential transceiver, UART or power.
-- The radio PCB has its own flashing, debug and BOOT/RESET facilities.
-
-## Interior component zoning
-
-| Zone | Placement rationale |
-|---|---|
-| North-center | P4, flash, decoupling and clock near center, below CSI FPC; MIPI shortest path |
-| Center-west | USB protection and optional data-path isolation for GPIO24/25 |
-| Southwest | Ethernet PHY, magnetics, ESD and twisted pair connector; keep noise away from CSI |
-| East-upper corner | MicroSD socket with accessible card insertion away from the GPIO pin field |
-| Southeast-center | Power supply, radio power switch/current monitor; isolate switching currents from MIPI |
-| Center-south | SDIO interface source damping footprints, contiguous grounded routing to radio FPC |
-
-## Mechanical and electrical review gates
-
-1. Verify real USB-C and JST-GH **body/courtyard sizes and cable exit directions**; the left stack is a packing constraint.
-2. Ensure nothing blocks the microSD card extraction path, camera FPC latch, radio FPC latch or 3×13 servo plugs.
-3. Reserve mounting hole keep-outs without crossing high-speed routes.
-4. Use 90 Ω differential USB, 100 Ω differential MIPI, and 50 Ω single-ended SDIO routing targets subject to the chosen PCB stack-up. Follow Espressif's current P4 hardware guidelines.
-5. Keep CSI and SDIO edge labels large and distinctive. Although the connectors have the same mechanics, **their electrical pinouts differ**.
-6. This draft does **not** approve the earlier conversation GPIO map. Pin capabilities and boot-strap conflicts must be audited before schematic sign-off.
-7. Review connector accessibility with a physical 1:1 printed or 3D mechanical model before shrinking below 120 × 120 mm.
+**Use 110 × 110 mm as the Rev A mechanical baseline**. At 100 × 100 mm, the eight west connectors need narrower gaps, tighter end margins, or moving a connector to another edge. A 110 mm square should be mechanically plausible but should not be interpreted as the minimum manufacturable dimensions without 3D courtyard and cable-access verification.
