@@ -21,7 +21,7 @@ This captures the *latest design discussion*, partially crosschecked against the
 | USB HS OTG D−/D+ | Dedicated USB pins | Verify actual package nets |
 | Ethernet RMII CRS_DV, RXD0, RXD1 | 28 / 29 / 30 | Provisional |
 | Ethernet RMII REF_CLK, TX_EN | 50 / 49 | Provisional |
-| Ethernet RMII TXD0, TXD1 | 34 / 35 | **Critical: GPIO35 is boot strap (normal boot requires high); reassign TXD1 or add verified isolation/boot-strapping** |
+| Ethernet RMII TXD0, TXD1 | 34 / 35 | **Draft net tied:** TXD1 on GPIO35, shared with BOOT input and its 10 kΩ pull-up; PHY input/loading and boot/download timing still require verification |
 | Ethernet MDC, MDIO, PHY_RESET | 31 / 52 / 51 | Provisional |
 | Camera control GPIO | 45 | Provisional |
 | microSD power enable | 47 | Provisional |
@@ -88,4 +88,11 @@ Totals: **13 GND + 13 5V + 2 3V3 + 11 signal = 39 contacts**. All 11 signal pins
 
 The [initial KiCad schematic](../boards/rov-gnd-p4/kicad/rov-gnd-p4.kicad_sch) uses **ESP32-P4NRW32X v3.x** and official Espressif physical-pad mapping. On v3.x, **physical pin 54 is VDD_HP_1 (1.2 V supply)**, while **GPIO54 remains available on physical pin 98** and is the proposed ADC2_CH5 pin of the expansion header. These are distinct.
 
-GPIO35, GPIO36, GPIO37 and GPIO38 participate in boot strapping. **GPIO35=high** is normal SPI boot; GPIO35=low and GPIO36=high selects joint download. The tentative RMII TXD1 assignment to GPIO35 must be reviewed and is not approved for hardware fabrication. Camera SDMMC0, UART0 and USB data pins have higher confidence than custom flexible GPIO-matrix mappings. [Espressif schematic checklist](https://docs.espressif.com/projects/esp-hardware-design-guidelines/en/latest/esp32p4/schematic-checklist-esp32p4.html).
+GPIO35, GPIO36, GPIO37 and GPIO38 participate in boot strapping. **GPIO35=high** is normal SPI boot; GPIO35=low and GPIO36=high selects joint download. The KiCad draft now ties GPIO35/BOOT to Ethernet RMII TXD1 on the same net (`RMII_TXD1_BOOT_GPIO35`), consistent with the Waveshare ESP32-P4-WIFI6-DEV-KIT IP101-family Ethernet mapping. Because GPIO35 is also the boot-mode strap, retain its pull-up, ensure the PHY TXD1 input does not pull the net low during strap sampling, and verify the auto-programming circuit and reset timing. The PHY and magnetics remain conceptual placeholders: this is a **logical net connection, not approval for hardware fabrication**. Camera SDMMC0, UART0 and USB data pins have higher confidence than custom flexible GPIO-matrix mappings. [Espressif schematic checklist](https://docs.espressif.com/projects/esp-hardware-design-guidelines/en/latest/esp32p4/schematic-checklist-esp32p4.html).
+
+
+### 2026-11-24 verified reference check
+
+- [Waveshare ESP32-P4-WIFI6-DEV-KIT Rev 1.2 schematic](https://files.waveshare.net/wiki/ESP32-P4-WIFI6-DEV-KIT/ESP32-P4-WIFI6-DEV-KIT.pdf): example P4 + IP101-family Ethernet PHY, but its onboard ESP32-C6 wiring must **not** replace our independent ESP32-C5 SDIO connector.
+- [Espressif ESP32-P4 hardware schematic checklist](https://docs.espressif.com/projects/esp-hardware-design-guidelines/en/latest/esp32p4/schematic-checklist-esp32p4.html): RMII TXD1 is limited to GPIO35 or GPIO42; GPIO42 is dedicated microSD DAT3 on SDMMC slot 0 in our design, and GPIO35 needs high on normal boot.
+- Only the shared RMII_TXD1/BOOT35 signal has been connected in this review. USB-C CC/OTG, genuine 1.2 V and 3.3 V supplies, Ethernet PHY/magnetics, UART auto-programming, and card power still need fully specified devices and electrical verification. Do not treat a clean label count as ERC sign-off.
